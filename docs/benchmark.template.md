@@ -14,8 +14,8 @@ the same items for every classifier) unless a full test split is named;
 intervals are 95 % bootstrap intervals.
 
 1. **A logistic regression on general-purpose embeddings, trained on the
-   SE train split, is the strongest and cheapest option where labelled data
-   exists.** Embeddings + LR: mean 0.83 (full test splits: GitHub 0.86, Jira
+   SE train split, is the strongest option where labelled data exists, and
+   costs almost nothing to run.** Embeddings + LR: mean 0.83 (full test splits: GitHub 0.86, Jira
    0.77, Stack Overflow 0.85) at $0.0006 per 1,000 items. The best LLM
    setting, `gpt-6.1-terra` few-shot, reaches 0.82, and none of its paired
    differences with Embeddings + LR is distinguishable from zero (GitHub
@@ -79,8 +79,9 @@ intervals are 95 % bootstrap intervals.
   and mapped to polarity (love, joy → positive; anger, sadness, fear →
   negative; surprise discarded; no emotion → neutral), in the train/test
   partition distributed with EMTk. One empty test text is dropped. 111 test
-  texts also occur verbatim in train (mostly short ones such as "Thanks!"),
-  which flatters supervised models on Jira.
+  texts also occur verbatim in train (short ones such as "Thanks!", "My bad."
+  and "I just committed this."; median 14 characters), which flatters
+  supervised models on Jira.
 - **Stack Overflow**: questions, answers and comments from Calefato et al.
   (2018), with the official Senti4SD train/test partition.
 
@@ -99,7 +100,7 @@ and factual problem reports as neutral.
 | RoBERTa-Twitter | `cardiffnlp/twitter-roberta-base-sentiment-latest` (Loureiro et al. 2022), fine-tuned on tweets, run off the shelf on CPU | No |
 | TF-IDF + LR | Word uni- and bigrams, sublinear tf, logistic regression; C and class weights chosen on dev, refitted on train | Yes |
 | Embeddings + LR | `text-embedding-3-small` vectors with a logistic regression head; C and class weights chosen on dev, refitted on train | Yes (head only) |
-| LLMs | `gpt-6-luna`, `gpt-6.1-terra`, `gpt-6.1-sol` through the OpenAI Responses API with a strict JSON schema (`{"label": "negative" \| "neutral" \| "positive"}`) and reasoning effort `low` (the lowest setting all three accept); `qwen3:8b` locally through Ollama with schema-constrained decoding and reasoning off. One item per call, default sampling | Few-shot: {{shots}} examples in the prompt |
+| LLMs | `gpt-6-luna`, `gpt-6.1-terra`, `gpt-6.1-sol` through the OpenAI Responses API with a strict JSON schema (`{"label": "negative" \| "neutral" \| "positive"}`) and reasoning effort `low` (the lowest setting all three accept); `qwen3:8b` locally through Ollama with schema-constrained decoding and reasoning off (the model's default sampling: temperature 0.6, top-p 0.95, top-k 20). One item per call, provider default sampling | Few-shot: {{shots}} examples in the prompt |
 
 SentiStrength-SE and Senti4SD were not run. Neither has a Python package:
 Senti4SD's classifier runs through R scripts and Java jars and needs a
@@ -117,10 +118,14 @@ SentiCR (bag of words with a supervised classifier).
    three datasets. `gpt-6-luna` and `qwen3:8b` were compared on 150 dev items
    per dataset, `gpt-6.1-terra` and `gpt-6.1-sol` on 60 (cost).
 3. **Test once.** The selected configurations were then run on test, once.
-   Nothing was changed after test scores were seen; the RoBERTa model was added
-   after the other baselines had been scored, with no settings to tune.
+   No model, prompt or setting was changed after test scores were seen. The
+   RoBERTa model was added after the other baselines had been scored, with no
+   settings to tune. The error-analysis tags, the paired comparisons and the
+   sarcasm marker search were defined after the test runs; they describe
+   results and choose nothing.
 4. **Samples.** The cheap classifiers (VADER, RoBERTa, TF-IDF, embeddings,
-   `gpt-6-luna`) were scored on every test item. All classifiers, including
+   `gpt-6-luna` zero-shot) were scored on every test item; the full-test
+   `gpt-6-luna` few-shot run was cut short. All classifiers, including
    `gpt-6.1-terra`, `gpt-6.1-sol` and `qwen3:8b`, were scored on the LLM test
    sample: the first {{sample_n}} items per dataset of a fixed stratified order of the
    test split, so every row of the main table is on the same items. The
@@ -134,8 +139,10 @@ SentiCR (bag of words with a supervised classifier).
   over items (1,000 resamples).
 - **Paired differences** between two classifiers on the same items, with a
   paired bootstrap interval.
-- **Failures** (invalid or truncated JSON, refusal, API error after four
-  retries) count as wrong answers and are never credited to a class.
+- **Failures** (invalid or truncated JSON, a refusal) count as wrong answers
+  and are never credited to a class. API errors that outlast four retries
+  (rate limits, outages, an empty account) say nothing about the model: those
+  items are treated as not yet run and are picked up by the next resume.
 - **Cost** from the published per-token prices as of {{prices_as_of}}
   ({{prices_source}}): {{prices}}
   per million input / cached input / output tokens; `text-embedding-3-small`
@@ -148,9 +155,9 @@ SentiCR (bag of words with a supervised classifier).
 Two things stand out. First, the guided prompt helps the small models and
 hurts the large ones on Jira: `gpt-6-luna` and `qwen3:8b` gain +0.04 to +0.05
 mean dev macro-F1 from it, while `gpt-6.1-terra` and `gpt-6.1-sol` drop from
-0.86 and 0.82 to 0.49 and 0.57 on Jira dev. Reading the disagreements, the
-large models applied rule 2 (routine politeness does not decide the label)
-literally: "Committed thanks Jingwei." and "sorry." became neutral, where
+0.86 and 0.82 to 0.49 and 0.57 on Jira dev. Reading `gpt-6.1-sol`'s
+disagreements between the two prompts, it applied rule 2 (routine politeness
+does not decide the label) literally: "Committed thanks Jingwei." and "sorry." became neutral, where
 Jira's gold says positive and negative. Second, the few-shot variant without
 rules (`fs-basic`, added after this first dev round) is the best variant for
 both large models. Few-shot examples carry a dataset's conventions better than
@@ -204,7 +211,14 @@ batch throughput on the same laptop's CPU.
 
 {{variance}}
 
-VARIANCE_NOTE
+Only the local model's repeated runs were completed; those of the three API
+models were cut short (see "Runs not completed"). With its default sampling
+(temperature 0.6), `qwen3:8b` changed the label of 4 of 300 items (1.3 %)
+zero-shot and 10 of 300 (3.3 %) few-shot across three runs. Mean macro-F1
+moved by 0.003 zero-shot and 0.03 few-shot. That is smaller than the sampling
+intervals (about ±0.05), but a single few-shot run can differ from the next by
+as much as some of the paired differences above, so one-run comparisons of
+close models should be read with that in mind.
 
 ## Agreement between classifiers
 
