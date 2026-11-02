@@ -20,7 +20,10 @@ intervals are 95 % bootstrap intervals.
    setting, `gpt-6.1-terra` few-shot, reaches 0.82, and none of its paired
    differences with Embeddings + LR is distinguishable from zero (GitHub
    +0.035, Jira −0.027, Stack Overflow −0.023). `gpt-6.1-sol` few-shot is
-   0.00 to 0.05 lower than Embeddings + LR, with intervals that just reach zero.
+   0.00 to 0.05 lower than Embeddings + LR, with intervals that just reach
+   zero, and `gpt-6-luna` few-shot 0.04 to 0.09 lower (on Jira the interval
+   excludes zero). On the full test splits, where `gpt-6-luna` is the only
+   LLM, its few-shot setting averages 0.79 against 0.83.
 2. **Jira separates prompting from training.** Zero-shot LLMs score 0.57 to
    0.68 on Jira against 0.78 to 0.79 for the supervised baselines; the loss is
    in the negative and positive classes (`gpt-6-luna` zero-shot: negative F1
@@ -28,14 +31,17 @@ intervals are 95 % bootstrap intervals.
    convey: thanks for a patch is positive, an apology negative. Nine labelled
    examples recover part of the gap: few-shot adds +0.08 on Jira for
    `gpt-6.1-terra` [+0.04, +0.13], `gpt-6.1-sol` [+0.05, +0.13] and `qwen3:8b`
-   [+0.02, +0.13], and little on Stack Overflow.
+   [+0.02, +0.13], and +0.13 for `gpt-6-luna` [+0.07, +0.19]. On Stack
+   Overflow it adds little, and on GitHub `gpt-6-luna` gains nothing (−0.03
+   [−0.07, +0.01]).
 3. **The larger model is not the better one here.** `gpt-6.1-terra` matches
    or beats `gpt-6.1-sol` in both settings (few-shot: +0.04 on GitHub
    [+0.01, +0.07], +0.02 elsewhere) at about half the price ($0.49 against
    $0.91 per 1,000 items few-shot).
 4. **The LLMs agree with each other more than with the gold labels.** Cohen's
-   κ between the `gpt-6.1-terra` and `gpt-6.1-sol` settings is 0.83 to 0.88;
-   their κ with gold is 0.63 to 0.74. They share a reading of developer text
+   κ between the `gpt-6.1-terra` and `gpt-6.1-sol` settings is 0.83 to 0.88
+   (and 0.96 to 0.97 between repeated runs of one setting); their κ with gold
+   is 0.63 to 0.74. They share a reading of developer text
    that differs from the annotators' in a consistent way, for example calling
    mild frustration in a bug report negative where the gold says neutral. On
    {{noise_n}} sample items, TF-IDF + LR, Embeddings + LR and both
@@ -52,18 +58,23 @@ intervals are 95 % bootstrap intervals.
    with no SE training, averages 0.73, level with zero-shot `gpt-6-luna` and
    `qwen3:8b`, and +0.17 over VADER on GitHub and +0.10 on Jira. Tuning
    VADER's two thresholds on dev adds +0.03 to +0.09 to VADER itself.
-7. **A local 8B model is close to the cheapest API model.** `qwen3:8b`
-   (Ollama, laptop) averages 0.73 zero-shot and 0.75 few-shot at about 0.55 s
-   per item, against 0.73 for zero-shot `gpt-6-luna`.
+7. **A local 8B model is close to the cheapest API model, and steadier.**
+   `qwen3:8b` (Ollama, laptop) averages 0.73 zero-shot and 0.75 few-shot at
+   about 0.55 s per item, against 0.73 and 0.77 for `gpt-6-luna`. Across
+   three runs it changed 1.3 % and 3.3 % of labels, `gpt-6-luna` 9.7 % and
+   6.3 %.
 8. **Strict JSON output removed parsing failures.** No LLM call in the test
    runs returned an invalid label: {{llm_failed}} failures in {{llm_calls}} calls
    (schema-constrained decoding through the OpenAI Responses API and Ollama).
-9. **Not done: OpenAI credits ran out.** The shared API account ran out of
-   credits during the test runs, so `gpt-6-luna` few-shot, the repeated runs
-   of the three API models, half of the cross-platform LLM cells and the API
-   models' outputs on the demo's example sentences are missing (listed under
-   "Runs not done"). No numbers were estimated for them; the findings above
-   use only completed runs.
+9. **Repeated runs change some labels but not the top of the table.** Over
+   three runs on {{variance_n}} items per dataset, with each provider's default
+   sampling, the API models changed 2.7 % (`gpt-6.1-sol` few-shot) to 9.7 %
+   (`gpt-6-luna` zero-shot) of labels. Mean macro-F1 moved by at most 0.025,
+   and `gpt-6.1-terra` few-shot then `gpt-6.1-sol` few-shot ranked first and
+   second in every run. The settings between 0.73 and 0.78 swap places from
+   run to run. Runs 2 and 3 differ from each other about as much as from
+   run 1, which for most settings was made eight hours earlier, so this looks
+   like sampling, not a change in the models.
 
 ## Setup
 
@@ -126,12 +137,16 @@ SentiCR (bag of words with a supervised classifier).
    sarcasm marker search were defined after the test runs; they describe
    results and choose nothing.
 4. **Samples.** The cheap classifiers (VADER, RoBERTa, TF-IDF, embeddings,
-   `gpt-6-luna` zero-shot) were scored on every test item; the full-test
-   `gpt-6-luna` few-shot run is not done (OpenAI credits ran out). All classifiers, including
-   `gpt-6.1-terra`, `gpt-6.1-sol` and `qwen3:8b`, were scored on the LLM test
-   sample: the first {{sample_n}} items per dataset of a fixed stratified order of the
-   test split, so every row of the main table is on the same items. The
-   variance runs repeat each LLM twice more on the first {{variance_n}} of those.
+   `gpt-6-luna` zero- and few-shot) were scored on every test item. All
+   classifiers, including `gpt-6.1-terra`, `gpt-6.1-sol` and `qwen3:8b`, were
+   scored on the LLM test sample: the first {{sample_n}} items per dataset of a
+   fixed stratified order of the test split, so every row of the main table is
+   on the same items. The variance runs repeat each LLM twice more on the
+   first {{variance_n}} of those.
+5. **Two passes.** The shared OpenAI account ran out of credits partway
+   through the test runs (see "Run history"). The remaining API runs were made
+   after a top-up with the same models, prompts and settings; calls that hit
+   the billing error were treated as not run, not as model failures.
 
 ### Metrics
 
@@ -191,14 +206,16 @@ Per-class F1:
 
 {{cross}}
 
-TF-IDF + LR loses 0.14 to 0.35 macro-F1 when it is trained on one dataset
+TF-IDF + LR loses 0.15 to 0.35 macro-F1 when it is trained on one dataset
 and tested on another (worst: Jira to Stack Overflow, 0.79 to 0.44), as
 Novielli et al. (2020) found for bag-of-words tools. Embeddings + LR loses
-0.04 to 0.16. For `gpt-6-luna`, few-shot examples from another dataset scored
-+0.01 to +0.04 above its zero-shot prompt on the target (GitHub examples on
-Jira 0.61, on Stack Overflow 0.82; Jira examples on GitHub 0.84; zero-shot:
-0.57, 0.81 and 0.80). The within-platform few-shot cells and the Stack
-Overflow-source cells are marked "–": not done, OpenAI credits ran out.
+0.04 to 0.16. For `gpt-6-luna`, the source of the few-shot examples matters
+most where conventions differ. On Jira its own examples give 0.70, against
+0.61 with GitHub examples, 0.59 with Stack Overflow examples and 0.57
+zero-shot. On Stack Overflow every source gives 0.80 to 0.83 (zero-shot 0.81).
+GitHub is the exception: Jira examples scored 0.84, above GitHub's own
+examples (0.77) and zero-shot (0.80). With intervals of about ±0.05 per cell,
+this benchmark does not explain that result.
 
 ## Cost, latency and failures
 
@@ -207,20 +224,39 @@ Overflow-source cells are marked "–": not done, OpenAI credits ran out.
 LLM latency is the wall time of one call with six to eight calls in flight
 from a laptop on home broadband; `qwen3:8b` ran one request at a time on an
 Apple M5 laptop with 16 GB that other work was also using. Local baselines are
-batch throughput on the same laptop's CPU.
+batch throughput on the same laptop's CPU. Latency includes any wait before a
+retry after the API's per-minute rate limit (2 s, then 4, 8 and 16 s).
+`gpt-6-luna` few-shot's long p95 comes almost entirely from its GitHub
+full-test run, which sent the longest prompts with six calls in flight. The
+slow calls there have the same token counts as the fast ones and cluster near
+10 s and 33 s. That fits rate-limit waits rather than slower answers.
 
 ## Run-to-run variance
 
 {{variance}}
 
-Only the local model's repeated runs were completed. The three API models'
-repeated runs are not done: OpenAI credits ran out (see "Runs not done"). With its default sampling
-(temperature 0.6), `qwen3:8b` changed the label of 4 of 300 items (1.3 %)
-zero-shot and 10 of 300 (3.3 %) few-shot across three runs. Mean macro-F1
-moved by 0.003 zero-shot and 0.03 few-shot. That is smaller than the sampling
-intervals (about ±0.05), but a single few-shot run can differ from the next by
-as much as some of the paired differences above, so one-run comparisons of
-close models should be read with that in mind.
+Each LLM ran three times on the same {{variance_n}} items per dataset with the
+same prompt and the provider's default sampling (`qwen3:8b`: temperature 0.6).
+The API models changed between 8 and 29 of 300 labels (2.7 to 9.7 %);
+`gpt-6-luna` changed the most, zero-shot 9.7 % and few-shot 6.3 %. The local
+`qwen3:8b` changed 1.3 % zero-shot and 3.3 % few-shot. Labels move more than
+macro-F1 does: mean macro-F1 moved by at most 0.025 for the API models and 0.03
+for `qwen3:8b` few-shot, because changes in both directions partly cancel.
+`gpt-6.1-terra` few-shot and `gpt-6.1-sol` few-shot were first and second in
+each of the three runs. Below them, the settings between 0.73 and 0.78
+changed order: `gpt-6-luna` few-shot and `gpt-6.1-terra` zero-shot swapped in
+run 2, and `qwen3:8b` few-shot went from last in runs 1 and 2 to fifth in run
+3.
+
+The API models' run 1 was made on 2 November and runs 2 and 3 about eight hours
+later (see "Run history"); `gpt-6-luna` few-shot is the exception, with its run 1
+on Jira and Stack Overflow also in the second pass. Runs 2 and 3 differ from each other about as much as
+from run 1 (`gpt-6-luna` zero-shot: 6.3 % of labels between runs 1 and 2,
+7.3 % between runs 2 and 3), so the changes look like sampling rather than an
+update to the models in between. The variation is smaller than the sampling
+intervals (about ±0.05), but a single run can differ from the next by as much
+as some of the paired differences above, so one-run comparisons of close
+models should be read with that in mind.
 
 ## Agreement between classifiers
 
@@ -275,7 +311,7 @@ What the examples show:
   37 politeness items on Stack Overflow are positive, while on Jira the split
   is 39 positive, 23 neutral, 23 negative (apologies are negative there).
   Zero-shot LLMs are weakest on Jira politeness (`gpt-6-luna` 0.39 accuracy);
-  few-shot brings `gpt-6.1-terra` to 0.78. The supervised baselines, which
+  few-shot brings `gpt-6-luna` to 0.62 and `gpt-6.1-terra` to 0.78. The supervised baselines, which
   learn each dataset's convention, are at 0.72 to 0.73 on Jira.
 - **Sarcasm.** The tag (gold negative, VADER compound ≥ 0.5) found 15 items,
   and on reading none of them is sarcastic. They are criticism or disagreement
@@ -299,26 +335,22 @@ What the examples show:
 
 {{spend}}
 
-## Runs not done: OpenAI credits ran out
+## Run history
 
-The shared OpenAI account ran out of credits at about 17:45 on 2 November
-2026, during the test runs ("You have no credits remaining"; the spend
-SentiBench recorded up to then is in the table above; other projects use the
-same account). The calls that hit the billing error were not counted as model
+The test runs were made in two passes. The shared OpenAI account ran out of
+credits at about 17:45 on 2 November 2026, partway through them ("You have no
+credits remaining"; other projects use the same account), when $3.42 had been
+spent. The calls that hit the billing error were not counted as model
 failures: the runner treats them as not run and stops at the first such error.
-Classifiers whose {{sample_n}}-item sample is incomplete (`gpt-6-luna` few-shot) are
-left out of the tables rather than shown on fewer items, and no number in this
-report is estimated. This report was built with `sentibench report
---partial`, which lists what is missing below; without `--partial` the report
-refuses to build until every planned run is complete.
+After a top-up, `sentibench resume` ran what was missing on 3 November between
+00:54 and 01:54 local time, for $1.71: `gpt-6-luna` few-shot (most of the
+sample and the full test splits), runs 2 and 3 of the three API models, three
+`gpt-6-luna` cross-platform cells and the API models' and Embeddings + LR's
+outputs on the demo's example sentences. Models, prompts and settings were the
+same in both passes, and cached items were not re-run.
 
-One command completes them. It runs only the missing items (finished ones are
-cached), then the demo's example sentences, then rebuilds this report and the
-demo data, and it can be repeated safely if it stops again:
-
-```bash
-uv run sentibench resume
-```
+`sentibench report` checks that every planned run is complete before it
+builds:
 
 {{incomplete}}
 

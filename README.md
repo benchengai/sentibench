@@ -73,6 +73,7 @@ intervals, paired differences and the error analysis are in
 | Embeddings + LR (trained per dataset) | 0.83 | 0.78 | 0.87 | **0.83** | 0.0006 |
 | `gpt-6.1-terra`, few-shot | 0.86 | 0.75 | 0.85 | 0.82 | 0.49 |
 | `gpt-6.1-sol`, few-shot | 0.82 | 0.73 | 0.83 | 0.79 | 0.91 |
+| `gpt-6-luna`, few-shot | 0.77 | 0.70 | 0.83 | 0.77 | 0.07 |
 | `gpt-6.1-terra`, zero-shot | 0.79 | 0.68 | 0.84 | 0.77 | 0.27 |
 | `qwen3:8b` (local), few-shot | 0.78 | 0.68 | 0.80 | 0.75 | 0 (0.56 s per item on a laptop) |
 | TF-IDF + LR (trained per dataset) | 0.67 | 0.79 | 0.75 | 0.74 | 0 |
@@ -91,7 +92,8 @@ Headlines:
 - **Jira separates prompting from training**: zero-shot LLMs score 0.57 to 0.68
   there against 0.78 to 0.79 for supervised baselines, because Jira's labels
   follow conventions (thanks for a patch is positive, an apology negative).
-  Nine in-domain examples add about +0.08.
+  Nine in-domain examples add +0.08 for `gpt-6.1-terra`, `gpt-6.1-sol` and
+  `qwen3:8b` and +0.13 for `gpt-6-luna`.
 - **`gpt-6.1-terra` matches or beats `gpt-6.1-sol` at half the price.**
 - **`gpt-6.1-terra` and `gpt-6.1-sol` agree with each other (κ 0.83 to 0.88)
   more than with the gold labels (0.63 to 0.74)**, which says as much about
@@ -102,16 +104,18 @@ Headlines:
 - Prompt rules written for one convention hurt the large models on another
   (dev): a politeness rule dropped `gpt-6.1-sol` from 0.82 to 0.57 on Jira dev.
   Few-shot examples without rules worked best for them.
-- Strict JSON schemas: no invalid outputs in 11,919 test calls.
-- Run-to-run variance (local `qwen3:8b`, three runs, default sampling): 1.3 %
-  of labels changed zero-shot, 3.3 % few-shot; macro-F1 moved by up to 0.03.
+- Strict JSON schemas: no invalid outputs in 20,642 test calls.
+- **Repeated runs change labels, not the top of the table.** Over three runs
+  with default sampling, the API models changed 2.7 % to 9.7 % of labels
+  (`gpt-6-luna` the most) and the local `qwen3:8b` 1.3 % to 3.3 %. Macro-F1
+  moved by at most 0.03, and `gpt-6.1-terra` few-shot then `gpt-6.1-sol`
+  few-shot ranked first and second in every run.
 
-**API spend: $3.42** (dev tuning $1.10, test $2.32, embeddings $0.01, plus a
-few unrecorded probe calls under $0.01), under the $6 budget. **Not done: OpenAI credits ran out.** The shared API account
-ran out of credits during the test runs, so `gpt-6-luna` few-shot, the repeated
-runs for the three API models, half of the cross-platform LLM cells and the
-API models' outputs on the demo's example sentences are missing; nothing was
-estimated in their place (see "Not done" below).
+**API spend: $5.13** (dev tuning $1.10, test $3.97, demo example sentences
+$0.06, embeddings $0.01, plus a few unrecorded probe calls under $0.01). The
+test runs took two passes: the shared OpenAI account ran out of credits after
+$3.42, and after a top-up `sentibench resume` finished the remaining runs for
+$1.71 with the same models, prompts and settings (report, "Run history").
 
 ## Quick start
 
@@ -152,27 +156,19 @@ uv run sentibench examples && uv run sentibench report
 ```
 
 The test commands use the prompts the dev selection rule picked; `report`
-checks that they match and stops if a selected configuration is missing.
+checks that they match and stops if a selected configuration is missing. If
+a run stops (spend cap, no API credits, Ollama not running), this runs only
+the missing items and rebuilds the report and demo data:
+
+```bash
+uv run sentibench resume
+```
 
 ## Not done
 
-- **Not done: OpenAI credits ran out.** The shared OpenAI account ran out of
-  credits during the test runs. Missing: `gpt-6-luna` few-shot (121 of 900
-  sample items, 863 of 5,221 full-test items), runs 2 and 3 of the variance
-  study for `gpt-6-luna`, `gpt-6.1-terra` and `gpt-6.1-sol` (the local
-  `qwen3:8b` variance runs are complete), three of the six `gpt-6-luna`
-  cross-platform cells, and the API models' outputs on the try-box example
-  sentences (Embeddings + LR too, since it needs the embeddings API). Billing
-  errors were not counted as model failures, and the report and demo show
-  only completed runs. Once credits are added, one command finishes the
-  missing items (finished ones are cached) and rebuilds the report and demo
-  data; it can be repeated safely if it stops again:
-
-  ```bash
-  uv run sentibench resume
-  ```
-- Not deployed: the site builds as a static export for Vercel, but there is no
-  account.
+- Deployment is not part of this repository. The site builds as a static
+  export; `DEMO_BASE_PATH=/demos/sentibench npm run build` serves it from a
+  sub-path.
 - SentiStrength-SE and Senti4SD were not run (no Python package); no
   transformer was fine-tuned on the SE data.
 

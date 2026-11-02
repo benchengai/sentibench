@@ -8,6 +8,36 @@
    "look_for": "Technical vocabulary: 'kill' is in general sentiment lexicons, but the writer expresses no emotion.",
    "python_vader_compound": -0.6908,
    "llm": {
+    "gpt-6-luna-zs": {
+     "github": "neutral",
+     "jira": "neutral",
+     "so": "neutral"
+    },
+    "gpt-6-luna-fs": {
+     "github": "neutral",
+     "jira": "neutral",
+     "so": "neutral"
+    },
+    "gpt-6.1-terra-zs": {
+     "github": "neutral",
+     "jira": "neutral",
+     "so": "neutral"
+    },
+    "gpt-6.1-terra-fs": {
+     "github": "neutral",
+     "jira": "neutral",
+     "so": "neutral"
+    },
+    "gpt-6.1-sol-zs": {
+     "github": "neutral",
+     "jira": "neutral",
+     "so": "neutral"
+    },
+    "gpt-6.1-sol-fs": {
+     "github": "neutral",
+     "jira": "neutral",
+     "so": "neutral"
+    },
     "qwen3:8b-zs": {
      "github": "neutral",
      "jira": "neutral",
@@ -21,9 +51,9 @@
    },
    "roberta": "negative",
    "embed_lr": {
-    "github": null,
-    "jira": null,
-    "so": null
+    "github": "neutral",
+    "jira": "neutral",
+    "so": "neutral"
    }
   },
   {
@@ -33,6 +63,36 @@
    "look_for": "A factual report that uses 'fails' and 'fatal'.",
    "python_vader_compound": -0.8402,
    "llm": {
+    "gpt-6-luna-zs": {
+     "github": "neutral",
+     "jira": "neutral",
+     "so": "neutral"
+    },
+    "gpt-6-luna-fs": {
+     "github": "neutral",
+     "jira": "neutral",
+     "so": "neutral"
+    },
+    "gpt-6.1-terra-zs": {
+     "github": "negative",
+     "jira": "negative",
+     "so": "negative"
+    },
+    "gpt-6.1-terra-fs": {
+     "github": "negative",
+     "jira": "negative",
+     "so": "negative"
+    },
+    "gpt-6.1-sol-zs": {
+     "github": "negative",
+     "jira": "negative",
+     "so": "negative"
+    },
+    "gpt-6.1-sol-fs": {
+     "github": "negative",
+     "jira": "negative",
+     "so": "neutral"
+    },
     "qwen3:8b-zs": {
      "github": "neutral",
      "jira": "neutral",
@@ -46,9 +106,9 @@
    },
    "roberta": "negative",
    "embed_lr": {
-    "github": null,
-    "jira": null,
-    "so": null
+    "github": "neutral",
+    "jira": "neutral",
+    "so": "neutral"
    }
   },
   {
@@ -58,6 +118,36 @@
    "look_for": "A 'polar fact': Novielli et al. (2020) note that Jira's gold labels such sentences negative, the other gold sets neutral.",
    "python_vader_compound": 0.0,
    "llm": {
+    "gpt-6-luna-zs": {
+     "github": "neutral",
+     "jira": "neutral",
+     "so": "neutral"
+    },
+    "gpt-6-luna-fs": {
+     "github": "neutral",
+     "jira": "neutral",
+     "so": "neutral"
+    },
+    "gpt-6.1-terra-zs": {
+     "github": "neutral",
+     "jira": "neutral",
+     "so": "neutral"
+    },
+    "gpt-6.1-terra-fs": {
+     "github": "neutral",
+     "jira": "neutral",
+     "so": "neutral"
+    },
+    "gpt-6.1-sol-zs": {
+     "github": "negative",
+     "jira": "negative",
+     "so": "negative"
+    },
+    "gpt-6.1-sol-fs": {
+     "github": "neutral",
+     "jira": "neutral",
+     "so": "neutral"
+    },
     "qwen3:8b-zs": {
      "github": "neutral",
      "jira": "neutral",
@@ -71,9 +161,9 @@
    },
    "roberta": "negative",
    "embed_lr": {
-    "github": null,
-    "jira": null,
-    "so": null
+    "github": "neutral",
+    "jira": "neutral",
+    "so": "neutral"
    }
   },
   {
@@ -83,6 +173,36 @@
    "look_for": "Sarcasm: positive words, negative meaning.",
    "python_vader_compound": 0.6249,
    "llm": {
+    "gpt-6-luna-zs": {
+     "github": "negative",
+     "jira": "negative",
+     "so": "negative"
+    },
+    "gpt-6-luna-fs": {
+     "github": "negative",
+     "jira": "negative",
+     "so": "negative"
+    },
+    "gpt-6.1-terra-zs": {
+     "github": "negative",
+     "jira": "negative",
+     "so": "negative"
+    },
+    "gpt-6.1-terra-fs": {
+     "github": "negative",
+     "jira": "negative",
+     "so": "negative"
+    },
+    "gpt-6.1-sol-zs": {
+     "github": "negative",
+     "jira": "negative",
+     "so": "negative"
+    },
+    "gpt-6.1-sol-fs": {
+     "github": "negative",
+     "jira": "negative",
+     "so": "negative"
+    },
     "qwen3:8b-zs": {
      "github": "negative",
      "jira": "negative",
@@ -96,9 +216,9 @@
    },
    "roberta": "positive",
    "embed_lr": {
-    "github": null,
-    "jira": null,
-    "so": null
+    "github": "positive",
+    "jira": "positive",
+    "so": "positive"
    }
   },
   {
@@ -108,6 +228,36 @@
    "look_for": "Sarcasm without any negative word.",
    "python_vader_compound": 0.4215,
    "llm": {
+    "gpt-6-luna-zs": {
+     "github": "negative",
+     "jira": "negative",
+     "so": "negative"
+    },
+    "gpt-6-luna-fs": {
+     "github": "negative",
+     "jira": "negative",
+     "so": "negative"
+    },
+    "gpt-6.1-terra-zs": {
+     "github": "negative",
+     "jira": "negative",
+     "so": "negative"
+    },
+    "gpt-6.1-terra-fs": {
+     "github": "negative",
+     "jira": "negative",
+     "so": "negative"
+    },
+    "gpt-6.1-sol-zs": {
+     "github": "negative",
+     "jira": "negative",
+     "so": "negative"
+    },
+    "gpt-6.1-sol-fs": {
+     "github": "negative",
+     "jira": "negative",
+     "so": "negative"
+    },
     "qwen3:8b-zs": {
      "github": "negative",
      "jira": "negative",
@@ -121,9 +271,9 @@
    },
    "roberta": "positive",
    "embed_lr": {
-    "github": null,
-    "jira": null,
-    "so": null
+    "github": "positive",
+    "jira": "positive",
+    "so": "neutral"
    }
   },
   {
@@ -133,6 +283,36 @@
    "look_for": "Thanks for a contribution: positive by Jira's convention, routine politeness elsewhere.",
    "python_vader_compound": 0.6124,
    "llm": {
+    "gpt-6-luna-zs": {
+     "github": "neutral",
+     "jira": "neutral",
+     "so": "neutral"
+    },
+    "gpt-6-luna-fs": {
+     "github": "neutral",
+     "jira": "positive",
+     "so": "neutral"
+    },
+    "gpt-6.1-terra-zs": {
+     "github": "positive",
+     "jira": "positive",
+     "so": "positive"
+    },
+    "gpt-6.1-terra-fs": {
+     "github": "positive",
+     "jira": "positive",
+     "so": "positive"
+    },
+    "gpt-6.1-sol-zs": {
+     "github": "positive",
+     "jira": "positive",
+     "so": "positive"
+    },
+    "gpt-6.1-sol-fs": {
+     "github": "positive",
+     "jira": "positive",
+     "so": "positive"
+    },
     "qwen3:8b-zs": {
      "github": "positive",
      "jira": "positive",
@@ -146,9 +326,9 @@
    },
    "roberta": "positive",
    "embed_lr": {
-    "github": null,
-    "jira": null,
-    "so": null
+    "github": "positive",
+    "jira": "positive",
+    "so": "positive"
    }
   },
   {
@@ -158,6 +338,36 @@
    "look_for": "A polite request with no emotion.",
    "python_vader_compound": 0.3182,
    "llm": {
+    "gpt-6-luna-zs": {
+     "github": "neutral",
+     "jira": "neutral",
+     "so": "neutral"
+    },
+    "gpt-6-luna-fs": {
+     "github": "neutral",
+     "jira": "neutral",
+     "so": "neutral"
+    },
+    "gpt-6.1-terra-zs": {
+     "github": "neutral",
+     "jira": "neutral",
+     "so": "neutral"
+    },
+    "gpt-6.1-terra-fs": {
+     "github": "neutral",
+     "jira": "neutral",
+     "so": "neutral"
+    },
+    "gpt-6.1-sol-zs": {
+     "github": "neutral",
+     "jira": "neutral",
+     "so": "neutral"
+    },
+    "gpt-6.1-sol-fs": {
+     "github": "neutral",
+     "jira": "neutral",
+     "so": "neutral"
+    },
     "qwen3:8b-zs": {
      "github": "neutral",
      "jira": "neutral",
@@ -171,9 +381,9 @@
    },
    "roberta": "neutral",
    "embed_lr": {
-    "github": null,
-    "jira": null,
-    "so": null
+    "github": "neutral",
+    "jira": "neutral",
+    "so": "neutral"
    }
   },
   {
@@ -183,6 +393,36 @@
    "look_for": "A routine apology.",
    "python_vader_compound": -0.0772,
    "llm": {
+    "gpt-6-luna-zs": {
+     "github": "neutral",
+     "jira": "neutral",
+     "so": "neutral"
+    },
+    "gpt-6-luna-fs": {
+     "github": "neutral",
+     "jira": "neutral",
+     "so": "neutral"
+    },
+    "gpt-6.1-terra-zs": {
+     "github": "neutral",
+     "jira": "neutral",
+     "so": "neutral"
+    },
+    "gpt-6.1-terra-fs": {
+     "github": "neutral",
+     "jira": "negative",
+     "so": "neutral"
+    },
+    "gpt-6.1-sol-zs": {
+     "github": "neutral",
+     "jira": "neutral",
+     "so": "neutral"
+    },
+    "gpt-6.1-sol-fs": {
+     "github": "neutral",
+     "jira": "negative",
+     "so": "neutral"
+    },
     "qwen3:8b-zs": {
      "github": "neutral",
      "jira": "neutral",
@@ -196,9 +436,9 @@
    },
    "roberta": "negative",
    "embed_lr": {
-    "github": null,
-    "jira": null,
-    "so": null
+    "github": "negative",
+    "jira": "negative",
+    "so": "negative"
    }
   },
   {
@@ -208,6 +448,36 @@
    "look_for": "Relief and gratitude.",
    "python_vader_compound": 0.4753,
    "llm": {
+    "gpt-6-luna-zs": {
+     "github": "positive",
+     "jira": "positive",
+     "so": "positive"
+    },
+    "gpt-6-luna-fs": {
+     "github": "positive",
+     "jira": "positive",
+     "so": "positive"
+    },
+    "gpt-6.1-terra-zs": {
+     "github": "positive",
+     "jira": "positive",
+     "so": "positive"
+    },
+    "gpt-6.1-terra-fs": {
+     "github": "positive",
+     "jira": "positive",
+     "so": "positive"
+    },
+    "gpt-6.1-sol-zs": {
+     "github": "positive",
+     "jira": "positive",
+     "so": "positive"
+    },
+    "gpt-6.1-sol-fs": {
+     "github": "positive",
+     "jira": "positive",
+     "so": "positive"
+    },
     "qwen3:8b-zs": {
      "github": "positive",
      "jira": "positive",
@@ -221,9 +491,9 @@
    },
    "roberta": "positive",
    "embed_lr": {
-    "github": null,
-    "jira": null,
-    "so": null
+    "github": "positive",
+    "jira": "negative",
+    "so": "positive"
    }
   },
   {
@@ -233,6 +503,36 @@
    "look_for": "Explicit frustration.",
    "python_vader_compound": -0.5709,
    "llm": {
+    "gpt-6-luna-zs": {
+     "github": "negative",
+     "jira": "negative",
+     "so": "negative"
+    },
+    "gpt-6-luna-fs": {
+     "github": "negative",
+     "jira": "negative",
+     "so": "negative"
+    },
+    "gpt-6.1-terra-zs": {
+     "github": "negative",
+     "jira": "negative",
+     "so": "negative"
+    },
+    "gpt-6.1-terra-fs": {
+     "github": "negative",
+     "jira": "negative",
+     "so": "negative"
+    },
+    "gpt-6.1-sol-zs": {
+     "github": "negative",
+     "jira": "negative",
+     "so": "negative"
+    },
+    "gpt-6.1-sol-fs": {
+     "github": "negative",
+     "jira": "negative",
+     "so": "negative"
+    },
     "qwen3:8b-zs": {
      "github": "negative",
      "jira": "negative",
@@ -246,9 +546,9 @@
    },
    "roberta": "negative",
    "embed_lr": {
-    "github": null,
-    "jira": null,
-    "so": null
+    "github": "negative",
+    "jira": "negative",
+    "so": "negative"
    }
   },
   {
@@ -258,6 +558,36 @@
    "look_for": "Negative through a rhetorical question, no negative word.",
    "python_vader_compound": 0.3612,
    "llm": {
+    "gpt-6-luna-zs": {
+     "github": "negative",
+     "jira": "negative",
+     "so": "negative"
+    },
+    "gpt-6-luna-fs": {
+     "github": "negative",
+     "jira": "negative",
+     "so": "negative"
+    },
+    "gpt-6.1-terra-zs": {
+     "github": "negative",
+     "jira": "negative",
+     "so": "negative"
+    },
+    "gpt-6.1-terra-fs": {
+     "github": "negative",
+     "jira": "negative",
+     "so": "negative"
+    },
+    "gpt-6.1-sol-zs": {
+     "github": "negative",
+     "jira": "negative",
+     "so": "negative"
+    },
+    "gpt-6.1-sol-fs": {
+     "github": "negative",
+     "jira": "negative",
+     "so": "negative"
+    },
     "qwen3:8b-zs": {
      "github": "negative",
      "jira": "negative",
@@ -271,9 +601,9 @@
    },
    "roberta": "negative",
    "embed_lr": {
-    "github": null,
-    "jira": null,
-    "so": null
+    "github": "negative",
+    "jira": "negative",
+    "so": "negative"
    }
   },
   {
@@ -283,6 +613,36 @@
    "look_for": "Review jargon ('looks good to me') that general lexicons do not know.",
    "python_vader_compound": 0.0,
    "llm": {
+    "gpt-6-luna-zs": {
+     "github": "positive",
+     "jira": "positive",
+     "so": "positive"
+    },
+    "gpt-6-luna-fs": {
+     "github": "positive",
+     "jira": "positive",
+     "so": "positive"
+    },
+    "gpt-6.1-terra-zs": {
+     "github": "positive",
+     "jira": "positive",
+     "so": "positive"
+    },
+    "gpt-6.1-terra-fs": {
+     "github": "positive",
+     "jira": "positive",
+     "so": "positive"
+    },
+    "gpt-6.1-sol-zs": {
+     "github": "positive",
+     "jira": "positive",
+     "so": "positive"
+    },
+    "gpt-6.1-sol-fs": {
+     "github": "positive",
+     "jira": "positive",
+     "so": "positive"
+    },
     "qwen3:8b-zs": {
      "github": "positive",
      "jira": "positive",
@@ -296,9 +656,9 @@
    },
    "roberta": "neutral",
    "embed_lr": {
-    "github": null,
-    "jira": null,
-    "so": null
+    "github": "neutral",
+    "jira": "neutral",
+    "so": "neutral"
    }
   }
  ]
