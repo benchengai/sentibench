@@ -1,0 +1,822 @@
+{"id": "jira-tr-00003-644", "text": "Integrated in ZooKeeper-trunk #1266 (See https://builds.apache.org/job/ZooKeeper-trunk/1266/) ZOOKEEPER-1104. CLONE - In QuorumTest", "label": "neutral"}
+{"id": "jira-tr-00006-1725", "text": "3.0.0 has been released", "label": "neutral"}
+{"id": "jira-tr-00010-4694", "text": "As Wing Yew said", "label": "neutral"}
+{"id": "jira-tr-00012-5294", "text": "After re-compiling the applcation and re-deploying everything worked properly", "label": "positive"}
+{"id": "jira-tr-00023-8980", "text": "Added 'onRowInserted' callback to TreeTable", "label": "neutral"}
+{"id": "jira-tr-00025-9798", "text": "closing this issue.", "label": "neutral"}
+{"id": "jira-tr-00029-11526", "text": "Original reporter is not available. This report has now 'timed out'.", "label": "neutral"}
+{"id": "jira-tr-00030-11718", "text": "*** This bug has been marked as a duplicate of 6155 ***", "label": "neutral"}
+{"id": "jira-tr-00033-11978", "text": "Unfortunatly", "label": "negative"}
+{"id": "jira-tr-00036-13391", "text": "I am also having the same issue with a java.sql.Timestamp based attribute. The date I entered into the field was 'not a date'. Of course", "label": "neutral"}
+{"id": "jira-tr-00039-13997", "text": "Integrated in Struts2-JDK6 #573 (See https://builds.apache.org/job/Struts2-JDK6/573/) WW-3928 Rollbacks changes introduced with WW-2749 to allow work with mod_jk and so on (Revision 1415770) Result = SUCCESS lukaszlenart : Files : /struts/struts2/trunk/plugins/tiles/src/main/java/org/apache/struts2/tiles/StrutsTilesRequestContext.java", "label": "neutral"}
+{"id": "jira-tr-00042-14371", "text": "This is by design", "label": "neutral"}
+{"id": "jira-tr-00044-14571", "text": "yay! it should be really really easy (not including the test", "label": "positive"}
+{"id": "jira-tr-00050-15330", "text": "As of r438174", "label": "neutral"}
+{"id": "jira-tr-00067-18707", "text": "Ah", "label": "neutral"}
+{"id": "jira-tr-00068-18885", "text": "Thanks Sven!", "label": "positive"}
+{"id": "jira-tr-00072-19946", "text": "Is there any documentation such as 'getting started with swarm' available? If there is", "label": "neutral"}
+{"id": "jira-tr-00078-20968", "text": "Integrated in Apache Wicket 1.5.x #54 (See [http://hudson.zones.apache.org/hudson/job/Apache%20Wicket%201.5.x/54/]) ?•?ä?•?ä?•?ä?•?ä", "label": "neutral"}
+{"id": "jira-tr-00093-28310", "text": "Change the element type of 'attributes' to FSAttribute.", "label": "neutral"}
+{"id": "jira-tr-00095-28338", "text": "added fixVersion", "label": "neutral"}
+{"id": "jira-tr-00097-28865", "text": "Fixed a prompt that asks user to enter either 's' or 'q'.", "label": "neutral"}
+{"id": "jira-tr-00110-33264", "text": "Assign to 1.0 during tidy up prior to 1.1", "label": "neutral"}
+{"id": "jira-tr-00112-33812", "text": "Here is a complete patch removing Composite* from the getImplementation() calls", "label": "neutral"}
+{"id": "jira-tr-00117-36052", "text": "Moving these all to a 'Doc 3.x' release version.", "label": "neutral"}
+{"id": "jira-tr-00118-36717", "text": "UIXListView also provides selection functionality through 'selectedRowKeys'", "label": "neutral"}
+{"id": "jira-tr-00121-37398", "text": "More done: -absolute-ordering faces-config/factory/view-declaration-language-factory faces-config/render-kit/renderer/client-behavior-renderer faces-config/application/partial-traversal", "label": "neutral"}
+{"id": "jira-tr-00124-37992", "text": "The issue as described by (resolved) issue TRINIDAD-1171 occurs consistently in our environment using 1.2.10", "label": "neutral"}
+{"id": "jira-tr-00125-38797", "text": "home page fixed in svn.", "label": "neutral"}
+{"id": "jira-tr-00145-46878", "text": "Bryan", "label": "neutral"}
+{"id": "jira-tr-00148-48034", "text": "Very curious as to where you saw that exception. Because digging through my log files", "label": "neutral"}
+{"id": "jira-tr-00153-50490", "text": "Integrated in tapestry-trunk-freestyle #515 (See [https://builds.apache.org/job/tapestry-trunk-freestyle/515/]) ?•?ä?•?ä?•?ä?•?äTAP5-1621 - Fixed test joshcanfield : http://svn.apache.org/viewcvs.cgi/?root=Apache-SVN&view=rev&rev=1167447 Files : * /tapestry/tapestry5/trunk/tapestry-ioc/src/test/java/org/apache/tapestry5/ioc/internal/services/TypeCoercerImplTest.java", "label": "neutral"}
+{"id": "jira-tr-00156-52309", "text": "Integrated in Syncope-ROLE_PROVISIONING #4 (See [https://builds.apache.org/job/Syncope-ROLE_PROVISIONING/4/]) ?•?ä?•?ä?•?ä?•?ä[SYNCOPE-173][SYNCOPE-219] (Additional) Moving some classes to new packages as preparation for role-related workflow classes (Revision 1408258) [SYNCOPE-173][SYNCOPE-219] Moving some classes to new packages as preparation for role-related workflow classes (Revision 1408249) ?•?ä?•?ä?•?ä?•?ä?•?äResult = SUCCESS ilgrosso : Files : * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/java/org/apache/syncope/core/init/ContentLoader.java * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/java/org/apache/syncope/core/init/SpringContextInitializer.java * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/java/org/apache/syncope/core/policy/AccountPolicyEnforcer.java * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/java/org/apache/syncope/core/rest/controller/UserController.java * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/java/org/apache/syncope/core/rest/controller/WorkflowController.java * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/java/org/apache/syncope/core/sync/SyncopeSyncResultHanlder.java * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/resources/workflow.properties * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/resources/workflowContext.xml * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/test/resources/noopworkflow/workflow.properties * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/test/resources/noopworkflow/workflowContext.xml * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/test/resources/workflow.properties ilgrosso : Files : * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/java/org/apache/syncope/core/init/ActivitiWorkflowLoader.java * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/java/org/apache/syncope/core/init/SpringContextInitializer.java * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/java/org/apache/syncope/core/policy/AccountPolicyEnforcer.java * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/java/org/apache/syncope/core/rest/controller/UserController.java * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/java/org/apache/syncope/core/rest/controller/WorkflowController.java * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/java/org/apache/syncope/core/sync/SyncopeSyncResultHanlder.java * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/java/org/apache/syncope/core/workflow/AbstractUserWorkflowAdapter.java * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/java/org/apache/syncope/core/workflow/ActivitiUserWorkflowAdapter.java * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/java/org/apache/syncope/core/workflow/NoOpUserWorkflowAdapter.java * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/java/org/apache/syncope/core/workflow/UserWorkflowAdapter.java * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/java/org/apache/syncope/core/workflow/activiti * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/java/org/apache/syncope/core/workflow/role * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/java/org/apache/syncope/core/workflow/user * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/java/org/apache/syncope/core/workflow/user/AbstractUserWorkflowAdapter.java * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/java/org/apache/syncope/core/workflow/user/NoOpUserWorkflowAdapter.java * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/java/org/apache/syncope/core/workflow/user/UserWorkflowAdapter.java * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/java/org/apache/syncope/core/workflow/user/activiti * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/java/org/apache/syncope/core/workflow/user/activiti/ActivitiUserWorkflowAdapter.java * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/java/org/apache/syncope/core/workflow/user/activiti/ActivitiWorkflowLoader.java * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/java/org/apache/syncope/core/workflow/user/activiti/SyncopeEntitiesVariableType.java * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/java/org/apache/syncope/core/workflow/user/activiti/SyncopeGroupManager.java * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/java/org/apache/syncope/core/workflow/user/activiti/SyncopeGroupQueryImpl.java * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/java/org/apache/syncope/core/workflow/user/activiti/SyncopeSession.java * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/java/org/apache/syncope/core/workflow/user/activiti/SyncopeSessionFactory.java * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/java/org/apache/syncope/core/workflow/user/activiti/SyncopeUserManager.java * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/java/org/apache/syncope/core/workflow/user/activiti/SyncopeUserQueryImpl.java * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/java/org/apache/syncope/core/workflow/user/activiti/task * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/java/org/apache/syncope/core/workflow/user/activiti/task/AbstractActivitiDelegate.java * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/java/org/apache/syncope/core/workflow/user/activiti/task/AutoActivate.java * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/java/org/apache/syncope/core/workflow/user/activiti/task/Create.java * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/java/org/apache/syncope/core/workflow/user/activiti/task/Delete.java * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/java/org/apache/syncope/core/workflow/user/activiti/task/GenerateToken.java * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/java/org/apache/syncope/core/workflow/user/activiti/task/Reactivate.java * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/java/org/apache/syncope/core/workflow/user/activiti/task/Suspend.java * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/java/org/apache/syncope/core/workflow/user/activiti/task/Update.java * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/resources/userWorkflow.bpmn20.xml * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/resources/workflow.properties * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/main/resources/workflowContext.xml * /incubator/syncope/branches/DEV_ROLE_PROVISIONING/core/src/test/resources/workflow.properties", "label": "neutral"}
+{"id": "jira-tr-00167-58484", "text": "Build on Windows looks also okay but there are still other problem loading the model data for the entity hub.", "label": "neutral"}
+{"id": "jira-tr-00176-60790", "text": "build.xml cleanup... Committed revision 1368286. - trunk Committed revision 1368287. - 4x", "label": "neutral"}
+{"id": "jira-tr-00180-61272", "text": "Thanks Alexey", "label": "positive"}
+{"id": "jira-tr-00191-67301", "text": "Very nice", "label": "positive"}
+{"id": "jira-tr-00198-71224", "text": "Additional fixes in Rev. 737663 and fixing the jcrapp module in Rev. 737664 completes this issue.", "label": "neutral"}
+{"id": "jira-tr-00207-75762", "text": "Hi Dave", "label": "negative"}
+{"id": "jira-tr-00208-75901", "text": "Refactoring out common code into a parent processing class for ack request/close/terminate", "label": "neutral"}
+{"id": "jira-tr-00214-77424", "text": "The macro is also deprecated now", "label": "neutral"}
+{"id": "jira-tr-00224-81302", "text": "Changes merged to the 0.16 branch", "label": "neutral"}
+{"id": "jira-tr-00232-148846", "text": "No this was on 3.3.3 (sorry I should have mentioned that before).  That's great to know thanks!", "label": "positive"}
+{"id": "jira-tr-00237-153162", "text": "You're right I didn't check what the warning was about and assumed it was due to your patch. Resubmitting it.  And yes I'll create a jira for the findbugs warning.", "label": "neutral"}
+{"id": "jira-tr-00241-155538", "text": "Committed revision 777662.", "label": "neutral"}
+{"id": "jira-tr-00243-156570", "text": "I just committed this. Thanks pat.", "label": "positive"}
+{"id": "jira-tr-00249-170787", "text": "Make patch against the latest trunk and add the comment suggested by Bikas.", "label": "neutral"}
+{"id": "jira-tr-00251-171334", "text": "Why not use getSystemLoadAvg() to make it portable?", "label": "neutral"}
+{"id": "jira-tr-00252-173483", "text": "Jaigak - Its nice to see another application on top of Yarn.  Since its a lot of new code could you please add some notes on the high level components and suggest some pointers on navigating the code. It will help review the changes. Thanks!", "label": "positive"}
+{"id": "jira-tr-00253-173576", "text": "Looks good to me.", "label": "positive"}
+{"id": "jira-tr-00255-175684", "text": "Will review by EOD today. Thanks for the tip.", "label": "positive"}
+{"id": "jira-tr-00259-178520", "text": "Closing issues which have been released.", "label": "neutral"}
+{"id": "jira-tr-00261-183044", "text": "Created an attachment (id=7238) 2nd repro.", "label": "neutral"}
+{"id": "jira-tr-00262-183244", "text": "If and when Xerces moves to SAX 2.0.1 this patch will satisfy the behaviour of  SAX1 and SAX2.", "label": "neutral"}
+{"id": "jira-tr-00265-190130", "text": "As of 05/25/07 no error is thrown in IE7 when title bar is clicked in window.xal example.", "label": "neutral"}
+{"id": "jira-tr-00266-190864", "text": "On 2008/Apr/08 04:09 pm Brian Minchau wrote: > > Hi Helge. > > I'm afraid you can't assign someone to review.  However I will have a look > at your patch.  Any progress in reviewing my patch?  -- Helge Schulz - http://OpenSHORE.org", "label": "neutral"}
+{"id": "jira-tr-00268-192614", "text": "This bug is fixed in 2.7 closing it down per the request by the reporter Anuj Gupta.", "label": "neutral"}
+{"id": "jira-tr-00271-197776", "text": "Created an attachment (id=1333) xml/xsl testcase for normalize-space-bug", "label": "neutral"}
+{"id": "jira-tr-00274-201706", "text": "I just did an AMD Linux build and all I did was remove /usr/lib from the list  of libraries.  Since we don't really need /usr/lib at all don't you think a  better patch would be to remove that directory all together?", "label": "neutral"}
+{"id": "jira-tr-00297-241528", "text": "I agree. I'm planning to look into WHIRR-370 later this month but I can't provide a timeline for it.", "label": "neutral"}
+{"id": "jira-tr-00302-247154", "text": "Hmm.  Breaking #if($query.foo) compatibility isn't ok if we can't find a reasonable way to keep that and the sub then i'll ditch the sub.   But i much prefer $query.foo.bar over $query.get('foo.bar') so i'm not going to give that up quickly.  The type conversion suffixes are more than just nice since the main point of the ValueParser is to parse values.  If you don't care about type conversion then you may as well just put the source map into the context.  Anyway i'm going to see if i can make both work somehow.  If i can't then expect me to resurrect the sub in a later version where complete backwards compatibility isn't necessary.", "label": "neutral"}
+{"id": "jira-tr-00303-253964", "text": "reopened for fixVersion", "label": "neutral"}
+{"id": "jira-tr-00306-256401", "text": "Fixed typo in title", "label": "neutral"}
+{"id": "jira-tr-00307-258144", "text": "The fix causes test to fail in other circumstances.  Apparently File.delete() can't be relied upon to actually delete the file.", "label": "neutral"}
+{"id": "jira-tr-00310-261633", "text": "Committed to 1.3.1 branch at revision: 685854", "label": "neutral"}
+{"id": "jira-tr-00320-297217", "text": "bq. {{ catch (InterruptedException ignore) { Thread.currentThread().interrupt()", "label": "neutral"}
+{"id": "jira-tr-00323-300902", "text": "thanks Randy!  committed", "label": "positive"}
+{"id": "jira-tr-00335-312081", "text": "commit 8193b5fddbff65e9e747f08ad36bc0ad41015ab0 Author: Bikas Saha <bikas@apache.org> Date:   Mon May 13 17:35:57 2013 -0700      TEZ-123. Cleanup package dependencies. (bikas)", "label": "neutral"}
+{"id": "jira-tr-00345-323047", "text": "+1  This is a very desired feature for me. Ship it!", "label": "positive"}
+{"id": "jira-tr-00346-323102", "text": "I'm sorry for frequently updating the issue title and contents.", "label": "negative"}
+{"id": "jira-tr-00349-327446", "text": "Thanks for valuable idea.   I haven't yet decided  the API for this. Once I decide  I will publish it here . I would consider your valuable suggestion when designing API.    Thanks  Indika", "label": "positive"}
+{"id": "jira-tr-00357-340961", "text": "The patch is attached.", "label": "neutral"}
+{"id": "jira-tr-00358-342623", "text": "Hi Rupert!   Sorry it took so long but i thought i'd test building in a linux environment too so i set up a Centos 6.3 machine running Maven 3.0.4 and Java 1.6_41.   Got the exact same error on both machines. I have attached corresponding logs both from windows8 and centos to this issue. Link here: https://issues.apache.org/jira/secure/attachment/12570981/surefire_reportsR1450112_win8_centos6.3.zip  Kind regards Esse  EDIT: I'll also run mvn clean install for just jenatdb with logging when i get home.", "label": "negative"}
+{"id": "jira-tr-00361-344741", "text": "Patch attached.", "label": "neutral"}
+{"id": "jira-tr-00366-349073", "text": "Patch committed. Thanks Jarek!", "label": "positive"}
+{"id": "jira-tr-00368-351254", "text": "I don't think this is a bug. CachedSqlEntityProcessor will execute the query only once and that is its USP. If you don't want the caching then just use SqlEntityProcessor.", "label": "neutral"}
+{"id": "jira-tr-00378-369955", "text": "Added to trunk in #1098800 3.x in #1098896  sorry about visad.UnimplementedException!", "label": "negative"}
+{"id": "jira-tr-00379-370312", "text": "see also SOLR-2399 -- this has done some great work revamping the admin UI", "label": "neutral"}
+{"id": "jira-tr-00394-387581", "text": "Sorry this new patch is the correct one. Still learning the ropes :-)", "label": "negative"}
+{"id": "jira-tr-00398-401129", "text": "Guillaume  I took a quick look at your suggestions.  I agree that we can reduce the code a bit.  However I think that we need to keep the activate method as it initializes the servingXml internals.   I'm not sure about the deactivate method.  I also noticed that you have added a patch but being new to jira I'm not sure if that means that you've made changes to my attachment or something else.  Are you still looking for me to correct the formatting and to remove the extraneous methods/classes?  Thanks James", "label": "positive"}
+{"id": "jira-tr-00405-415725", "text": "patch applied.  thanks!", "label": "positive"}
+{"id": "jira-tr-00415-426215", "text": "I must have clicked the wrong link.  I didn't mean to mark this resolved.", "label": "neutral"}
+{"id": "jira-tr-00416-426747", "text": "This was a temporary connectivity issue.  You can close this bug.  Thank you.", "label": "positive"}
+{"id": "jira-tr-00417-428789", "text": "newPost now sets publishEntry to true.", "label": "neutral"}
+{"id": "jira-tr-00421-433604", "text": "Lets fix this post rampart-1.3", "label": "neutral"}
+{"id": "jira-tr-00422-435386", "text": "Released in Qpid 0.24 http://qpid.apache.org/releases/qpid-0.24/index.html", "label": "neutral"}
+{"id": "jira-tr-00425-441029", "text": "Thanks for catching this I have fixed it.", "label": "positive"}
+{"id": "jira-tr-00426-441370", "text": "Looks good to me.", "label": "positive"}
+{"id": "jira-tr-00432-447143", "text": "All existing documentation/discussion from Moin Moin wiki now copied across to Confluence JIRA and re-formatted as appropriate.  Should now all be updating on Confluence wiki and retire Moin Moin in a couple of weeks when people have been able to check that their pages look ok on Confluence.", "label": "neutral"}
+{"id": "jira-tr-00433-448492", "text": "Hi Rustam Finally I will not commit the IMAP-351 patch so it will be good that you attach your patch here. Thx Eric", "label": "positive"}
+{"id": "jira-tr-00451-467084", "text": "bq. Though pig itself compiled fine and is ready to go the contrib projects (owlzebrapiggybank/hiverc) didnt compile I think because either it didn't download dependices of those projects or didn't include them in the build path.  Ashutosh yes. I did realize it and as you rightly guessed it is because the ivy-dependency list doesn't have some jars that are actually being used by contrib packages. This is not an issue related to eclipse-classpath. However there has to be a JIRA opened to solve this issue of downloading the missing jars by ivy.   Can you please file a JIRA for this? Thanks", "label": "positive"}
+{"id": "jira-tr-00452-467290", "text": "Hi Gianmarco Thanks for your concern. Actually we need one additional step to make bin/pig work. We shall copy $PIG_HOME/build/pig-0.8.0-dev.jar to $PIG_HOME/pig-0.8.0-core.jar. This will be handled in ant's \"package\" target when releasing. But if you check out from svn we will do this additional step to work with bin/pig.", "label": "positive"}
+{"id": "jira-tr-00453-467392", "text": "Patch is committed to the trunk. Thanks Niraj.", "label": "positive"}
+{"id": "jira-tr-00455-471677", "text": "Patch was commited on May 13 2009.", "label": "neutral"}
+{"id": "jira-tr-00459-476380", "text": "Totally agree. I don't see any good reason why Pig should require 1.6 at this stage. Don't make it harder for the users (and developers under OSX - that includes me) than it already is.", "label": "neutral"}
+{"id": "jira-tr-00463-479828", "text": "I'm afraid one can't extract the text from the given pdfs. Both are using fonts with a non human readable encoding and as there isn't included any mapping you'll get rubbish instead of the text. Even the acrobat reader can't extract the text.", "label": "negative"}
+{"id": "jira-tr-00464-480641", "text": "A PDF which demonstrates the problem", "label": "neutral"}
+{"id": "jira-tr-00467-483378", "text": "released with OWB-1.1.4", "label": "neutral"}
+{"id": "jira-tr-00472-489735", "text": "Johannes --   Thanks for the complete testcase! Sorry about taking so long to fix this one.   Thanks Rick", "label": "positive"}
+{"id": "jira-tr-00474-498437", "text": "Added the following to getRollbackOnly():  if (status == Status.STATUS_NO_TRANSACTION) {     throw new IllegalStateException(\"There is no transaction in progess.\")", "label": "neutral"}
+{"id": "jira-tr-00476-501456", "text": "Closing issue", "label": "neutral"}
+{"id": "jira-tr-00479-509109", "text": "Hi Antonio  I can take this one if nobody is working on it.  Would be a nice one to get my feet wet... :)  Thx Sam", "label": "positive"}
+{"id": "jira-tr-00481-511670", "text": "Thanks Jacques :)", "label": "positive"}
+{"id": "jira-tr-00489-516774", "text": "Hi Sascha  There is an overlap with OFBIZ-3843 could you please check?  Thanks", "label": "positive"}
+{"id": "jira-tr-00490-517718", "text": "Hi Erwan  If you don't mind I have re-assigned to you as you assigned yourself the umbrella task", "label": "neutral"}
+{"id": "jira-tr-00494-527414", "text": "Sorry to hack your issue Bilgin my intention is to keep readable traces (in ML you can't read easily stack)", "label": "negative"}
+{"id": "jira-tr-00496-528726", "text": "Sorry Jacques I have not seen that it was a grouped bugs.  In this case I have used to set in the grouped bugs the sum of the components used by detailed issues.  I didn't like unknow components.  Otherwise we can add a new fictitious component - GROUPED ISSUES - and assign this component to this type of issue.   Thanks  Marco", "label": "positive"}
+{"id": "jira-tr-00498-529443", "text": "I have added          <property file=\"framework/base/config/cache.properties\"/>         <echo message=\"NOTICE: deleting ${cache.file.store}.db\"/>         <delete file=\"${cache.file.store}.db\" verbose=\"true\"/>  to the clean task of my local main build.xml.  After some more testing/discussion perhaps I will post it as a patch.", "label": "neutral"}
+{"id": "jira-tr-00503-541471", "text": "The patch looks good just applied on the 1.1 branch and trunk. Thanks a lot keep them coming! :)", "label": "positive"}
+{"id": "jira-tr-00514-562657", "text": "Using nutch with solr has been a very demanding request so it will be very useful when this makes into trunk. I have spend some time reviewing the patch which I find quite elegant.   Some improvements to the patch would be  - make NutchDocument implement VersionedWritable instead of writable and delegate version checking to superclass - refactor getDetails() methods in HitDetailer to Searcher (it is not likely that a class would implement Searcher but not HitDetailer) - use Searcher delete HitDetailer and SearchBean  - Rename XXXBean classes so that they do not include \"bean\". (I think it is confusing to have bean objects that have non-trivial functionality) - refactor LuceneSearchBean.VERSION to RPCSearchBean - remove unrelated changes from the patch.(the changes in NGramProfile HTMLLanguageParserLanguageIdentifier... correct me if i'm wrong)  As far as i can see we do not need any metadata for Solr backend and only need StoreIndex and Vector options for lucene backend so i think we can simplify NutchDocument#metadata. We may implement :   {code} class FieldMeta { o.a.l.document.Field.Store store", "label": "neutral"}
+{"id": "jira-tr-00518-569317", "text": "Unfortunately we can't do that because that is not explicit on the spec javadoc and there is a way to do what is expected using \"targets\" property.", "label": "negative"}
+{"id": "jira-tr-00520-570828", "text": "thanks to Jakob Korherr for this patch", "label": "positive"}
+{"id": "jira-tr-00521-571869", "text": "Duplicate of MYFACES-2970", "label": "neutral"}
+{"id": "jira-tr-00525-575599", "text": "Sorry I use JDK 1.4.2_06 and not 1.4.1 :)", "label": "negative"}
+{"id": "jira-tr-00544-601204", "text": "Hi Jason! I was thinking one of those parameters was the time the NM should wait before sending the SIGTERM. Alas I was wrong ContainerLaunch.java:337 sends the SIGTERM pretty much instantly. That is messing me up in MAPREDUCE-4135.  I'm still thinking having a small time delay before sending even the SIGTERM should be good. If we can do it on the NM and not on the RM I think we might be able to conserve RM resources.", "label": "neutral"}
+{"id": "jira-tr-00545-601669", "text": "Sorry looks like we took to long to get to this the patch no longer applies.  Can you please upmerge to latest?", "label": "negative"}
+{"id": "jira-tr-00549-604668", "text": "I just committed this. Thanks Vinod!", "label": "positive"}
+{"id": "jira-tr-00556-618655", "text": "addressed review comments.  Thanks Vinod.", "label": "positive"}
+{"id": "jira-tr-00558-619471", "text": "+1 lgtm to get rid of the extra logging and to kill the child process.", "label": "neutral"}
+{"id": "jira-tr-00575-633282", "text": "Updating patch synch'ed with trunk.", "label": "neutral"}
+{"id": "jira-tr-00578-644706", "text": "(If it's just reading ints I was thinking just write 4-byte ints. That's got to be the fastest of all.)  The author would be Ted really his call. If it's more of an example for the book it could be attached to the book. If it stays that's cool too just need to have a think about fixing/documenting the issues raised here.  You've raised a different an interesting point about performance though. You find that the slow-down is actually in addToVector where it converts a String to byte[]? The thing is the corresponding line in the \"fast\" version skips this step and adds null.  Indeed also passing null in the \"normal\" version makes it twice as fast for me. It's still twice as slow as the \"fast\" version though. But I do wonder whether the example deserves a bit more attention. I may not know what I'm doing. Is that a difference that shouldn't exist between the two benchmarks?", "label": "neutral"}
+{"id": "jira-tr-00587-657879", "text": "Committed to trunk and 4x. Thanks Simon!", "label": "positive"}
+{"id": "jira-tr-00591-662724", "text": "I commented out the assertion for this test ... it's not valid.", "label": "neutral"}
+{"id": "jira-tr-00592-663127", "text": "Thanks Scott. git formatted patches are fine in my opinion: lets get this fixed", "label": "positive"}
+{"id": "jira-tr-00597-668028", "text": "Thanks Dawid.  bq. Yes this is pretty much the top-n nodes reordering that I did albeit without any optimization of how many n to take (the hardcoded magic constants should probably be justified somehow? Or replaced by a default in FST somewhere?).  bq. Deciding how many nodes to reorder is I think hard – I failed to provide any sensible fast heuristic for that and I simply do a simulated annealing to find a local optimum.  Yeah the algo is simplistic now... and it does force caller to pick the params (though minInCountDeref=3 and maxDerefNodes=Inf are probably pretty good)... we can and should make it more sophisticated over time.  We have at least one spare bit to still use in the arc flags :)  bq. One thing I was wondering is why you decided to integrate the packer with the fst – wouldn't it be cleaner to separate packing from construction? Granted this requires a double pass over the fst nodes and more intermediate memory but it wouldn't add any more complexity to the builder which is already ehm a bit complex . You can compare this design in Morfologik:  Well... it's tricky.  First I decided to change node targets to ords so that pack could use an array to (relatively!) efficiently hold node data eg inCount newAddress etc.  That required making the first pass FST \"modal\" (deref'd or not).  If we didn't do this then the packer would have to use even less RAM efficient data structures (eg Map<IntX>) I think?  Second the format written by the packer is tightly coupled with the FST reading ie there are sizable differences when reading packed vs unpacked FST.  But I agree it'd be cleaner if we could move packing out (eg Util.pack) and more strongly decouple packing from FST format...  One thing I'd really like to somehow do is create different classes for FST writing vs reading and different classes for each format.  We now have write-ord write-non-ord read-packed read-unpacked (and even the two readers have 3 different modes depending on INPUT_TYPE).", "label": "positive"}
+{"id": "jira-tr-00598-668427", "text": "From the dev list didn't want to lose this background (or make Uwe type it again <G>)  The idea was to maybe replace RAMDirectory by a “clone‿ of MMapDirectory that uses large DirectByteBuffers outside the JVM heap. The current RAMDirectory is very limited (buffersize hardcoded to 8 KB if you have a 50 Gigabyte Index in this RAMDirectory your GC simply drives crazy – we investigated this several times for customers. RAMDirectory was in fact several times slower than a simple disk-based MMapDir). Also the locking on the RAMFile class is horrible as for large indexes you have to change buffer several times when seeking/reading/… which does heavily locking. In contrast MMapDir is completely lock-free!   Until there is no replacement we will not remove it but the current RAMDirectory is not useable for large indexes. That’s a limitation and the design of this class does not support anything else. It’s currently unfixable and instead of putting work into fixing it the time should be spent in working on a new ByteBuffer-based RAMDir with larger blocs/blocs that merge or IOContext helping to calculate the file size before writing it (e.g. when triggering a merge you know the approximate size of the file before so you can allocate a buffer that’s better than 8 Kilobytes). Also directByteBuffer helps to make GC happy as the RAMdir is outside JVM heap.....  RAMdir uses more time for switching buffers than reading the data. The problem is that MMapDir does not support *writing* and that why we plan to improve this. Have you tried MMapDir for read access in comparison to RAMDirectory for a larger index it outperforms several times (depending on OS and if file data is in FS cache already). The new directory will simply mimic the MMapIndexInput add MMapIndexOutput but not based on a mmapped buffer instead a in-memory (Direct)ByteBuffer (outside or inside JVM heap – both will be supported). This simplifies code a lot.   The discussions about the limitations of crappy RAMDirectory were discussed on conferences sorry. We did *not*decide to remove it (without a patch/replacement). The whole “message‿ on the issue was that RAMDirectory is a bad idea. The recommended approach at the moment to handle large in-ram directories would be to use a tmpfs on Linux/Solaris and use MMapDir on top (for larger indexes). The MMap would then directly map the RAM of the underlying tmpfs.....", "label": "neutral"}
+{"id": "jira-tr-00602-670016", "text": "bq. Can we just make it final when we backport this change?   Duh no we can't since we have core IR impls subclassing IR...", "label": "neutral"}
+{"id": "jira-tr-00613-677876", "text": "+1 patch looks good.", "label": "positive"}
+{"id": "jira-tr-00624-686161", "text": "Simon thanks please commit this :)", "label": "positive"}
+{"id": "jira-tr-00625-686162", "text": "Commited in r823180 thx robert", "label": "neutral"}
+{"id": "jira-tr-00631-694344", "text": "Committed revision 698035.  it's just about having an optional ant property for specifying the full path to svnversion ... i've made the Hudson config changes for Lucene-trunk (add -Dsvnversion.exe=/opt/subversion-current/bin/svnversion) and manually kicked off build#594.  If i missed something re-open and i'll take a look", "label": "neutral"}
+{"id": "jira-tr-00635-701833", "text": "I just remembered one of the reasons why i didn't do this the last time i looked at it: i don't think FunctionQuery has any good unit tests in the Solr code base -- there might be some tests that use the SOlrTestHarness to trigger function queries but they aren't really portable.", "label": "neutral"}
+{"id": "jira-tr-00643-720185", "text": "FWIW I didn't experience the problem with Karaf commands when using Fuse ESB (based on Karaf 2.2.5) but I did have problems with Aries Blueprint when I tried to instantiate some of our own beans as an OSGi service.  Workaround for me was to remove the Aries Proxy 0.3 bundle shipped with Fuse ESB and install Aries Proxy 0.3.1. After I did that and restarted the container the problem was resolved for me.", "label": "neutral"}
+{"id": "jira-tr-00647-726059", "text": "Thanks for the reviews guys!", "label": "positive"}
+{"id": "jira-tr-00649-727466", "text": "Quick fix to interchange the order of constructor arguments of ClientIdAndTopic.", "label": "neutral"}
+{"id": "jira-tr-00654-732872", "text": "bundles have been promoted to OSSRH some minutes ago. It will take roughly 2-4 hours before they appear on Central so this one is close to be fixed.", "label": "neutral"}
+{"id": "jira-tr-00659-740402", "text": "Added missing 2 *  package.html.  Some files need to be removed (svn del): src/java/org/apache/commons/jexl/Arithmetic.java src/java/org/apache/commons/jexl/parser/JEXLNode.java (*) src/java/org/apache/commons/jexl/util/PropertyExecutor.java src/java/org/apache/commons/jexl/util/BooleanPropertyExecutor.java src/java/org/apache/commons/jexl/util/introspection/UberspectLoggable.java src/java/org/apache/commons/jexl/util/GetExecutor.java  If on windows you really need to remove it before applying the patch otherwise it will just keep using JEXLNode.java for a class named JexlNode...  The patch does not apply cleanly especially UberspectImpl & Introspector. The \"best\" approach I've found yet is to force apply updates even if patch thinks it may have already been applied. Then for each of them copy/paste the '.rej' content replacing the end of the original file with the content at the proper place", "label": "neutral"}
+{"id": "jira-tr-00660-742827", "text": "Great (it turned out simpler than what I would have thought). Thanks Andy.", "label": "positive"}
+{"id": "jira-tr-00662-744706", "text": "Re: patch looks fine. I'd include <optional> too on geronimo/ant deps as per project.xml", "label": "positive"}
+{"id": "jira-tr-00665-755727", "text": "sorry for the delay", "label": "negative"}
+{"id": "jira-tr-00668-757179", "text": "Please re-open if necessary.", "label": "neutral"}
+{"id": "jira-tr-00669-758435", "text": "Hi  I just made some more (long running) tests and found some problems in the patch I submitted. The mechanism is working but it shrinks the caches too quickly and it prints too much log output (log.info instead of log.debug). I will fix those problems and submit a new patch. Sorry.  Thomas", "label": "negative"}
+{"id": "jira-tr-00670-758799", "text": "well the above ascii art did not really work in jira :-( will attach a file.", "label": "neutral"}
+{"id": "jira-tr-00675-767059", "text": "Thanks for your patch and your investigations! I reopen the issue will apply the patch soon.", "label": "positive"}
+{"id": "jira-tr-00676-775786", "text": "[INFO] Repository Target 'org.apache.tez' is created. [INFO] Staging Profile 'org.apache.tez' is created. [INFO] Privileges (CRU) 'org.apache.tez - Public Repositories' are created. [INFO] Privileges (CRUD) 'org.apache.tez - Snapshots' are created. [INFO] Role 'org.apache.tez Deployment Role' is created. [INFO] Role 'tez' is added to user 'acmurthy'. [INFO] Role 'tez' is added to user 'billgraham'. [INFO] Role 'tez' is added to user 'bikas'. [INFO] Role 'tez' is added to user 'bobby'. [INFO] Role 'tez' is added to user 'cdouglas'. [INFO] Role 'tez' is added to user 'daryn'. [INFO] Role 'tez' is added to user 'ddas'. [INFO] Role 'tez' is added to user 'gates'. [INFO] Role 'tez' is added to user 'gopalv'. [INFO] Role 'tez' is added to user 'gunther'. [INFO] Role 'tez' is added to user 'hitesh'. [INFO] Role 'tez' is added to user 'hashutosh'. [INFO] Role 'tez' is added to user 'jghoman'. [INFO] Role 'tez' is added to user 'jitendra'. [INFO] Role 'tez' is added to user 'jlowe'. [INFO] Role 'tez' is added to user 'julien'. [INFO] Role 'tez' is added to user 'kevinwilfong'. [INFO] Role 'tez' is added to user 'mattmann'. [INFO] Role 'tez' is added to user 'mliddell'. [INFO] Role 'tez' is added to user 'namit'. [INFO] Role 'tez' is added to user 'nroberts'. [INFO] Role 'tez' is added to user 'omalley'. [INFO] Role 'tez' is added to user 'sseth'. [INFO] Role 'tez' is added to user 'tgraves'. [INFO] Role 'tez' is added to user 'tomwhite'. [INFO] Role 'tez' is added to user 'vikram'. [INFO] Role 'tez' is added to user 'vinodkv'. -- Nexus repository was prepared successfully. --  Configuration has been prepared now you can: * Deploy snapshot artifacts into repository https://repository.apache.org/content/repositories/snapshots * Deploy release artifacts into the staging repository https://repository.apache.org/service/local/staging/deploy/maven2 * Promote staged artifacts into repository 'Releases' * Download snapshot and release artifacts from group https://repository.apache.org/content/groups/public * Download snapshot release and staged artifacts from staging group https://repository.apache.org/content/groups/staging", "label": "neutral"}
+{"id": "jira-tr-00678-779148", "text": "Hi Pieter  it looks fine now", "label": "positive"}
+{"id": "jira-tr-00681-781112", "text": "Can put the info in this file on people: -rwx------  1 dblevins  dblevins  0 Jul 12 21:00 /home/dblevins/INFRA-5044", "label": "neutral"}
+{"id": "jira-tr-00685-784007", "text": "Thanks did that. Hopefully it syncs now. Cheers --Kurt", "label": "positive"}
+{"id": "jira-tr-00686-785998", "text": "Added to all-developers group which has this permission.", "label": "neutral"}
+{"id": "jira-tr-00689-793682", "text": "Thanks!", "label": "positive"}
+{"id": "jira-tr-00692-798067", "text": "Thanks!", "label": "positive"}
+{"id": "jira-tr-00703-815513", "text": "Committed to trunk. Thanks Sushanth!", "label": "positive"}
+{"id": "jira-tr-00712-822226", "text": "Brock commented two test failed.   org.apache.hadoop.hive.cli.TestNegativeMinimrCliDriver.testNegativeCliDriver_mapreduce_stack_trace_hadoop20 org.apache.hcatalog.fileformats.TestOrcDynamicPartitioned.testHCatDynamicPartitionedTable  Can you assert that? I cannot reproduce.", "label": "neutral"}
+{"id": "jira-tr-00715-825341", "text": "Committed. Thanks Gang Tim Liu", "label": "positive"}
+{"id": "jira-tr-00717-828832", "text": "Committed to trunk and 0.9 branch. Thanks Arup!", "label": "positive"}
+{"id": "jira-tr-00719-830148", "text": "Committed thanks Jingwei.", "label": "positive"}
+{"id": "jira-tr-00723-833158", "text": "Carl - Sorry I missed that though I did see it on the logs 2x the other being this one. Fixed in this patch.", "label": "negative"}
+{"id": "jira-tr-00726-836070", "text": "kevinwilfong updated the revision \"HIVE-2797 [jira] Make the IP address of a Thrift client available to HMSHandler.\". Reviewers: JIRA njain ashutoshc    Ran updated my checkout.  REVISION DETAIL   https://reviews.facebook.net/D1701  AFFECTED FILES   shims/src/common/java/org/apache/hadoop/hive/thrift/TUGIContainingTransport.java   metastore/src/test/org/apache/hadoop/hive/metastore/TestRemoteUGIHiveMetaStoreIpAddress.java   metastore/src/test/org/apache/hadoop/hive/metastore/IpAddressListener.java   metastore/src/test/org/apache/hadoop/hive/metastore/TestRemoteHiveMetaStoreIpAddress.java   metastore/src/java/org/apache/hadoop/hive/metastore/TUGIBasedProcessor.java   metastore/src/java/org/apache/hadoop/hive/metastore/TSetIpAddressProcessor.java   metastore/src/java/org/apache/hadoop/hive/metastore/HiveMetaStore.java", "label": "neutral"}
+{"id": "jira-tr-00729-850284", "text": "Committed and was my first commit. Thanks to all.", "label": "positive"}
+{"id": "jira-tr-00738-859236", "text": "Committed. Thanks Ning", "label": "positive"}
+{"id": "jira-tr-00744-864980", "text": "Committed. Thanks Yongqiang", "label": "positive"}
+{"id": "jira-tr-00750-874800", "text": "I have committed the patch to trunk branch-2 and branch-2.0.4-alpha. Thanks you Jagane!", "label": "positive"}
+{"id": "jira-tr-00751-876691", "text": "I've just committed this to trunk and branch-2. Thanks a lot for the reviews/testing Chris and Todd.", "label": "positive"}
+{"id": "jira-tr-00757-879583", "text": "That sounds good. New patch uploaded.", "label": "positive"}
+{"id": "jira-tr-00758-880837", "text": "+1 patch looks good.", "label": "positive"}
+{"id": "jira-tr-00762-886848", "text": "I have committed this.  Thanks Junping!", "label": "positive"}
+{"id": "jira-tr-00763-888435", "text": "There is no close() in FileContext.  Users are not supposed to close FileContext.", "label": "neutral"}
+{"id": "jira-tr-00767-891841", "text": "Hi colin I agree that scatter/gather typically refers to multiple input tuples of (position length). Yes we can extend the api to include that.  The reason my original proposal did not include that was because I was mostly targetting this api to reduce the number of buffer copies.", "label": "neutral"}
+{"id": "jira-tr-00770-898645", "text": "Looks very good. +1", "label": "positive"}
+{"id": "jira-tr-00774-901112", "text": "I just committed this to trunk. Thank you Uma.  The patch does not apply to 0.23 branch any more. I recommend it for back porting.", "label": "positive"}
+{"id": "jira-tr-00779-905436", "text": "I have committed this.  Thanks CW!", "label": "positive"}
+{"id": "jira-tr-00783-913188", "text": "Hi Hairong the speedups you measured with this patch are very impressive.  It would be great to have it included in the system.  The patch still applied successfully to current trunk when I tried it.  So can you please go ahead and \"submit patch\" so we see how it does with test-patch?  And I'll review it and try to get someone else to also.  Thanks!", "label": "positive"}
+{"id": "jira-tr-00793-930467", "text": "Integrated into trunk and 0.96. Thanks.", "label": "positive"}
+{"id": "jira-tr-00799-939053", "text": "This looks like it needs rebased onto trunk.  The posted patch includes generated code ({{AdminProtos.java}}) please remove.  Please add javadoc for the new classes and new public methods on existing classes.  {{FavoredNodeAssignmentHelper#placeSecondaryAndTertiaryWithRestrictions}} introduces a {{while(true)}} block containing non-trivial branching logic. Can this be refactored with simpler and/or clearer break conditions?  {{FSUtils}} introduces new configuration {{hbase.client.localityCheck.threadPoolSize}}. Can this be added to {{HConstants}} and/or documented in {{hbase-defaults.xml}}?", "label": "neutral"}
+{"id": "jira-tr-00803-953205", "text": "The same appears to be try for case_studies.xml community.xml and zookeeper.xml. Should those not be copied for some other reason?", "label": "neutral"}
+{"id": "jira-tr-00806-958040", "text": "hi. Ping? :)", "label": "positive"}
+{"id": "jira-tr-00810-961566", "text": "Integrated to 0.94 and trunk.  Thanks for the patch Anoop.  Thanks for the review Stack.", "label": "positive"}
+{"id": "jira-tr-00811-962663", "text": "Patch v6 integrated to trunk.  Thanks for the patch Jean-Marc.  Thanks for the review Matteo.  @Lars: Do you want this in 0.94 as well ?", "label": "positive"}
+{"id": "jira-tr-00813-965553", "text": "v4 Patch does not apply snapshot branch ff25969ea0b2ff38cc25512a02569c351e757d66  Looks like this is built upon some of the online snaphots work.  What branch/hash does this go on Matteo?", "label": "neutral"}
+{"id": "jira-tr-00822-981762", "text": "v3 up in PB. Thanks for the reviews", "label": "positive"}
+{"id": "jira-tr-00833-999285", "text": "@Ted Thanks for taking a look. Sure I will make that change on commit.", "label": "positive"}
+{"id": "jira-tr-00835-1004485", "text": "bq. So we can add isAlreadyExpiring() and if true  Sorry it should be  So we can add isAlreadyExpiring() and if flase we can go with expireIfOnline", "label": "negative"}
+{"id": "jira-tr-00838-1009060", "text": "Applied to branch and TRUNK.  Thanks for the patch Ramkrishna.", "label": "positive"}
+{"id": "jira-tr-00840-1012843", "text": "Yeah can't cache KV.  Can we have something for one server first?", "label": "neutral"}
+{"id": "jira-tr-00842-1013814", "text": "Committed to TRUNK.  Thanks for review Prakash.", "label": "positive"}
+{"id": "jira-tr-00846-1017946", "text": "Fixed in HBASE-2156 after it was reopened.", "label": "neutral"}
+{"id": "jira-tr-00847-1018276", "text": "Sounds good. We'll postpone HBASE-2993 til then. Thanks!", "label": "positive"}
+{"id": "jira-tr-00851-1028273", "text": "+1 as well.  Patch looks good like the javadoc we get lots of users asking what those exceptions mean.", "label": "positive"}
+{"id": "jira-tr-00854-1032603", "text": "Some tests I did with a modified PE. I ran the PE with a number from 10 to 3000 and incremented by 10. The garbage collector was called after each run. Here are the results:  {quote} 08/09/17 16:48:54 INFO hbase.ManyPerformanceEvaluation: 10 42725 08/09/17 16:49:31 INFO hbase.ManyPerformanceEvaluation: 20 36744 08/09/17 16:50:06 INFO hbase.ManyPerformanceEvaluation: 30 34928 08/09/17 16:50:40 INFO hbase.ManyPerformanceEvaluation: 40 34150 08/09/17 16:51:14 INFO hbase.ManyPerformanceEvaluation: 50 33664 08/09/17 16:51:47 INFO hbase.ManyPerformanceEvaluation: 60 33570 08/09/17 16:52:21 INFO hbase.ManyPerformanceEvaluation: 70 33142 08/09/17 16:52:54 INFO hbase.ManyPerformanceEvaluation: 80 32901 08/09/17 16:53:26 INFO hbase.ManyPerformanceEvaluation: 90 32864 08/09/17 16:53:59 INFO hbase.ManyPerformanceEvaluation: 100 32776 08/09/17 16:54:32 INFO hbase.ManyPerformanceEvaluation: 110 32725 08/09/17 16:55:05 INFO hbase.ManyPerformanceEvaluation: 120 32747 08/09/17 16:55:38 INFO hbase.ManyPerformanceEvaluation: 130 32698 08/09/17 16:56:10 INFO hbase.ManyPerformanceEvaluation: 140 32693 08/09/17 16:56:43 INFO hbase.ManyPerformanceEvaluation: 150 32643 08/09/17 16:57:16 INFO hbase.ManyPerformanceEvaluation: 160 32686 08/09/17 16:57:48 INFO hbase.ManyPerformanceEvaluation: 170 32665 08/09/17 16:58:21 INFO hbase.ManyPerformanceEvaluation: 180 32448 08/09/17 16:58:53 INFO hbase.ManyPerformanceEvaluation: 190 32004 08/09/17 16:59:25 INFO hbase.ManyPerformanceEvaluation: 200 31985 08/09/17 16:59:57 INFO hbase.ManyPerformanceEvaluation: 210 31964 08/09/17 17:00:29 INFO hbase.ManyPerformanceEvaluation: 220 31983 08/09/17 17:01:01 INFO hbase.ManyPerformanceEvaluation: 230 31778 08/09/17 17:01:32 INFO hbase.ManyPerformanceEvaluation: 240 31766 08/09/17 17:02:04 INFO hbase.ManyPerformanceEvaluation: 250 31886 08/09/17 17:02:36 INFO hbase.ManyPerformanceEvaluation: 260 31773 08/09/17 17:03:08 INFO hbase.ManyPerformanceEvaluation: 270 31709 08/09/17 17:03:40 INFO hbase.ManyPerformanceEvaluation: 280 31669 08/09/17 17:04:11 INFO hbase.ManyPerformanceEvaluation: 290 31647 08/09/17 17:04:43 INFO hbase.ManyPerformanceEvaluation: 300 31634 08/09/17 17:05:15 INFO hbase.ManyPerformanceEvaluation: 310 31674 08/09/17 17:05:47 INFO hbase.ManyPerformanceEvaluation: 320 31935 08/09/17 17:06:18 INFO hbase.ManyPerformanceEvaluation: 330 31802 08/09/17 17:06:50 INFO hbase.ManyPerformanceEvaluation: 340 31571 08/09/17 17:07:21 INFO hbase.ManyPerformanceEvaluation: 350 31484 08/09/17 17:07:53 INFO hbase.ManyPerformanceEvaluation: 360 31713 08/09/17 17:08:25 INFO hbase.ManyPerformanceEvaluation: 370 31512 08/09/17 17:08:56 INFO hbase.ManyPerformanceEvaluation: 380 31456 08/09/17 17:09:28 INFO hbase.ManyPerformanceEvaluation: 390 32055 08/09/17 17:10:01 INFO hbase.ManyPerformanceEvaluation: 400 32260 08/09/17 17:10:33 INFO hbase.ManyPerformanceEvaluation: 410 32167 08/09/17 17:11:05 INFO hbase.ManyPerformanceEvaluation: 420 31962 08/09/17 17:11:37 INFO hbase.ManyPerformanceEvaluation: 430 32003 08/09/17 17:12:09 INFO hbase.ManyPerformanceEvaluation: 440 32054 08/09/17 17:12:41 INFO hbase.ManyPerformanceEvaluation: 450 32105 08/09/17 17:13:13 INFO hbase.ManyPerformanceEvaluation: 460 32126 08/09/17 17:13:45 INFO hbase.ManyPerformanceEvaluation: 470 31961 08/09/17 17:14:17 INFO hbase.ManyPerformanceEvaluation: 480 31968 ... {quote}  It seems that 2000 was an overkill. The gain is impressive between 1 and 10 then around 300 we pretty much reduced the RPC call at it's smallest value.", "label": "neutral"}
+{"id": "jira-tr-00862-1043375", "text": "Thanks applied OK.", "label": "positive"}
+{"id": "jira-tr-00863-1044520", "text": "Works for me. Thank you Alexei.", "label": "positive"}
+{"id": "jira-tr-00869-1049906", "text": "Please try this patch. Thanks a lot!", "label": "positive"}
+{"id": "jira-tr-00873-1059856", "text": "Ruth patch applied at r526665 thanks a lot for this enhancement please verify thanks.", "label": "positive"}
+{"id": "jira-tr-00878-1065232", "text": "Thanks Anton.  Fix applied to ACCESSIBILITY module at repo revision r598652.  Please check it is fixed as you expected.", "label": "positive"}
+{"id": "jira-tr-00883-1070604", "text": "Spark patch applied at revision r440604 thanks a lot for this enhancement please verify that the problem is fully fixed as you expected.", "label": "positive"}
+{"id": "jira-tr-00887-1072027", "text": "Oops it is my fault. Please defer this patch I'll raise jira for other classes/interface as its dependance soon sorry for inconvenience.", "label": "negative"}
+{"id": "jira-tr-00891-1074169", "text": "Thanks for the patch Richard.  Applied to LUNI module at repo revision r418009.  Please check that the patch was applied as you expected.", "label": "positive"}
+{"id": "jira-tr-00897-1075917", "text": "Sorry that I think I missed some discussion in the mailing list. The implementation and test and BreakIterator is attached.", "label": "negative"}
+{"id": "jira-tr-00905-1080991", "text": "And Could you please explain detail?", "label": "neutral"}
+{"id": "jira-tr-00907-1081698", "text": "Submit to hudson.", "label": "neutral"}
+{"id": "jira-tr-00910-1085748", "text": "+1 for the patch pending successful Jenkins run for the latest version.  The changes look good.  I verified on both Mac and Windows.  Thanks for addressing this Andrey!  I'll commit this after Jenkins responds with +1 for the latest version.", "label": "positive"}
+{"id": "jira-tr-00912-1087105", "text": "Did you mean to reference HADOOP-8562?  HADOOP-8952 was never committed although apparently a typo during the checkin of HADOOP-8562 accidentally referenced it.", "label": "neutral"}
+{"id": "jira-tr-00916-1089363", "text": "+1 branch-2 patch looks good to me.  I'll commit this to branch-2 later today to give others a chance to comment.", "label": "positive"}
+{"id": "jira-tr-00917-1091697", "text": "I believe this is fixed by HADOOP-9984", "label": "neutral"}
+{"id": "jira-tr-00918-1092173", "text": "Thanks Daryn I put this into trunk and branch-2", "label": "positive"}
+{"id": "jira-tr-00924-1096255", "text": "+1 the new patch looks good.", "label": "positive"}
+{"id": "jira-tr-00928-1101131", "text": "> If it's windows and it's a local filesystem URI do the os-specific subbing.  You can't always tell whether it's a local filesystem URI.  Lots of relative paths are constructed that do not contain a scheme.", "label": "neutral"}
+{"id": "jira-tr-00931-1104780", "text": "attached a patch for branch 20 security.", "label": "neutral"}
+{"id": "jira-tr-00934-1110390", "text": "+1 I just committed this to branch 0.22.1. Thank you Benoy.", "label": "positive"}
+{"id": "jira-tr-00942-1119170", "text": "Perhaps we should have a filesystem-specific method that indicates whether a path is fully-qualified?", "label": "neutral"}
+{"id": "jira-tr-00947-1124856", "text": "Duplicate of HADOOP-3906. Plz comment there.", "label": "neutral"}
+{"id": "jira-tr-00950-1125247", "text": "I committed this to 0.20 and above.  Thanks Corinne!", "label": "positive"}
+{"id": "jira-tr-00960-1136869", "text": "I just committed this. Thanks Alejandro!", "label": "positive"}
+{"id": "jira-tr-00977-1151423", "text": "+1. The patch looks good.", "label": "positive"}
+{"id": "jira-tr-00979-1152135", "text": "I just committed this. Thanks Mahadev!", "label": "positive"}
+{"id": "jira-tr-00982-1153084", "text": "I've just committed this.  Thanks Arun!", "label": "positive"}
+{"id": "jira-tr-00983-1153468", "text": "I just committed this.  Thanks Raghu!", "label": "positive"}
+{"id": "jira-tr-00990-1159101", "text": "Hadoop-475 is for making reduce value iterators cloneable.  Hadoop-531 is for sorting on multiple keys", "label": "neutral"}
+{"id": "jira-tr-01002-1171766", "text": "Reopening this to keep track of progress in WTP's Bug 200715.", "label": "neutral"}
+{"id": "jira-tr-01006-1180530", "text": "A patch for this. Thanks a lot.", "label": "positive"}
+{"id": "jira-tr-01011-1190335", "text": "any chance to get a patch also for this? :)", "label": "positive"}
+{"id": "jira-tr-01022-1206141", "text": "This is a java problem.", "label": "neutral"}
+{"id": "jira-tr-01026-1211791", "text": "Patch committed to trunk Thanks Hari!", "label": "positive"}
+{"id": "jira-tr-01035-1330021", "text": "Same attachement with ASF grant this time (forgot to check the first time sorry)", "label": "negative"}
+{"id": "jira-tr-01037-1332701", "text": "Applied thanks.", "label": "positive"}
+{"id": "jira-tr-01042-1349722", "text": "I suggest a potspone to 3.0 as we will redesign the chain.", "label": "neutral"}
+{"id": "jira-tr-01043-1350243", "text": "Yes I'm building MINA myself from trunk. Just to be sure when I checkout the code from <http://svn.apache.org/repos/asf/mina/trunk> I'll get always the latest code!?  I'll see if I can some up with a little application (it may take a few days due to a lot of work I've to finish).  -Roger", "label": "neutral"}
+{"id": "jira-tr-01054-1377368", "text": "Changes look good. Could you run regression tests with your patch and let us know how it goes?  Thanks  Kathey", "label": "positive"}
+{"id": "jira-tr-01064-1395382", "text": "Closing as a duplicate of DERBY-3061 which is fixed in Derby 10.3.2.1.", "label": "neutral"}
+{"id": "jira-tr-01069-1401118", "text": "Committed revision 1125305.", "label": "neutral"}
+{"id": "jira-tr-01071-1405014", "text": "Committed revision 568039.", "label": "neutral"}
+{"id": "jira-tr-01076-1411459", "text": "I found the reason why we observe different behaviors with the network server: Since you run with the default security manager you actually get derby.system.home set as a system property as a side effect (see line ca line 586 in NetworkServerControl.java) as part of the set-up of the security manager. I ran without the security manager so I did not get it set.   I do think though that the old behavior was buggy: I can't see why one should need to set derby.system.home explicitly to get the auto-boot behavior. Unless someone can explain why this should be so I'll file a bug for that.", "label": "neutral"}
+{"id": "jira-tr-01082-1417277", "text": "I propose to commit drop_column_v8_restored_tests.diff. If there are any reviewers currently examining this patch please let me know. Unless any additional review comments are raised in the next 48 hours I will commit the patch.", "label": "neutral"}
+{"id": "jira-tr-01084-1421523", "text": "The patch looks good and the tests ran cleanly. I reindented some parts of the code since they had twice as much indentation as the surrounding code (does your editor use tab width eight instead of four?).  Committed revision 396859.", "label": "positive"}
+{"id": "jira-tr-01087-1422949", "text": "description of the changes made in this patch", "label": "neutral"}
+{"id": "jira-tr-01093-1433103", "text": "Great thanks!", "label": "positive"}
+{"id": "jira-tr-01102-1442147", "text": "Added patch generated from CXF 2.2.6", "label": "neutral"}
+{"id": "jira-tr-01107-1447265", "text": "when we have @RequestWrapper/@ResponseWrapper annotion the generated WSDL contains duplicate schemas.  See test: JaxwsServiceBuilderTest.testDocLit()", "label": "neutral"}
+{"id": "jira-tr-01112-1455985", "text": "That's what reminded me of ubjson actually. I looked at UBF and it looks rather complicated for a data exchange. I wouldn't say no but I don't have any interest in supporting it.  ubjson shouldn't be anything more than writing a parser (which should be ~trivial) and then adding the logic to switch (de)serializers based on content and accept types. I have no idea what UBF really even is under the hood but it sounded a lot more complicated.", "label": "neutral"}
+{"id": "jira-tr-01114-1457506", "text": "Applied to master and branch 1.2.x. Thanks Klaus.", "label": "positive"}
+{"id": "jira-tr-01119-1470173", "text": "Changing resolution to WFM", "label": "neutral"}
+{"id": "jira-tr-01121-1471143", "text": "Brilliant thanks!", "label": "positive"}
+{"id": "jira-tr-01124-1473763", "text": "Hi Colm   My comments are the same see above: https://issues.apache.org/jira/browse/CODEC-161?focusedCommentId=13485148&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-13485148  I've not gone through to see if you've addresses any of comments but a quick scan shows that you did not pick up 2 and 3 so I'll wait for the next version of the patch", "label": "positive"}
+{"id": "jira-tr-01125-1473899", "text": "Hi Gary I think I have a rather nice and elegant patch for this", "label": "positive"}
+{"id": "jira-tr-01130-1479934", "text": "Created an attachment (id=9504) relevant portion of stack dump", "label": "neutral"}
+{"id": "jira-tr-01131-1480856", "text": "Created an attachment (id=6729) modified SQLTransformer (in full)", "label": "neutral"}
+{"id": "jira-tr-01139-1509174", "text": "Looks good patch applied -- Thanks Naoki!", "label": "positive"}
+{"id": "jira-tr-01143-1511853", "text": "+1 looks good.  Once it is committed I will deploy it.  Thanks Sourygna.", "label": "positive"}
+{"id": "jira-tr-01145-1513110", "text": "I just committed this thanks Ari.", "label": "positive"}
+{"id": "jira-tr-01148-1520797", "text": "I am sorry if you think this is nit picking but the logged error still refers to plugins.xml but it should not:  {code} LOG.e(TAG \"ERROR: config.xml is missing.  Add res/xml/plugins.xml to your project.\")", "label": "negative"}
+{"id": "jira-tr-01159-1538047", "text": "Looking at DataStax's 2.0.0 Debian packages the change didn't make its way in.  Digging deeper it's only on the cassandra-1.2 branch.  Can someone merge/cherry-pick it to cassandra-2.0 and trunk.  Thanks Blair", "label": "positive"}
+{"id": "jira-tr-01160-1540035", "text": "Not sure if the patch was pushed for review or not. In any case fixing the build is pretty trivial the changes made to ModificationStatement should just be reverted (and we should just pass the CL in argument to executeWithCondition() to SP.cas()).  Other than that: * I believe we now refuse CL.SERIAL for the cas() method (because CL.blockfor() throw an UnsupportedOperationException for SERIAL). Maybe we can make SERIAL mean \"wait for nothing on commit not even a local one\" (which probably amount to making CL.blockfor() return 0 for SERIAL and adding a 'if' in WriteResponseHandler ctor to signal right away if blockfor is 0). * I don't think CL.ANY will really work as for normal writes since we don't generate hints for commit. Maybe we could (generate hints) ultimately btw but in the meantime it might make more sense to refuse it (and thus make the default for CAS be either SERIAL if we do the preceding point or ONE). * We don't call CL.validateForWrite() when calling CAS (and we shouldn't as it complains with SERIAL) but maybe we should add a validateForConditionalWrite that would at least check we have the right replication strategy when using the multi-DC specific CLs.", "label": "neutral"}
+{"id": "jira-tr-01161-1540050", "text": "patch attached.", "label": "neutral"}
+{"id": "jira-tr-01163-1540816", "text": "Committed thanks!", "label": "positive"}
+{"id": "jira-tr-01165-1543961", "text": "Duplicate of CASSANDRA-4587", "label": "neutral"}
+{"id": "jira-tr-01169-1549222", "text": "committed thanks!", "label": "positive"}
+{"id": "jira-tr-01171-1552257", "text": "(This is the Debian build of the 1.0.6 RC that Sylvain just put up)", "label": "neutral"}
+{"id": "jira-tr-01172-1553512", "text": "We can get average column size from row size / column count so we could make it \"If column size > N bytes or sstable is older than gc_grace_period.\"", "label": "neutral"}
+{"id": "jira-tr-01173-1555229", "text": "bq. CASSANDRA-2444 got in the way  I'm not sure what the right solution is here.  I buy the premise of 2444 that you don't necessarily want to get hammered by compaction when you're first starting up (warming up caches).  So I don't think \"check for compactions ever N seconds\" is a great policy.  But I'm not sure \"check every N seconds starting M minutes after startup\" is great either because it's not something a user will just guess when he's wondering \"why aren't compactions happening yet?\"  Any other ideas?", "label": "neutral"}
+{"id": "jira-tr-01174-1557184", "text": "Split out some fixes to the SSTII bytes tracker getting out of sync w/ the underlying stream and did some cleanup to make the streamed/file versions less divergent.  Also adds parallel compaction testing to LazilyCompactedRowTest.  CliTest and DefsTest generate compaction loads (in DefsTest's case on the Migrations CF -- haven't dug into CliTest as much) that break w/ parallel enabled although the test doesn't actually fail (argh).  Haven't figured out what's causing that and haven't come up with a way to reproduce in a \"real\" test yet.  The DefsTest does mix lazy/nonlazy iteration in the merge which may be relevant.  bq. I'm also no proposing to complicate things.    You're right poor choice of words on my part.  Latest gives the merge executor a SynchronousQueue.  I think that's a better way to cut worst-case than the Deserializer for the reason given previously.  bq. 'if...instanceof' business is a bit error prone/ugly  Agreed. Added getColumnCount + reset to ICountableColumnIterator sub-interface.  bq. say how multithreaded_compaction is different from concurrent_compactors and that multithread_compaction is likely only useful for SSDs in cassandra.yaml  done  bq. The bytesRead \"race\" should also be fixed in CompactionIterable  done  bq. I would have put the code in CompactedRow.close() at the end of the LCR.write() instead of adding a new method as it avoids forgetting calling close   I did consider that but it feels weird to me to have write implicitly call close.  I guess we could just change the method name? :)  bq. We can make PreCompactedRow.removeDeletedAndOldShards a public method and use it in PCI.MergeTask  done", "label": "neutral"}
+{"id": "jira-tr-01175-1558937", "text": "committed thanks!", "label": "positive"}
+{"id": "jira-tr-01180-1563297", "text": "attached patch puts all MessageDigest creation into util class.", "label": "neutral"}
+{"id": "jira-tr-01181-1563635", "text": "It's hard to say. I lost 5 nodes in about an hour but I don't know how many I lost last time", "label": "neutral"}
+{"id": "jira-tr-01183-1563825", "text": "Looks good to me for the first 3.  I think ANY should be equal to ONE for hints=off.  I.e. when it's off we *never* create hints.", "label": "neutral"}
+{"id": "jira-tr-01186-1565919", "text": "+1 Thanks!", "label": "positive"}
+{"id": "jira-tr-01189-1571197", "text": "Need to add the reconciler as part of the keyspace attributes...  just so I don't forget.", "label": "neutral"}
+{"id": "jira-tr-01218-1608525", "text": "Committed as r1406707. Thanks for reviewing Sijie.", "label": "positive"}
+{"id": "jira-tr-01232-1616996", "text": "Thanks James does the rest of the build work with this patch? Seems like this should work with the old RHEL5 toolchain but I didn't look closely.", "label": "positive"}
+{"id": "jira-tr-01233-1619496", "text": "Applied the patch with revision 170884.  Thanks Carlin for the detailed updates (and for all the fixed double-dashes :)).", "label": "positive"}
+{"id": "jira-tr-01235-1624614", "text": "Looks good.  Applied thanks!    http://svn.apache.org/viewvc?rev=606891&view=rev", "label": "positive"}
+{"id": "jira-tr-01251-1646880", "text": "Patch attached.", "label": "neutral"}
+{"id": "jira-tr-01259-1666083", "text": "[~thiru_mg] - thanks for the patch! Looking forward to it landing in 1.7.0", "label": "positive"}
+{"id": "jira-tr-01267-1683409", "text": "Thanks Rick for applaying the patch.", "label": "positive"}
+{"id": "jira-tr-01272-1695551", "text": "Committed @revision 1340076 in trunk", "label": "neutral"}
+{"id": "jira-tr-01278-1699005", "text": "Nathan  I have not been able to get the time to run the other tests.  However I did try changing the timeoutwait.  I set it to 10000 as suggested.  The test failed as it did before.  I then decided to change it to an unrealistic number 60000.  The program died as it did before.  Whats interesting with this test is that it did not even run for a minute.  As such I dont think changing this value had any impact on the problem.", "label": "neutral"}
+{"id": "jira-tr-01280-1700325", "text": "It's working! Thanks.", "label": "positive"}
+{"id": "jira-tr-01283-1712155", "text": "Patch applied!  Thanks.", "label": "positive"}
+{"id": "jira-tr-01284-1712588", "text": "Great - thanks for the heads up Ben!", "label": "positive"}
+{"id": "jira-tr-01289-1719017", "text": "+1 looks good.", "label": "positive"}
+{"id": "jira-tr-01301-1723049", "text": "I checked it on IE and firefox and it was working fine. Though i am not sure why it didnt work particularly in chrome i put those elements in a separate div and this helped. Now its working fine in Chrome also.", "label": "neutral"}
+{"id": "jira-tr-01303-1724973", "text": "Now why did I not think of that... :) Great idea I'll move the files to svn!", "label": "positive"}
+{"id": "jira-tr-01308-1078380_2", "text": "Who made this stupid rule?", "label": "negative"}
+{"id": "jira-tr-01310-1078538_5", "text": "But I will quit committing to Hama then because I'm not going to support ONLY a binary format.", "label": "negative"}
+{"id": "jira-tr-01311-1078538_6", "text": "This is not what I build a framework for.", "label": "negative"}
+{"id": "jira-tr-01319-1342658_1", "text": "Damn...", "label": "negative"}
+{"id": "jira-tr-01322-1346179_1", "text": "Bloody hell !!!", "label": "negative"}
+{"id": "jira-tr-01323-1348495_1", "text": "Damn time has flown...", "label": "negative"}
+{"id": "jira-tr-01330-1537069_6", "text": "That being said I'm not totally opposed to making the limit configurable.", "label": "negative"}
+{"id": "jira-tr-01333-1573478_1", "text": "+1 (damn intellij it's not like patch format hasn't been standard for years)", "label": "negative"}
+{"id": "jira-tr-01336-1687818_1", "text": "It seems some of the wrappers in ink_hrtime.h() might no longer be used either e.g. ink_gettimeofday() is never used so lets get rid of that shit.", "label": "negative"}
+{"id": "jira-tr-01338-1769700_1", "text": "What a stupid name I chose for that object... )-:", "label": "negative"}
+{"id": "jira-tr-01348-2024396_1", "text": "you can't reopen stuff fixed in the past without upsetting JIRA.", "label": "neutral"}
+{"id": "jira-tr-01349-2059085_3", "text": "I've fixed that locally and am doing a full build but I'm going to build a test case to duplicate the error and then verify my proposed fix corrects it.", "label": "neutral"}
+{"id": "jira-tr-01353-2132543_1", "text": "*Damn* I forgot.", "label": "negative"}
+{"id": "jira-tr-01354-2148299_4", "text": "Also your username was stupidly named and confusing so I deleted it and created a new one more appropriate.", "label": "negative"}
+{"id": "jira-tr-01355-2162609_1", "text": "It sucks to lose the code readability but it seems like a reasonable price to pay.", "label": "negative"}
+{"id": "jira-tr-01360-2264018_2", "text": "That irritated the hell out of me too but I didn't realise it was configurable in the .launch file.", "label": "negative"}
+{"id": "jira-tr-01361-2268304_1", "text": "This sucks badly.", "label": "negative"}
+{"id": "jira-tr-01365-2470534_1", "text": "That sucks why isn't the escape mechanism working?", "label": "negative"}
+{"id": "jira-tr-01372-362807_1", "text": "Hmm that sucks.", "label": "negative"}
+{"id": "jira-tr-01380-373905_1", "text": "though I disagree with a signficant amount of statements you madeI don't think we would ever come to agreement anyway.", "label": "negative"}
+{"id": "jira-tr-01383-455767_4", "text": "I think you made mistakes in ivy.xml.", "label": "negative"}
+{"id": "jira-tr-01385-540214_1", "text": "If I can give you one advice on this one I'd say this: fuck Derby use H2 instead as the default embedded database.", "label": "negative"}
+{"id": "jira-tr-01391-654182_1", "text": "who the fuck is asking for scores but not the max score and why does their insanely specialized use case justify all these booleans on a central lucene class.", "label": "negative"}
+{"id": "jira-tr-01395-663657_2", "text": "I think the comments here are a bad sign... I sent us down an unfortunate slippery slope  we are a search engine library!  don't put shit in the index directory! or we will delete your shit. dead simple.", "label": "negative"}
+{"id": "jira-tr-01396-681152_1", "text": "I wholeheartedly agree this API is confusing as hell.", "label": "negative"}
+{"id": "jira-tr-01400-729706_1", "text": "My bad.", "label": "negative"}
+{"id": "jira-tr-01406-973402_1", "text": "But now that I think about it it may crap out when coming back to read even on a recovered file.", "label": "negative"}
+{"id": "jira-tr-01410-1553771_1", "text": "It also happens at the very startup after he has loaded only 3 sstables (hence DataTracker likely have 3 sstables not a shit load).", "label": "negative"}
+{"id": "jira-tr-01422-795658_1", "text": "oh ...geez I'm an idiot.", "label": "negative"}
+{"id": "jira-tr-01438-1142125_2", "text": "It seems really confusing.", "label": "negative"}
+{"id": "jira-tr-01439-760720_2", "text": "Hell or high water.", "label": "negative"}
+{"id": "jira-tr-01443-1005556_7", "text": "It's not too bad once CacheConfig is in.", "label": "negative"}
+{"id": "jira-tr-01446-1583248_1", "text": "My bad.", "label": "negative"}
+{"id": "jira-tr-01450-679938_5", "text": "Ie both at are bad.", "label": "negative"}
+{"id": "jira-tr-01452-1342154_2", "text": "My bad.", "label": "negative"}
+{"id": "jira-tr-01455-370394_4", "text": "This is bad.", "label": "negative"}
+{"id": "jira-tr-01457-227345_1", "text": "the recommendation in the wiki is bad.", "label": "negative"}
+{"id": "jira-tr-01458-709675_2", "text": "I'm starting to think of \"DLL Hell.\"", "label": "negative"}
+{"id": "jira-tr-01502-1456574_2", "text": "That's pretty unlikely.", "label": "negative"}
+{"id": "jira-tr-01506-706069_21", "text": "But please don't say that my reasoning is bad - because it is not.", "label": "negative"}
+{"id": "jira-tr-01509-986179_2", "text": "Don't hate me just throwing this out there.", "label": "negative"}
+{"id": "jira-tr-01522-1582964_1", "text": "The Async API in http client 4.x really sucks.", "label": "negative"}
+{"id": "jira-tr-01528-1148854_7", "text": "Seeking back is pretty inefficient in DFS.", "label": "negative"}
+{"id": "jira-tr-01535-344525_1", "text": "Ah damn I thought it was fixed :/  Guillaume ?", "label": "negative"}
+{"id": "jira-tr-01540-1542045_1", "text": "Turning off hints is basically intended as a \"oh shit something is broken with hints let's turn it off\" switch.", "label": "negative"}
+{"id": "jira-tr-01541-778795_1", "text": "why on earth would it match anything you have not even touched the Apache install.", "label": "negative"}
+{"id": "jira-tr-01557-1191462_1", "text": "Continue with stupid questions :)  Who is sponsor and mentor of project?", "label": "neutral"}
+{"id": "jira-tr-01559-1203586_5", "text": "We are all different\" Crowd \"I'm not\" Dissenter Monty Python's Life of Brian", "label": "neutral"}
+{"id": "jira-tr-01560-1217410_2", "text": "Turns out that Ubuntu dropped 32 bit support for 'whatever' in 12.04 and now you need to run \"sudo apt-get install ia32-libs\" in order to get older executables to run.", "label": "neutral"}
+{"id": "jira-tr-01565-132669_3", "text": "It is better to express such things in Java or in a query language that is designed for that.", "label": "neutral"}
+{"id": "jira-tr-01566-132669_5", "text": "In addition in the longterm we will all most likely be using annotations and the \"fetch group\" notion does *not* work with annotations.", "label": "neutral"}
+{"id": "jira-tr-01567-1328594_8", "text": "It's generally pretty straightforward but extensibility is not quite clear.", "label": "neutral"}
+{"id": "jira-tr-01569-1342186_3", "text": "What exactly is your configuration ?", "label": "neutral"}
+{"id": "jira-tr-01573-1346179_4", "text": "Here we have two options : 1) work with the internal value but escape all the special chars 2) work with the stored UP value.", "label": "neutral"}
+{"id": "jira-tr-01576-1346179_7", "text": "I already have a fix for the first request but the question is : which version will integrate this modification ?", "label": "neutral"}
+{"id": "jira-tr-01577-1346179_8", "text": "any suggestion ?", "label": "neutral"}
+{"id": "jira-tr-01583-1398734_3", "text": "I've been running with -Xmx1024M -Xms1024M before and that worked in the past...Not sure what's going on now.", "label": "negative"}
+{"id": "jira-tr-01584-1398734_4", "text": "A second run (with 2048M) only got worse (sooner) OOM behavior and after that I had trouble getting rid of my processes - apparent hang with derbyall:lang/wisconsin.java.", "label": "neutral"}
+{"id": "jira-tr-01585-1398734_6", "text": "On rerun I let it go for 20 mins but apart from the database getting booted (derby.log) nothing at all showed up in any of the output files (i.e.", "label": "neutral"}
+{"id": "jira-tr-01588-1411398_1", "text": "I remember that rule for line breaking in Japanese was very different from that of English.", "label": "neutral"}
+{"id": "jira-tr-01592-1423346_2", "text": "I too am concerned about the  DRDA 255 byte character string limit.", "label": "negative"}
+{"id": "jira-tr-01593-1424522_1", "text": "You can close this out.", "label": "neutral"}
+{"id": "jira-tr-01597-1462558_7", "text": "But I could join them.", "label": "neutral"}
+{"id": "jira-tr-01602-1564457_1", "text": "Nice try :-)  I was Mr I dont believe in magic from the very beginning.", "label": "positive"}
+{"id": "jira-tr-01606-1564457_6", "text": "Or at least schedule this for a release which allows for a downgrade.", "label": "neutral"}
+{"id": "jira-tr-01611-1628616_1", "text": "The Calculator sample now works with SimpleAxisServer.", "label": "neutral"}
+{"id": "jira-tr-01613-1710387_1", "text": "hi Dan!!", "label": "positive"}
+{"id": "jira-tr-01620-1787887_3", "text": "People tend to review javadoc when things don't go as expected or are unclear.", "label": "neutral"}
+{"id": "jira-tr-01626-1817942_1", "text": "I am sufficiently archaic as to have only a pre-ANSI-C K&R.", "label": "neutral"}
+{"id": "jira-tr-01629-1825414_2", "text": "I'm going to jump back to Robert's initial pushback here:  \"1.", "label": "neutral"}
+{"id": "jira-tr-01630-1825414_3", "text": "Using technical tricks like automatically appending parameters to create unique JobInstance makes alarm bell ring - we should not be trying to do clever arbitrary things in classes that form the foundation of the framework.", "label": "neutral"}
+{"id": "jira-tr-01636-190531_1", "text": "Same goes for fontSize and fontWeight and other font styles.", "label": "neutral"}
+{"id": "jira-tr-01644-2059085_2", "text": "It appears to be a simple cast to the wrong type (from a copy/paste error during coding).", "label": "neutral"}
+{"id": "jira-tr-01650-2132048_2", "text": "Someone either needs to write a custom XSD and link it to the document or we need to disable validation for those examples pending another solution.", "label": "neutral"}
+{"id": "jira-tr-01653-2153268_3", "text": "Crossing fingers...", "label": "negative"}
+{"id": "jira-tr-01657-2181040_14", "text": "Can we even be sure that the thread is the same?", "label": "neutral"}
+{"id": "jira-tr-01664-2350557_1", "text": "Woo hoo!", "label": "neutral"}
+{"id": "jira-tr-01671-307884_1", "text": "Forgot ASF grant.", "label": "negative"}
+{"id": "jira-tr-01672-319373_1", "text": "Duplicated here TAP5-1017", "label": "neutral"}
+{"id": "jira-tr-01674-351191_2", "text": "SOLR-5232: SolrCloud should distribute updates via streaming rather than buffering.", "label": "neutral"}
+{"id": "jira-tr-01682-371904_11", "text": "I'm no angel and I'm not perfect about this myself.", "label": "neutral"}
+{"id": "jira-tr-01690-463810_3", "text": "Thus the case is closed as non-reproducible.", "label": "neutral"}
+{"id": "jira-tr-01692-485900_4", "text": "If the dictionary were created with the flag to true then all entries would use a case sensitive comparison.", "label": "neutral"}
+{"id": "jira-tr-01702-579540_2", "text": "That's why I need to ask questions now when I want to understand the current logic (as it is not logical for me).", "label": "neutral"}
+{"id": "jira-tr-01718-711826_6", "text": "Nobody has any permissions unless explicitly granted.", "label": "neutral"}
+{"id": "jira-tr-01719-711848_5", "text": "While I am not a spokesperson for my employer by my assessment their interests are aligned with mine -- they sponsor my work and as a consumer of the products that I contribute to it would be bad for them if their investment were to be harmed.", "label": "neutral"}
+{"id": "jira-tr-01729-850349_9", "text": "Otherwise the constant will be converted   to DOUBLE.", "label": "neutral"}
+{"id": "jira-tr-01734-957374_1", "text": "Which API at the thrift client you are referring?", "label": "negative"}
+{"id": "jira-tr-01739-711843_2", "text": "Under copyright law there are several potential kinds of damages one can obtain for infringement.", "label": "neutral"}
+{"id": "jira-tr-01742-711843_5", "text": "(There are other requirements for these types of damages also all described in 17 USC 401 et seq.) OTOH if you want to waste your time proving *actual infringement damages* for free software don't bother with a notice but also don't bother trying to find an attorney to argue your case.", "label": "neutral"}
+{"id": "jira-tr-01751-997096_12", "text": "else { this.services.getAssignmentManager().assign(e.getKey() true) } is called for another assignment.", "label": "neutral"}
+{"id": "jira-tr-01756-681403_5", "text": ") then I'm ok with that as well.", "label": "neutral"}
+{"id": "jira-tr-01765-801851_3", "text": "But even if it wasn't it would be totally worthless where it is at.", "label": "neutral"}
+{"id": "jira-tr-01770-1171690_5", "text": "Plus of course you don't have to hardcode the name of the jarfile.", "label": "neutral"}
+{"id": "jira-tr-01775-1133185_1", "text": "> I'm confused.", "label": "neutral"}
+{"id": "jira-tr-01776-647874_1", "text": "Pretty fancy.", "label": "neutral"}
+{"id": "jira-tr-01788-808440_2", "text": "HttpClient stock code is JDK 1.2 compatible (hell 1.2 is old).", "label": "neutral"}
+{"id": "jira-tr-01791-921876_1", "text": "Matt are you still working on this?", "label": "neutral"}
+{"id": "jira-tr-01792-354030_1", "text": "James I think it is time to do some of the tasks that you have outlined and I'm willing to do the work.", "label": "neutral"}
+{"id": "jira-tr-01793-616442_11", "text": "I'm fairly convinced that signing is the only way to go without turning the knobs so far up that the AM is pretty useless (no images!", "label": "neutral"}
+{"id": "jira-tr-01795-802775_3", "text": "Please do not forget about adding the ASL header to all new classes.", "label": "neutral"}
+{"id": "jira-tr-01796-422950_6", "text": "Matt", "label": "neutral"}
+{"id": "jira-tr-01801-1188068_7", "text": "This seems backward to me (but of course I'm no expert in this area).", "label": "neutral"}
+{"id": "jira-tr-01802-812311_2", "text": "Specially the framework.", "label": "neutral"}
+{"id": "jira-tr-01808-582041_2", "text": "of course it could be built on the fly...", "label": "neutral"}
+{"id": "jira-tr-01816-1180608_9", "text": "It seems pretty reliable.", "label": "neutral"}
+{"id": "jira-tr-01818-344362_1", "text": "In revision 1064741 the framework is functional and activated for the enhancer.", "label": "neutral"}
+{"id": "jira-tr-01822-1629813_2", "text": "But I didn't get any memory errors.", "label": "neutral"}
+{"id": "jira-tr-01823-1110621_4", "text": "It was confusing for me too.", "label": "neutral"}
+{"id": "jira-tr-01827-1010631_15", "text": "The verification of state over in timeout monitor before acting is another aspect?", "label": "neutral"}
+{"id": "jira-tr-01839-255447_3", "text": "Even during the full-blown \"validation\" of the descriptors (done just before \"saving\") the CDE is invoking the base UIMA framework in  special mode to prevent instantiation.", "label": "neutral"}
+{"id": "jira-tr-01840-906649_3", "text": "Move startTime from DecommingStatus to DatanodeDescriptor so startTime could be used to represent either decommissioning or dead start time 2.", "label": "neutral"}
+{"id": "jira-tr-01845-1021722_2", "text": "A single table could be made up of many thousands even hundreds of thousands of regions?", "label": "neutral"}
+{"id": "jira-tr-01860-1556367_1", "text": "I have tried using Snappy{Input/Output}Stream and they don't work (it just throws EOFException in the middle of the transfer) and causes stream to retry.", "label": "neutral"}
+{"id": "jira-tr-01867-1465721_1", "text": "If you are stuck with solr 4.0 alpha here's a patch which may work.", "label": "neutral"}
+{"id": "jira-tr-01868-622818_2", "text": "This patch also adds the new resource emulation framework to GridMix.", "label": "neutral"}
+{"id": "jira-tr-01869-1177358_1", "text": "We need verify all the links and buttons in console to ensure the fix.", "label": "neutral"}
+{"id": "jira-tr-01874-146057_1", "text": "Sounds reasonable to me given it's a standalone (debug) utility.", "label": "neutral"}
+{"id": "jira-tr-01876-992380_17", "text": "Can't be avoided though given what is going on here.", "label": "neutral"}
+{"id": "jira-tr-01877-1712919_2", "text": "Pretty much the same stack trace.", "label": "neutral"}
+{"id": "jira-tr-01884-1559316_5", "text": "DROP INDEX <INDEX_NAME>  making this the only option right now would suck because we don't auto-generate an index name when none is provided.", "label": "neutral"}
+{"id": "jira-tr-01889-784662_1", "text": "#NAME?", "label": "neutral"}
+{"id": "jira-tr-01891-159912_10", "text": "Does that sound like a reasonable plan going forward?", "label": "neutral"}
+{"id": "jira-tr-01894-997564_11", "text": "Otherwise we would be storing the bytes-per-checksum field but not actually using it which would be really confusing.", "label": "neutral"}
+{"id": "jira-tr-01896-1032208_3", "text": "J-D gave my patch a review and said fine except for some line-lengths which I've fixed.", "label": "neutral"}
+{"id": "jira-tr-01901-689231_13", "text": "I'm not sure this can't be achieved without messing with IR/W guts so much.", "label": "neutral"}
+{"id": "jira-tr-01908-1339064_2", "text": "After moving it to a local disk I can't reproduce it anymore.", "label": "neutral"}
+{"id": "jira-tr-01909-316006_1", "text": "I just realized I never really explained the original problem that led me to making these fixes.", "label": "neutral"}
+{"id": "jira-tr-01914-1109060_7", "text": "All other log frameworks do this)", "label": "neutral"}
+{"id": "jira-tr-01917-956141_12", "text": "Will pull that into the 2.0.4-alpha branch.", "label": "neutral"}
+{"id": "jira-tr-01919-1610758_3", "text": "For the first part I got stuck on two points.", "label": "neutral"}
+{"id": "jira-tr-01928-915373_1", "text": "Doug you defined: +public interface NamenodeProtocols +  extends ClientProtocol +          DatanodeProtocol +          NamenodeProtocol +          RefreshAuthorizationPolicyProtocol +          RefreshUserToGroupMappingsProtocol { ...}  Will this prevent us from putting the DatanodeProtocol in a different port?", "label": "neutral"}
+{"id": "jira-tr-01929-871077_2", "text": "But would there be other cases that the writer stuck for different reasons?", "label": "neutral"}
+{"id": "jira-tr-01930-788835_2", "text": "There is a single directory ~apbackup/remotelybackedup and anything symlinked to there gets backed up as documented in the README.", "label": "neutral"}
+{"id": "jira-tr-01931-1545644_1", "text": "Jeremy are you still planning to take a stab at this?", "label": "neutral"}
+{"id": "jira-tr-01935-351186_1", "text": "This patch takes care of the nocommits in the previous patch.", "label": "neutral"}
+{"id": "jira-tr-01949-1436378_5", "text": "This is where the bus gets over lapped.", "label": "neutral"}
+{"id": "jira-tr-01960-1128998_3", "text": "Adding directories to removedStorageDirs in original patch is already in branch-1.", "label": "neutral"}
+{"id": "jira-tr-01963-1435679_3", "text": "There may perhaps be some way to use Windows file-locking as a signalling mechanism here.", "label": "neutral"}
+{"id": "jira-tr-01964-1667843_12", "text": "Alternatively we could build a variation avro-ipc.jar that shades in avro.jar that could be the smallest unit for OSGi.", "label": "neutral"}
+{"id": "jira-tr-01966-1429231_1", "text": "we don't have an agreement that it should be active", "label": "neutral"}
+{"id": "jira-tr-01981-1044677_5", "text": "Also I'm slightly confused by your description because in section 5.8 of the spec it says that members of code_handler_class_RCN can be null.", "label": "neutral"}
+{"id": "jira-tr-01999-2042158_1", "text": "Does it solve your issue ?", "label": "neutral"}
+{"id": "jira-tr-02009-696242_1", "text": "And in that case the first argument could also be changed from OpenBitSetDISI to OpenBitSet.", "label": "neutral"}
+{"id": "jira-tr-02010-423201_1", "text": "Until there will be _real_ need of adding new Monoid implementations I would suggest to postpone the problem and keep *your* version of the patch.", "label": "neutral"}
+{"id": "jira-tr-02011-423201_2", "text": "Let's fight with the right weapons when we need I wouldn't use a katana to kill a fly (unless I am Bruce Willis and I'm in Pulp Fiction :P)  best and thanks!", "label": "neutral"}
+{"id": "jira-tr-02032-368838_1", "text": "Stefan: are you sure you had a clean build with my patch applied?", "label": "neutral"}
+{"id": "jira-tr-02039-2449525_1", "text": "This appears to be a issue with Hibernate (the default JPA implementation in JBoss AS) rather than a EJB3 issue.", "label": "neutral"}
+{"id": "jira-tr-02040-614426_2", "text": "Fixed the MAPREDUCE-3028 commit which broke MR1.", "label": "neutral"}
+{"id": "jira-tr-02041-614426_3", "text": "Contributed by Hitesh Shah.", "label": "neutral"}
+{"id": "jira-tr-02043-861953_3", "text": "Do we want to reconsider this?I kinda like the feature.", "label": "neutral"}
+{"id": "jira-tr-02048-2220965_2", "text": "Thanks  Mike", "label": "neutral"}
+{"id": "jira-tr-02050-1577629_2", "text": "patch by johano reviewed by jbellis for", "label": "neutral"}
+{"id": "jira-tr-02051-2309521_1", "text": "EAR project case is fixed.", "label": "neutral"}
+{"id": "jira-tr-02064-1876165_1", "text": "pushed", "label": "neutral"}
+{"id": "jira-tr-02070-1042898_2", "text": "Please check that it was applied as expected.", "label": "neutral"}
+{"id": "jira-tr-02072-1008127_3", "text": "I believe in relativity :-)", "label": "positive"}
+{"id": "jira-tr-02078-1749686_2", "text": "Please open with Spring Framework.", "label": "neutral"}
+{"id": "jira-tr-02081-656966_1", "text": "Thanks Uwe!", "label": "positive"}
+{"id": "jira-tr-02083-778200_1", "text": "Sorry I realise now that \"does not work\" was insufficiently specific.", "label": "neutral"}
+{"id": "jira-tr-02090-2110584_2", "text": "Nobody has complained about it yet but I don't think it should be ported to older versions at this time.", "label": "neutral"}
+{"id": "jira-tr-02097-1680856_2", "text": "Thanks Raymond", "label": "neutral"}
+{"id": "jira-tr-02098-2383572_1", "text": "I'll try it on our Fedora.", "label": "neutral"}
+{"id": "jira-tr-02100-1210594_2", "text": "Just a note there was a long conversation about this here: https://reviews.apache.org/r/4655/ and this is a dup of FLUME-1089.", "label": "neutral"}
+{"id": "jira-tr-02104-149704_1", "text": "using g++ (GCC) 4.1.2 20080704 (Red Hat 4.1.2-48) and cppunit 1.12.1.", "label": "neutral"}
+{"id": "jira-tr-02106-643278_1", "text": "Here's a patch that adds in support for SGD.", "label": "neutral"}
+{"id": "jira-tr-02107-1950335_1", "text": "Fixed in trunk -r746186.", "label": "neutral"}
+{"id": "jira-tr-02114-1274036_2", "text": "On 2008-04-04 13:31:57.627 jimurphy commented: fixed rev.", "label": "neutral"}
+{"id": "jira-tr-02125-920545_1", "text": "Hi Carlos This looks awesome! Lots of cool stuff.", "label": "positive"}
+{"id": "jira-tr-02128-820038_1", "text": "An awesome feature of Hive is the rich type system with excellent support for complex data-structures.", "label": "neutral"}
+{"id": "jira-tr-02132-729628_1", "text": "Committed after fixing the typo.", "label": "neutral"}
+{"id": "jira-tr-02134-857455_3", "text": "The patch needs to be regenerated against the current trunk but otherwise looks good.", "label": "neutral"}
+{"id": "jira-tr-02138-2087167_1", "text": "Deleted spurious 'Added: svn:executable' from the patch.", "label": "neutral"}
+{"id": "jira-tr-02156-1455020_1", "text": "So very cool and so very committed-- thanks Matthias this is awesome.", "label": "positive"}
+{"id": "jira-tr-02158-1064705_2", "text": "I'm giving this up hoping someone confident in Swing would look into it.", "label": "neutral"}
+{"id": "jira-tr-02161-1776212_2", "text": "Fixed for both 2.0 M4 and 1.2.8.", "label": "neutral"}
+{"id": "jira-tr-02167-912375_1", "text": "Ran some benchmarks.", "label": "neutral"}
+{"id": "jira-tr-02175-2026908_1", "text": "how does your application.cfc looks like (ormsettings)?", "label": "neutral"}
+{"id": "jira-tr-02180-2027278_1", "text": "fixed.", "label": "neutral"}
+{"id": "jira-tr-02182-2465701_3", "text": "When did 1.8 RC 9 get upgraded and where is it tracked/documented?", "label": "neutral"}
+{"id": "jira-tr-02184-1659348_1", "text": "Applied patch.", "label": "neutral"}
+{"id": "jira-tr-02186-577184_2", "text": "Cheers!", "label": "positive"}
+{"id": "jira-tr-02190-604592_2", "text": "Thanks Sid!", "label": "neutral"}
+{"id": "jira-tr-02192-441965_1", "text": "Fixed trunk r910567", "label": "neutral"}
+{"id": "jira-tr-02194-1847364_1", "text": "All log statements should now be surrounded by log guards.", "label": "neutral"}
+{"id": "jira-tr-02196-2481795_1", "text": "Thanks Galder:)", "label": "positive"}
+{"id": "jira-tr-02203-1468735_3", "text": "Many thanks.", "label": "neutral"}
+{"id": "jira-tr-02211-1667340_1", "text": "Dona Thiru: can one of you (or anyone else) please review this?", "label": "neutral"}
+{"id": "jira-tr-02212-1045150_1", "text": "05 was committed in r613384", "label": "neutral"}
+{"id": "jira-tr-02225-1776805_2", "text": "This is actually the case in 2.0.5 already.", "label": "neutral"}
+{"id": "jira-tr-02227-907912_1", "text": "It seems that using {{BufferedOutputStream}} is a better solution since it will also help other operations.", "label": "neutral"}
+{"id": "jira-tr-02228-907912_2", "text": "BTW do you know why there are four one-byte packets?", "label": "neutral"}
+{"id": "jira-tr-02233-2271434_1", "text": "Marc you're re-logging your ownn issues :)", "label": "neutral"}
+{"id": "jira-tr-02238-977198_1", "text": "On trunk apparently all use of the \"get\" \"put\" and \"delete\" histograms have already been removed from the regionserver except for the Jamon templates.", "label": "neutral"}
+{"id": "jira-tr-02243-2426284_1", "text": "After several retries seems we are unable to proceed with releng team to get supported solution.", "label": "neutral"}
+{"id": "jira-tr-02244-2426284_2", "text": "Will setup mirroring to Brno QA lab.", "label": "neutral"}
+{"id": "jira-tr-02246-175864_3", "text": "I have throuroughly documented this in the XWorkConverterTest see testStringToInt testStringToInteger testStringToPrimitiveDouble and testStringToDouble.", "label": "neutral"}
+{"id": "jira-tr-02248-175864_5", "text": "cheers  ./alex -- .w( the_mindstorm )p.", "label": "neutral"}
+{"id": "jira-tr-02262-1876181_1", "text": "Spoke too soon!", "label": "neutral"}
+{"id": "jira-tr-02263-1876181_2", "text": "The SocetException is still there sporadically.", "label": "neutral"}
+{"id": "jira-tr-02266-874025_3", "text": "Thanks Daryn for the review.", "label": "neutral"}
+{"id": "jira-tr-02271-1503751_2", "text": "hence closing the ticket.", "label": "neutral"}
+{"id": "jira-tr-02274-879312_1", "text": "The 0.23 patch looks fine.", "label": "neutral"}
+{"id": "jira-tr-02276-1478633_1", "text": "Thanks for the patch.", "label": "neutral"}
+{"id": "jira-tr-02277-1478633_2", "text": "It was applied with minor changes in 2.1.10-dev and 2.2-dev.", "label": "neutral"}
+{"id": "jira-tr-02278-1478633_3", "text": "Please reopen the issue if needed.", "label": "neutral"}
+{"id": "jira-tr-02279-2167248_1", "text": "fixed in 1.8. checking in javadoc fixes momentarily", "label": "neutral"}
+{"id": "jira-tr-02281-449674_1", "text": "I know this hasn't been looked at in quite a while.", "label": "neutral"}
+{"id": "jira-tr-02284-449674_4", "text": "Without an explanation of what the issue is this issue is likely to remain dormant or just be closed as won't fix.", "label": "neutral"}
+{"id": "jira-tr-02286-508220_1", "text": "Latest commits now include filemgr and workflowmgr integration.", "label": "neutral"}
+{"id": "jira-tr-02287-508220_2", "text": "The work in progress archetype is now committed in the trunk (http://svn.apache.org/repos/asf/oodt/trunk/mvn/archetypes/radix/).", "label": "neutral"}
+{"id": "jira-tr-02288-1112403_1", "text": "Bharath  Since all of this work's goal was done - can this be closed?", "label": "neutral"}
+{"id": "jira-tr-02289-2276054_1", "text": "Thanks for Paul King's advice I tried 1.6.3 again with groovy.bat.", "label": "neutral"}
+{"id": "jira-tr-02293-2512266_1", "text": "Marek Novotny <mnovotny@redhat.com> made a comment on [bug 883918|https://bugzilla.redhat.com/show_bug.cgi?id=883918]  This will be fixed/upgraded to GWT 2.5 in WFK 2.3.", "label": "neutral"}
+{"id": "jira-tr-02299-2178588_1", "text": "Added to portletswap but not the distro until we have themed groupings.", "label": "neutral"}
+{"id": "jira-tr-02305-2334381_1", "text": "Fixed in next savara release.", "label": "neutral"}
+{"id": "jira-tr-02315-2547124_1", "text": "JMX support will be implemented with the remoting project.", "label": "neutral"}
+{"id": "jira-tr-02320-288955_1", "text": "Hi  Thanks for your help testing this stuff.", "label": "neutral"}
+{"id": "jira-tr-02327-2375072_1", "text": "Should be fixed with DOXIA-390 I added your test case.", "label": "neutral"}
+{"id": "jira-tr-02332-1131871_1", "text": "I just committed this.", "label": "neutral"}
+{"id": "jira-tr-02336-260556_3", "text": "I wonder if there are any advantages to your way of doing it over mine but I think yours will definitely work to detect the error cases I had in mine.", "label": "neutral"}
+{"id": "jira-tr-02339-705725_2", "text": "Thanks for you patience - this is a nasty issue.", "label": "neutral"}
+{"id": "jira-tr-02342-2333436_1", "text": "This never got into Indigo - pusihing for it to go into Juno.", "label": "neutral"}
+{"id": "jira-tr-02356-2385607_2", "text": "I saw 'acusament de recepci?' in the GDLC but I wasn't certain what it was in English.", "label": "neutral"}
+{"id": "jira-tr-02376-2540286_2", "text": "Indeed this saved some time.", "label": "neutral"}
+{"id": "jira-tr-02383-1607244_2", "text": "+1 thanks Ivan.", "label": "neutral"}
+{"id": "jira-tr-02385-456364_4", "text": "Just realize that.", "label": "neutral"}
+{"id": "jira-tr-02391-2036173_3", "text": "Under what runtime conditions are you seeing this.?", "label": "neutral"}
+{"id": "jira-tr-02393-2036173_6", "text": "Would you have a test that we can use to reproduce?", "label": "neutral"}
+{"id": "jira-tr-02405-1720530_3", "text": "Thanks Arpit!", "label": "neutral"}
+{"id": "jira-tr-02406-1191390_1", "text": "I think your logic is right.", "label": "neutral"}
+{"id": "jira-tr-02409-1191390_6", "text": "FileSystemView can have user object to indicate whose file system view it is representing.", "label": "neutral"}
+{"id": "jira-tr-02411-1191390_8", "text": "In that case caching will be at the FileSystemView level (not at FileObject level).", "label": "neutral"}
+{"id": "jira-tr-02415-1191390_12", "text": "So if necessary we can add another FileSystemManager implementation which will support caching.", "label": "neutral"}
+{"id": "jira-tr-02421-942679_1", "text": "Thanks for the patch Gustavo.", "label": "neutral"}
+{"id": "jira-tr-02426-1680193_4", "text": "Unzip ws-void-args-return under the itest directory 4.", "label": "neutral"}
+{"id": "jira-tr-02431-1025268_2", "text": "Oh and that wiki page for the shell is slightly formatted wrong by the looks it changes to cursive/italics and stays until the end.", "label": "neutral"}
+{"id": "jira-tr-02452-1423534_6", "text": "In my experience this kind of shadowing always causes bugs in the future because it is so easy to lose track of which copy of the redundant field is being used.", "label": "neutral"}
+{"id": "jira-tr-02456-1423534_10", "text": "However I see that you are following the data dictionary patterns for the other permissions descriptors.", "label": "neutral"}
+{"id": "jira-tr-02459-1423534_15", "text": "SYSSEQUENCESRowFactory  o I think that you should flip the order of the keys in the second index.", "label": "neutral"}
+{"id": "jira-tr-02463-1423534_23", "text": "DataDictionary  o The header comment for getPermDescriptor() does not seem to describe the method.", "label": "neutral"}
+{"id": "jira-tr-02468-1946907_2", "text": "Attribute 'width' works fine.", "label": "neutral"}
+{"id": "jira-tr-02471-480162_2", "text": "Many CID mappings are expressed as ranges which the code explodes into individual Integer->String pairs.", "label": "neutral"}
+{"id": "jira-tr-02472-1836207_1", "text": "In the same pc I have a outlook client and It work fine the problem is with xplanner how can I  configurate xplanner for send mails ?", "label": "neutral"}
+{"id": "jira-tr-02473-1836207_2", "text": "Thanks", "label": "neutral"}
+{"id": "jira-tr-02476-280697_2", "text": "One minor correction to configure without sqlite3.", "label": "neutral"}
+{"id": "jira-tr-02481-412291_3", "text": "I'll make those changes as soon as I can.", "label": "neutral"}
+{"id": "jira-tr-02489-1427702_2", "text": "I would advise that a good thing to do once you have fixed this issue is to then perform a similar test modification for setting a valid value and using batching.", "label": "neutral"}
+{"id": "jira-tr-02490-1673444_1", "text": "I've started to work towards support for visualising services and cascading configuration.", "label": "neutral"}
+{"id": "jira-tr-02495-1673444_6", "text": "I've also started to add cascading configuration.", "label": "neutral"}
+{"id": "jira-tr-02496-1673444_8", "text": "ComponentAppearances will also inherit from one another when we have nested components (like a bundle inside an application).", "label": "neutral"}
+{"id": "jira-tr-02506-804555_1", "text": "> MultipartEntity entity = new MultipartEntity(HttpMultipartMode.BROWSER_COMPATIBLE)   Use strict mode instead of browser compatibility.", "label": "neutral"}
+{"id": "jira-tr-02512-297441_1", "text": "OK will open the issue with Solr/Lucene.", "label": "neutral"}
+{"id": "jira-tr-02516-1767428_2", "text": "I found the note in the manual about @Resource and that fixes it.", "label": "neutral"}
+{"id": "jira-tr-02519-258148_1", "text": "I looked at all the TODO's in uimaj-core and found only one Sofa-related exception that needed update.", "label": "neutral"}
+{"id": "jira-tr-02520-258148_2", "text": "Fixed it's foot.", "label": "neutral"}
+{"id": "jira-tr-02523-1605030_3", "text": "boisvert@sixtine:~/svn/buildr-trunk$ svn commit -m \"BUILDR-283: Misleading documentation on env.", "label": "neutral"}
+{"id": "jira-tr-02526-747246_1", "text": "Could you please verify and/or adapt your patch against the current version at http://svn.apache.org/repos/asf/commons/proper/jcs/branches/generics-interface I was not able to apply your patch there.", "label": "neutral"}
+{"id": "jira-tr-02527-1814664_1", "text": "A potentially legitimate use case of a {{set}} without an {{apply}} is a builder class that should not be accessed until the building is complete at which point the internal state will be accessed directly to produce the final result of some type.", "label": "neutral"}
+{"id": "jira-tr-02528-1961214_1", "text": "Pull request available here:  https://github.com/SpringSource/spring-roo/pull/8  The changes are minor.", "label": "neutral"}
+{"id": "jira-tr-02534-1083704_1", "text": "Committed to branch-2.1-beta branch-2 and trunk.", "label": "neutral"}
+{"id": "jira-tr-02551-145320_1", "text": "An example patch.", "label": "neutral"}
+{"id": "jira-tr-02554-289945_2", "text": "I seem to be having trouble applying the patches though and I'd hate for all these corrections and improvements to be lost.", "label": "neutral"}
+{"id": "jira-tr-02572-152270_1", "text": "great. awesome job sergey!", "label": "positive"}
+{"id": "jira-tr-02574-645538_8", "text": "#NAME?", "label": "neutral"}
+{"id": "jira-tr-02579-1160849_2", "text": "Thanks Bryan!", "label": "positive"}
+{"id": "jira-tr-02580-915538_1", "text": "+1  Patch looks nice.", "label": "neutral"}
+{"id": "jira-tr-02586-914494_2", "text": "I ran it on current trunk.", "label": "neutral"}
+{"id": "jira-tr-02591-1332525_1", "text": "I didn't see anything in subversion?", "label": "neutral"}
+{"id": "jira-tr-02596-352230_1", "text": "Added support for the QueryElevationComponent and test case.", "label": "neutral"}
+{"id": "jira-tr-02599-935706_1", "text": "Committed to trunk.", "label": "neutral"}
+{"id": "jira-tr-02603-395863_1", "text": "Applied the patch into trunk.", "label": "neutral"}
+{"id": "jira-tr-02608-456007_2", "text": "Thanks Viraj and Cheolsoo.", "label": "neutral"}
+{"id": "jira-tr-02610-640309_2", "text": "There are tests in Mahout-integration that are using DummyRecordWriter  -  TestConcatenateVectorsJob and RegexMapperTest and are failing with this patch.", "label": "neutral"}
+{"id": "jira-tr-02613-1600504_1", "text": "Vadim you're keeping us busy :).", "label": "neutral"}
+{"id": "jira-tr-02614-1600504_2", "text": "Patch applied with thanks!", "label": "positive"}
+{"id": "jira-tr-02615-376813_1", "text": "Hello I see Uwe has commented on SOLR-1657 that he would help convert tokenstreams to the new api but he needs this patch (the tests) applied first.", "label": "neutral"}
+{"id": "jira-tr-02621-1140039_1", "text": "fPIC rings a bell on amd64.", "label": "neutral"}
+{"id": "jira-tr-02623-900223_2", "text": "I have committed this.", "label": "neutral"}
+{"id": "jira-tr-02624-802843_1", "text": "Patch checked in.", "label": "neutral"}
+{"id": "jira-tr-02625-1350017_1", "text": "Thanks for the patch.", "label": "neutral"}
+{"id": "jira-tr-02633-444610_1", "text": "Please review this for me!", "label": "neutral"}
+{"id": "jira-tr-02639-222291_1", "text": "You are absolutely right.", "label": "neutral"}
+{"id": "jira-tr-02648-438384_1", "text": "Tested with both JBoss EAP 5.x and Geronimo 2.2.x", "label": "neutral"}
+{"id": "jira-tr-02653-1140769_2", "text": "Thanks Jothi!", "label": "neutral"}
+{"id": "jira-tr-02662-1651730_1", "text": "What classes were changed for this fix?", "label": "neutral"}
+{"id": "jira-tr-02665-835743_2", "text": "But in the meanwhile can I upload a patch which reverts this ?", "label": "neutral"}
+{"id": "jira-tr-02676-1065730_1", "text": "Hi Sergey thanks for the patch.", "label": "neutral"}
+{"id": "jira-tr-02681-169292_2", "text": "Thank you Ivan!", "label": "positive"}
+{"id": "jira-tr-02682-1685349_1", "text": "After talking with Steve B. we decided that the DAS should insist that datagraph root is passed to the ApplyChanges command.", "label": "neutral"}
+{"id": "jira-tr-02687-153482_1", "text": "Cool.", "label": "positive"}
+{"id": "jira-tr-02698-678190_1", "text": "+1 if the test is problematic we can always either comment out the new test or @Ignore it and add a note.", "label": "neutral"}
+{"id": "jira-tr-02706-1586698_1", "text": "Applied patch with thanks to Dan :)", "label": "neutral"}
+{"id": "jira-tr-02709-984786_1", "text": "Thanks a lot Jon for signing up this.", "label": "positive"}
+{"id": "jira-tr-02717-795692_3", "text": "thanks dims", "label": "neutral"}
+{"id": "jira-tr-02719-596711_1", "text": "I just committed this.", "label": "neutral"}
+{"id": "jira-tr-02726-613565_2", "text": "I ran it from the base and it looks good.", "label": "neutral"}
+{"id": "jira-tr-02737-1071335_1", "text": "Leo patch applied at revision r438040 thanks a lot for this enhancement please verify that the problem is fully fixed as you expected.", "label": "neutral"}
+{"id": "jira-tr-02749-729735_1", "text": "Attach patch v2.", "label": "neutral"}
+{"id": "jira-tr-02755-519688_2", "text": "897392 Thanks Sharan !", "label": "positive"}
+{"id": "jira-tr-02764-931062_1", "text": "1", "label": "neutral"}
+{"id": "jira-tr-02767-869356_2", "text": "I've committed the patch.", "label": "neutral"}
+{"id": "jira-tr-02768-635187_2", "text": "Thanks Ravi!", "label": "positive"}
+{"id": "jira-tr-02772-1577000_3", "text": "Thanks", "label": "neutral"}
+{"id": "jira-tr-02775-686421_1", "text": "Hi Uwe  I updated the patch now it uses TermRangeQuery and does not cast anymore getAttribute", "label": "neutral"}
+{"id": "jira-tr-02783-1190469_1", "text": "Fixed in rev 1137251 and 1137252.", "label": "neutral"}
+{"id": "jira-tr-02797-1613386_1", "text": "Patch was applied analyzers can now be instantiated by writing some javascript to be executed on the server side.", "label": "neutral"}
+{"id": "jira-tr-02800-1445470_1", "text": "New 2.0.5 and 2.1 snapshots are deployed that contain the fixes.", "label": "neutral"}
+{"id": "jira-tr-02802-418583_1", "text": "reviewed looks good.", "label": "neutral"}
+{"id": "jira-tr-02807-1180084_1", "text": "Committed the patch to trunk (revision 63660) and branches/2.1 (revision 636606).", "label": "neutral"}
+{"id": "jira-tr-02827-1116483_2", "text": "Thank you Ravi.", "label": "positive"}
+{"id": "jira-tr-02831-833875_2", "text": "Thanks", "label": "neutral"}
+{"id": "jira-tr-02834-1676480_1", "text": "aim to merge patches and publish for review by this coming weekend", "label": "neutral"}
+{"id": "jira-tr-02840-986573_5", "text": "(We are retrying once and if we fail twice we give up).", "label": "neutral"}
+{"id": "jira-tr-02849-1066585_2", "text": "Thanks.", "label": "neutral"}
+{"id": "jira-tr-02851-903019_1", "text": "Hi Uma thanks for taking a look.", "label": "neutral"}
+{"id": "jira-tr-02862-793141_1", "text": "Subversion dump file.", "label": "neutral"}
+{"id": "jira-tr-02871-1101394_1", "text": "+1 the latest patch looks good to me.", "label": "neutral"}
+{"id": "jira-tr-02875-1607003_1", "text": "Committed r1463555.", "label": "neutral"}
+{"id": "jira-tr-02878-969033_1", "text": "This patch fixes the issue: # Short circuits the MUST_PASS_ONE case just like it is done in the MUST_PASS_ALL case.", "label": "neutral"}
+{"id": "jira-tr-02880-969033_4", "text": "I am quite skeptical about this.", "label": "neutral"}
+{"id": "jira-tr-02883-1659591_1", "text": "Thanks for you work on this Jayachandra.", "label": "positive"}
+{"id": "jira-tr-02892-1487389_1", "text": "Are there snapshots of the volumes belonging to the VM?", "label": "neutral"}
+{"id": "jira-tr-02894-1609273_1", "text": "Thanks a lot Kiran for the patch.", "label": "positive"}
+{"id": "jira-tr-02896-1609273_4", "text": "if you like please push this in.", "label": "neutral"}
+{"id": "jira-tr-02916-988022_1", "text": "Wrong JIRA...please ignore my previous comment.", "label": "neutral"}
+{"id": "jira-tr-02921-1611788_2", "text": "Thanks Sijie.", "label": "positive"}
+{"id": "jira-tr-02929-492451_3", "text": "I will correct it and ask for commiting the patch once I am done with this.", "label": "neutral"}
+{"id": "jira-tr-02931-153942_2", "text": "In fact if you happen to know why ObserverHammerQuorumTest is failing with this latest patch I'd love to hear.", "label": "positive"}
+{"id": "jira-tr-02935-423508_1", "text": "Junit test.", "label": "neutral"}
+{"id": "jira-tr-02950-432723_2", "text": "I will investigate this issue and update the patch.", "label": "neutral"}
+{"id": "jira-tr-02953-1665161_1", "text": "Thanks Tom.", "label": "positive"}
+{"id": "jira-tr-02961-1030636_1", "text": "Committed.", "label": "neutral"}
+{"id": "jira-tr-02964-832893_1", "text": "@Ashutosh: thanks a lot for the comments.", "label": "positive"}
+{"id": "jira-tr-02965-1321632_2", "text": "Or even better do you have a patch?", "label": "neutral"}
+{"id": "jira-tr-02969-1071886_1", "text": "Hello Paulex      The fix is fine.", "label": "neutral"}
+{"id": "jira-tr-02970-1071886_2", "text": "Thanks!", "label": "neutral"}
+{"id": "jira-tr-02973-784754_2", "text": "See INFRA-4641 for some thoughts on how we could/should achieve that.", "label": "neutral"}
+{"id": "jira-tr-02977-1076299_1", "text": "Svetlana  Fixed in LUNI java.net.DatagramPacket at repo revision 376009.", "label": "neutral"}
+{"id": "jira-tr-02980-166284_1", "text": "Thanks [~bikassaha] addressed your comments.", "label": "neutral"}
+{"id": "jira-tr-02983-1273997_2", "text": "On 2010-03-01 15:37:55.688 jchuang commented: AIR bug is fixed.", "label": "neutral"}
+{"id": "jira-tr-02987-155358_1", "text": "I just committed this.", "label": "neutral"}
+{"id": "jira-tr-02989-196370_2", "text": "Thank Morris.", "label": "neutral"}
+{"id": "jira-tr-02993-1463800_1", "text": "Patch applied in r710027.", "label": "neutral"}
+{"id": "jira-tr-02999-1643696_1", "text": "As I know this is working  [I didnt not test with JSR 181]  but I have tested with POJOs and it worked fine for me   Thanks Deepal", "label": "neutral"}
+{"id": "jira-tr-03007-1210631_1", "text": "Patch committed.", "label": "neutral"}
+{"id": "jira-tr-03014-1074008_1", "text": "Hello George  The fix looks fine many thanks!", "label": "positive"}
+{"id": "jira-tr-03020-675692_1", "text": "Committed revision 1058592.  thanks uwe for the review", "label": "neutral"}
+{"id": "jira-tr-03025-491558_1", "text": "Committed revision 901901 to trunk.", "label": "neutral"}
+{"id": "jira-tr-03026-491558_2", "text": "Thanks Dianne!", "label": "positive"}
+{"id": "jira-tr-03029-1603168_1", "text": "belongs to cactus project?", "label": "neutral"}
+{"id": "jira-tr-03032-1171911_1", "text": "Applied combined patch from Shiva and BJ at r692233.", "label": "neutral"}
+{"id": "jira-tr-03042-353154_1", "text": "Who knows what evil lurks in the heart of Solr?", "label": "neutral"}
+{"id": "jira-tr-03047-1158228_1", "text": "correct build status capture echo's exit code", "label": "neutral"}
+{"id": "jira-tr-03048-1051047_1", "text": "Paulex the original patch seems to be out-of-date.", "label": "neutral"}
+{"id": "jira-tr-03061-451059_4", "text": "svn rev 503448", "label": "neutral"}
+{"id": "jira-tr-03077-521246_1", "text": "Thanks Awdesh - Done at r821748.", "label": "positive"}
+{"id": "jira-tr-03081-1075912_2", "text": "Please check that the patch was applied as you expected.", "label": "neutral"}
+{"id": "jira-tr-03102-1485242_1", "text": "I don't this its specific to HyperV as the mgmt server has to take care of reservation of IP address.", "label": "neutral"}
+{"id": "jira-tr-03107-1602705_1", "text": "Hi James  This patch has been applied by chirino in the revision 576522  at Sep 17.", "label": "positive"}
+{"id": "jira-tr-03111-762743_1", "text": "Thx for your investigations Chet.", "label": "neutral"}
+{"id": "jira-tr-03113-376847_2", "text": "This patch really helped.", "label": "positive"}
+{"id": "jira-tr-03114-376847_4", "text": "So I added a comment out on UnInvertedField.", "label": "neutral"}
+{"id": "jira-tr-03117-583075_10", "text": "Pareto Tweedie ..)  Why we don't stick with triangular or uniform distribution as default for Kernel within the bean?", "label": "neutral"}
+{"id": "jira-tr-03120-784774_4", "text": "Does nexus check for https connections for anything?", "label": "neutral"}
+{"id": "jira-tr-03139-1406041_8", "text": "There is an embedded Tomcat running in the same JVM but according to the logs the database is not booted twice.", "label": "neutral"}
+{"id": "jira-tr-03142-877672_2", "text": "#NAME?", "label": "neutral"}
+{"id": "jira-tr-03143-236726_1", "text": "Dojo [0] and Ext.js [1] take both a different approach (which i personally don't really like).", "label": "neutral"}
+{"id": "jira-tr-03147-1110348_2", "text": "My goal here is a very small/quick change to revert how every FsShell command (except count) to how it used to work.", "label": "neutral"}
+{"id": "jira-tr-03150-892816_1", "text": "Thanks Todd glad to be on board!", "label": "positive"}
+{"id": "jira-tr-03152-476703_2", "text": "But when i delete the file which was created at <tomcat-home>/bin/search-index/write.lock  it works fine  but I'm not sure whether this creates other implications?", "label": "neutral"}
+{"id": "jira-tr-03154-476703_4", "text": "Is this due to the deletion of write.lock", "label": "neutral"}
+{"id": "jira-tr-03165-1029613_1", "text": "Thanks for sweet patch Erik.", "label": "positive"}
+{"id": "jira-tr-03167-612026_4", "text": "The patch does not contain any @author tags.", "label": "neutral"}
+{"id": "jira-tr-03169-612026_8", "text": "Also please list what manual steps were performed to verify this patch.", "label": "neutral"}
+{"id": "jira-tr-03174-1116600_1", "text": "Owen thanks for the slides.", "label": "positive"}
+{"id": "jira-tr-03177-1116600_7", "text": "But I'm not convinced its wise to add such support to the exisiting Java-only container file formats.", "label": "neutral"}
+{"id": "jira-tr-03188-985641_5", "text": "Assume the PUT(and related things) that i created in preBatchPut is also needed while i use the preWALWrite is there any way i can carry it in one flow?", "label": "neutral"}
+{"id": "jira-tr-03193-1013449_3", "text": "Thanks", "label": "neutral"}
+{"id": "jira-tr-03199-641296_1", "text": "Megan Glad to be of service : )", "label": "positive"}
+{"id": "jira-tr-03213-1444834_6", "text": "Any help would be appreciated.", "label": "neutral"}
+{"id": "jira-tr-03217-1115581_2", "text": "If it's OK sometimes and not others than IllegalArgumentException seems appropriate seems like it should never be legitimate to create a FileStatus w/o a path unless using the no argument constructor.", "label": "neutral"}
+{"id": "jira-tr-03219-1129939_3", "text": "And I think I will do more next time.", "label": "neutral"}
+{"id": "jira-tr-03221-196536_1", "text": "FilterExprWalker.detach() calls  DescendantIterator.detach() and set DescendantIterator.m_traverser to null for $exceptions[1]/@name.", "label": "neutral"}
+{"id": "jira-tr-03231-780555_4", "text": "I'll ping here once this will be done.", "label": "neutral"}
+{"id": "jira-tr-03232-167609_3", "text": "Contributed by Siddharth Seth.", "label": "neutral"}
+{"id": "jira-tr-03236-1678692_1", "text": "Fixed in 1.2 branch as well.", "label": "neutral"}
+{"id": "jira-tr-03237-367988_1", "text": "What is the right process to deprecate this behavior in 3.x?", "label": "neutral"}
+{"id": "jira-tr-03249-1393433_2", "text": "I also verified that the bug still occurs in 10.6.1.0", "label": "neutral"}
+{"id": "jira-tr-03257-1377264_3", "text": "Please review and comment if anything is lacking or incorrect.", "label": "neutral"}
+{"id": "jira-tr-03262-963946_1", "text": "That is correct.", "label": "neutral"}
+{"id": "jira-tr-03271-1068432_1", "text": "Hmm the suggested patch is not good for DRLVM which handles \"-version\" normally.", "label": "neutral"}
+{"id": "jira-tr-03274-715499_2", "text": "There have been no new ones added for 2.3.", "label": "neutral"}
+{"id": "jira-tr-03276-282276_1", "text": "Committed patch with workaround in revisions 1054027 and 1054030", "label": "neutral"}
+{"id": "jira-tr-03280-422798_1", "text": "Problem ensuing from source files inconsistency", "label": "neutral"}
+{"id": "jira-tr-03284-658544_1", "text": "Closed after release.", "label": "neutral"}
+{"id": "jira-tr-03292-1417766_3", "text": "We are re-using the prepared statement after table t1 is dropped.", "label": "neutral"}
+{"id": "jira-tr-03297-428249_1", "text": "Fixed long ago.", "label": "neutral"}
+{"id": "jira-tr-03303-1678342_2", "text": "In the future I could just get around the issue by using relative symlinks for those files (I think).", "label": "neutral"}
+{"id": "jira-tr-03304-938748_4", "text": "The patch does not contain any @author tags.", "label": "neutral"}
+{"id": "jira-tr-03314-694863_4", "text": "That method which inverts a single document was replaced with new code starting with 2.3 so it's possible you can workaround the bug by upgrading to 2.3 or 2.4.", "label": "neutral"}
+{"id": "jira-tr-03329-1009498_4", "text": "In this case the first OOM occurred here during writing the checksum.", "label": "neutral"}
+{"id": "jira-tr-03330-982619_1", "text": "How about patch 2?", "label": "neutral"}
+{"id": "jira-tr-03337-1403474_8", "text": "cases the values in a derby.", "label": "neutral"}
+{"id": "jira-tr-03341-593534_1", "text": "Does not appear to exist in trunk.", "label": "neutral"}
+{"id": "jira-tr-03342-1497546_2", "text": "Reporters of these issues please verify the fixes and help close these issues", "label": "neutral"}
+{"id": "jira-tr-03343-1571661_1", "text": "I couldn't reproduce this.", "label": "neutral"}
+{"id": "jira-tr-03355-995004_5", "text": "But we still might want to sort it to ensure (better) progress (no livelock).", "label": "neutral"}
+{"id": "jira-tr-03363-1456970_1", "text": "Wonky.", "label": "neutral"}
+{"id": "jira-tr-03366-639780_2", "text": "Thats sweet that you have the prior experience hacking this on top of a store already.", "label": "positive"}
+{"id": "jira-tr-03368-355390_1", "text": "Sweet kickstart for our new wiki!", "label": "positive"}
+{"id": "jira-tr-03381-1411121_7", "text": "3c) The search order for customer-written routines is SQL standard: First we look in the jar file where the routine lives.", "label": "neutral"}
+{"id": "jira-tr-03388-389675_5", "text": "But not very helpful at the sizes you are working with (and not settings I would use to save RAM anyway unless the amount I need to save was pretty small).", "label": "neutral"}
+{"id": "jira-tr-03398-1379857_1", "text": "Commited a fix for this into trunk using revision 610846.", "label": "neutral"}
+{"id": "jira-tr-03414-1613036_2", "text": "This may only be related to the BlurIndexReader and may not be an issue in the BlurIndexNRT.", "label": "neutral"}
+{"id": "jira-tr-03434-1563411_3", "text": "I don't see the connection to .tmp files.", "label": "neutral"}
+{"id": "jira-tr-03437-1563411_8", "text": "The problem is that no exception is raised if the other side of the connection dies.", "label": "neutral"}
+{"id": "jira-tr-03442-1563411_13", "text": "But it does as a consequence of correctly raising an exception when should be.", "label": "neutral"}
+{"id": "jira-tr-03453-474173_4", "text": "One of my earlier patches had the log.info  3.", "label": "neutral"}
+{"id": "jira-tr-03454-1093320_2", "text": "It's kind of annoying to have to use 4GB of temporary space  Nope it only writes the compressed file to disk {{gzip -1}} compresses 4GB of zeros to 18 MiB.", "label": "negative"}
+{"id": "jira-tr-03457-1093320_7", "text": "I will figure out the details and do the port later this week if you don't get to it first.", "label": "negative"}
+{"id": "jira-tr-03458-797577_1", "text": "xerces.apache.org has been added to DNS.", "label": "neutral"}
+{"id": "jira-tr-03471-934135_5", "text": "But it was not the only issue: we also want to manage priorities between the tasks but we need to read them to get enough information to make the right priorities.", "label": "negative"}
+{"id": "jira-tr-03472-1118631_1", "text": "I just committed this.", "label": "neutral"}
+{"id": "jira-tr-03479-1357364_6", "text": "When debugging it in Eclipse you can see the number of daemons grow very fast.", "label": "neutral"}
+{"id": "jira-tr-03480-1357364_7", "text": "While creating the DerbyTest I did notice that this problem is caused by the Database pool because it tries to connect to the database in the background.", "label": "negative"}
+{"id": "jira-tr-03491-698238_2", "text": "My assumption is that when you make a request to read 1k from a disk file that the OS reads substantially more than 1k from the disk and places it in the buffer cache.", "label": "neutral"}
+{"id": "jira-tr-03497-939903_1", "text": "[~lhofhansl] thank you so much.", "label": "positive"}
+{"id": "jira-tr-03500-879843_2", "text": "Have passed all the local unit tests.", "label": "neutral"}
+{"id": "jira-tr-03512-686001_3", "text": "How about adding required Version to QP ctor?", "label": "neutral"}
+{"id": "jira-tr-03519-482429_1", "text": "Hi  could you add the following line form.getDictionary().setItem(COSName.getPDFName(\"NeedAppearances\")COSBoolean.TRUE)  right after PDAcroForm form = docCatalog.getAcroForm()  and try again?", "label": "neutral"}
+{"id": "jira-tr-03532-1068983_2", "text": "Breakpoint handler frame is detected and processed specifically by unwinding algorithm.", "label": "neutral"}
+{"id": "jira-tr-03533-1697610_1", "text": "Ran for almost an hour this time.", "label": "neutral"}
+{"id": "jira-tr-03541-1415798_3", "text": "It is specific to what it is describing.", "label": "neutral"}
+{"id": "jira-tr-03544-322106_1", "text": "In pom.xml of tajo root you forget to change the tajo version to 0.8 at Line 76.", "label": "neutral"}
+{"id": "jira-tr-03550-728458_9", "text": "ReplicaManager: 22.1 recordLeaderLogUpdate(): Could we rename it to recordLeaderLogEndOffset()?", "label": "neutral"}
+{"id": "jira-tr-03556-1046439_2", "text": "Still why do we hardcode these numbers e.g.", "label": "neutral"}
+{"id": "jira-tr-03558-924133_1", "text": "It would be good if folks can use standard Java i/o idioms with Hadoop.", "label": "neutral"}
+{"id": "jira-tr-03562-870799_3", "text": "Alternatively I guess the DN could automatically mlock appended data but there are quota implications there.", "label": "neutral"}
+{"id": "jira-tr-03565-597488_1", "text": "Uploaded a patch that fixes the comments and includes the test", "label": "neutral"}
+{"id": "jira-tr-03569-1017255_5", "text": "I think just needed for this at mo.", "label": "neutral"}
+{"id": "jira-tr-03572-161056_2", "text": "Sorry to let you lose a wild goose chase.", "label": "negative"}
+{"id": "jira-tr-03581-1029207_1", "text": "(@ddlatham: thats kinda funny that you wrote the linked-to article -- it was a random google search)", "label": "positive"}
+{"id": "jira-tr-03585-642162_1", "text": "[~smarthi] When I apply this patch the source code cannot be compiled.", "label": "neutral"}
+{"id": "jira-tr-03612-783620_1", "text": "<danielsh> Yes any23.zones.apache.org is the jail's hostname so use the IP it resolves to.", "label": "neutral"}
+{"id": "jira-tr-03637-1574835_2", "text": "I'm not forgetting it :)   Did you forget it or did I miss it somewhere?", "label": "neutral"}
+{"id": "jira-tr-03642-461111_1", "text": "Seems we didn't enforce an exec for sh but we did for fs.", "label": "negative"}
+{"id": "jira-tr-03654-232746_1", "text": "Igor sorry it took me so long to get back to this.", "label": "negative"}
+{"id": "jira-tr-03655-232746_2", "text": "Thanks for the patch.", "label": "neutral"}
+{"id": "jira-tr-03656-232746_3", "text": "It works for me both in container and in testing with WicketTester.", "label": "neutral"}
+{"id": "jira-tr-03662-684519_2", "text": "by the way the only open impl of this algorithm i could find is at http://rrette.com/moman.html (ZSpell) in python.", "label": "neutral"}
+{"id": "jira-tr-03668-143877_4", "text": "afaict things are working properly at least on the ZK side of things.", "label": "neutral"}
+{"id": "jira-tr-03677-640140_6", "text": "In current version the same error cause different messages because there are many commiters.", "label": "negative"}
+{"id": "jira-tr-03680-1125138_2", "text": "Also setting webinterface.private.actions has other effects like enabling the 'kill job' and 'kill task' links on the Job web UI.", "label": "neutral"}
+{"id": "jira-tr-03687-478827_2", "text": "Here is his response:  \"There is no reason to change the version in the header as the version can be anything (ISO 19005-2:2005 6.1.2).", "label": "neutral"}
+{"id": "jira-tr-03690-478827_5", "text": "Leonard\"       BR  Bill Fausser", "label": "neutral"}
+{"id": "jira-tr-03692-1050678_2", "text": "It is not yet tested - I ran into strange build problems with APR.", "label": "negative"}
+{"id": "jira-tr-03694-534574_1", "text": "David  I've done a little digging and have a question around:  OrderReadHelper.getOrderItemQuantityBd()  Firstly going back a while now this log:     http://svn.ofbiz.org/viewcvs/trunk/components/order/src/org/ofbiz/order/order/OrderReadHelper.java?rev=4367&r1=4281&r2=4367 shows a change to the strings that seems to make the first if statement redundant?!", "label": "neutral"}
+{"id": "jira-tr-03699-1575383_4", "text": "if get is causing the cancel even w/o any exceptions being involved then I guess you'll need to source dive in ScheduledThreadPoolExecutor to see what is going on.", "label": "neutral"}
+{"id": "jira-tr-03704-401935_1", "text": "Thanks for the reference I'll look into it.", "label": "neutral"}
+{"id": "jira-tr-03706-564075_1", "text": "(back from holidays so a bit delayed but) I confirm Andrzej's suggestion -- a plain-text only summarized is ideal for clustering for example.", "label": "negative"}
+{"id": "jira-tr-03709-1326729_3", "text": "Thus assigning the issue to you.", "label": "neutral"}
+{"id": "jira-tr-03710-528962_1", "text": "Hi Marco  I changed the name of patch because it was made in Java earliar sorry for inconvenience.", "label": "negative"}
+{"id": "jira-tr-03714-1672977_4", "text": "I hope the first approach as the more general solution will work though :)", "label": "neutral"}
+{"id": "jira-tr-03716-1500398_1", "text": "I fixed the build failures on 4.1 this morning.", "label": "neutral"}
+{"id": "jira-tr-03725-547122_2", "text": "lifecycle management up to a separate container  Agreed and my patch also contains a TODO for that.", "label": "neutral"}
+{"id": "jira-tr-03741-1194263_3", "text": "Thanks Cyriaque.", "label": "neutral"}
+{"id": "jira-tr-03770-1470935_6", "text": "However I figured it was better to get it in the public domain sooner and let the iterative process do it's work.", "label": "negative"}
+{"id": "jira-tr-03771-1680512_1", "text": "This is only a problem with exceptions from java.", "label": "negative"}
+{"id": "jira-tr-03780-1518664_2", "text": "Bugs like this make me sad.", "label": "negative"}
+{"id": "jira-tr-03786-788254_3", "text": "[1] https://svn.apache.org/viewvc?view=revision&revision=733924", "label": "neutral"}
+{"id": "jira-tr-03792-897427_2", "text": "I think this should be fine for all of the cases I could find where we use this function.", "label": "neutral"}
+{"id": "jira-tr-03793-815032_1", "text": "The precommit failures are unrelated to the issue at hand.", "label": "neutral"}
+{"id": "jira-tr-03794-565607_1", "text": "commons.net 3.0.1 Thsi application is too big RMI is in Jconsole.I myself dont use.I just use ftp.listfiles.", "label": "neutral"}
+{"id": "jira-tr-03807-154098_1", "text": "+1 great job pat.", "label": "positive"}
+{"id": "jira-tr-03813-1584891_1", "text": "Thanks Willem.", "label": "neutral"}
+{"id": "jira-tr-03815-1117591_1", "text": "Updated patch with new file.", "label": "neutral"}
+{"id": "jira-tr-03817-620209_2", "text": "The patch looks good to me.", "label": "neutral"}
+{"id": "jira-tr-03818-620209_4", "text": "{noformat} _harMetaCache {noformat}  Also this is meant for trunk only?", "label": "neutral"}
+{"id": "jira-tr-03822-929541_3", "text": "Nice work [~stepinto] !", "label": "positive"}
+{"id": "jira-tr-03824-878653_1", "text": "@Luke Sorry for the late attaching latest version patch", "label": "negative"}
+{"id": "jira-tr-03827-168203_4", "text": "RMAppAttemptImpl.recoverAppAttemptTokens()  Looks like all changes in RMAppImpl are unnecessary.", "label": "negative"}
+{"id": "jira-tr-03828-168203_5", "text": "Bug in existing testDelegationTokenRestoredOnRMrestart().", "label": "negative"}
+{"id": "jira-tr-03834-983442_2", "text": "Could we keep this DataOutputBuffer for reuse?", "label": "neutral"}
+{"id": "jira-tr-03842-1349696_1", "text": "I am new to Mina and the whole environment.", "label": "negative"}
+{"id": "jira-tr-03851-1136158_5", "text": "That's why I have posted my last patch.", "label": "neutral"}
+{"id": "jira-tr-03855-439583_2", "text": "We have done pretty intensive testing and believe this fixes the problem.", "label": "neutral"}
+{"id": "jira-tr-03856-439583_3", "text": "Here I am removing the subscription list impl and implementing it using ConcurrentLinkedQueue while keeping the interface intact as much as possible.", "label": "neutral"}
+{"id": "jira-tr-03860-857556_3", "text": "Can you try it on Mac and see if it works?", "label": "neutral"}
+{"id": "jira-tr-03861-148193_1", "text": "Thanks Thomas committed to 3.4.0.", "label": "neutral"}
+{"id": "jira-tr-03876-1218390_2", "text": "I'll focus my efforts on the compile targets then.", "label": "neutral"}
+{"id": "jira-tr-03878-1163124_1", "text": "gora-cassandra is patched to work with this prove of concept (It's just a one-liner in CassandraStore).", "label": "neutral"}
+{"id": "jira-tr-03883-899132_4", "text": "(HDFS-2438) - throw FileNotFoundException if getFileStatus on non-existing file.", "label": "neutral"}
+{"id": "jira-tr-03884-899132_6", "text": "(HDFS-2508) - changed file checksum json response root from \"MD5MD5CRC32FileChecksum\" to \"FileChecksum\".", "label": "neutral"}
+{"id": "jira-tr-03886-719536_1", "text": "Seems to work reliably now.", "label": "positive"}
+{"id": "jira-tr-03895-196610_1", "text": "Santiago and I  have removed the readExternal() writeExternal() methods (from interface Externizable) and instead rely on readObject() writeObject().", "label": "neutral"}
+{"id": "jira-tr-03903-1570616_2", "text": "patch by gdusbabek reviewed by jbellis.", "label": "neutral"}
+{"id": "jira-tr-03906-1443068_2", "text": "In meantime I will see what I can do with respect to the context injection into subresources... Perhaps in some cases modifying the subresource classes with extra methods might not be an option.", "label": "neutral"}
+{"id": "jira-tr-03912-1209886_1", "text": "Sorry about the noise was trying out the precommit job.", "label": "negative"}
+{"id": "jira-tr-03918-715787_3", "text": "Will nudge to see what people think.", "label": "neutral"}
+{"id": "jira-tr-03921-682123_2", "text": "So I also changed a test to test a non-ascii stopword :)", "label": "negative"}
+{"id": "jira-tr-03924-739590_4", "text": "Sorry about the confusion before", "label": "negative"}
+{"id": "jira-tr-03931-675155_1", "text": "just uploaded.", "label": "neutral"}
+{"id": "jira-tr-03934-607213_1", "text": "Sorry.", "label": "negative"}
+{"id": "jira-tr-03936-607213_3", "text": "They met the same bug with us.", "label": "neutral"}
+{"id": "jira-tr-03947-333000_1", "text": "Sorry missed that select-box.", "label": "negative"}
+{"id": "jira-tr-03954-1269025_2", "text": "The background image is a 2000x2000 gif image with transparency and then the bitmap is very big.", "label": "neutral"}
+{"id": "jira-tr-03964-851389_2", "text": "Uploaded new patch with no compilation errors.", "label": "neutral"}
+{"id": "jira-tr-03966-1345968_1", "text": "Some file were missing in the last patch sorry.", "label": "negative"}
+{"id": "jira-tr-03967-649301_1", "text": "Trove's licensing won't be changing.", "label": "neutral"}
+{"id": "jira-tr-03971-527771_2", "text": "Sorry.", "label": "negative"}
+{"id": "jira-tr-03972-1532587_1", "text": "sorry.. redeploy patch", "label": "negative"}
+{"id": "jira-tr-03973-813461_1", "text": "Since the change is already included in HIVE-5741 I will mark this one resolved.", "label": "neutral"}
+{"id": "jira-tr-03981-791971_1", "text": "Here is a url with a frame.", "label": "neutral"}
+{"id": "jira-tr-03984-382450_2", "text": "sorry.", "label": "negative"}
+{"id": "jira-tr-03995-1331386_1", "text": "Sorry [~svenkat] I just committed this.", "label": "negative"}
+{"id": "jira-tr-04003-635659_1", "text": "Sorry.", "label": "negative"}
+{"id": "jira-tr-04008-1075529_1", "text": "As expected thanks.", "label": "neutral"}
+{"id": "jira-tr-04009-789141_1", "text": "Sorry  fixed.", "label": "negative"}
+{"id": "jira-tr-04010-775360_1", "text": "Sorry Gav DONE Committed @revision 2487.", "label": "negative"}
+{"id": "jira-tr-04013-399400_1", "text": "well sorry i didn't upload the right files", "label": "negative"}
+{"id": "jira-tr-04016-1615864_2", "text": "Sorry about the trouble.", "label": "negative"}
+{"id": "jira-tr-04017-1685941_1", "text": "Committed Ron's patch.", "label": "neutral"}
+{"id": "jira-tr-04021-533397_1", "text": "Sorry typo:  \"our part\" in place of  \"one part\" above.", "label": "negative"}
+{"id": "jira-tr-04034-820870_2", "text": "Sorry about that.", "label": "negative"}
+{"id": "jira-tr-04037-253682_1", "text": "Sorry attached the file to the wrong issue.", "label": "negative"}
+{"id": "jira-tr-04049-1353557_3", "text": "Thanks.", "label": "neutral"}
+{"id": "jira-tr-04055-1044220_2", "text": "of course!", "label": "neutral"}
+{"id": "jira-tr-04057-1072532_2", "text": "The problem is that it builds awt and that requires some dependencies.", "label": "negative"}
+{"id": "jira-tr-04059-243701_1", "text": "This is is my todo list still but hasn't risen to the top.", "label": "neutral"}
+{"id": "jira-tr-04061-726893_2", "text": "Sorry for the hassle.", "label": "negative"}
+{"id": "jira-tr-04066-710767_1", "text": "Here is a fixed patch.", "label": "neutral"}
+{"id": "jira-tr-04067-710767_2", "text": "Sorry for that.", "label": "negative"}
+{"id": "jira-tr-04069-965408_1", "text": "I think this was a dud.", "label": "neutral"}
+{"id": "jira-tr-04071-1017010_1", "text": "Aaron sorry about this.", "label": "negative"}
+{"id": "jira-tr-04077-937006_2", "text": "Here is addendum to fix (Sorry about build breakage)", "label": "negative"}
+{"id": "jira-tr-04093-691246_1", "text": "Eventually I decided to include just one patch file (instead of code and test) since it was simpler after all.", "label": "neutral"}
+{"id": "jira-tr-04096-1075917_1", "text": "Sorry that I think I missed some discussion in the mailing list.", "label": "negative"}
+{"id": "jira-tr-04097-1075917_2", "text": "The implementation and test and BreakIterator is attached.", "label": "neutral"}
+{"id": "jira-tr-04099-666886_1", "text": "New patch removing \"preserve holes\" option from AnalyzingCompletionLookup: you can simply tell your StopFilter whether or not holes are meaningful.", "label": "neutral"}
+{"id": "jira-tr-04102-724407_1", "text": "Supplemental patch committed.", "label": "neutral"}
+{"id": "jira-tr-04107-1527349_1", "text": "Shazron  I am using alert to visually notify myself.", "label": "neutral"}

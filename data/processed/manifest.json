@@ -1,0 +1,117 @@
+{
+  "seed": 2026,
+  "dev_fraction": 0.2,
+  "datasets": {
+    "github": {
+      "splits": {
+        "train": {
+          "n": 4985,
+          "classes": {
+            "negative": 1461,
+            "neutral": 2115,
+            "positive": 1409
+          }
+        },
+        "fit": {
+          "n": 3988,
+          "classes": {
+            "negative": 1169,
+            "neutral": 1692,
+            "positive": 1127
+          }
+        },
+        "dev": {
+          "n": 997,
+          "classes": {
+            "negative": 292,
+            "neutral": 423,
+            "positive": 282
+          }
+        },
+        "test": {
+          "n": 2137,
+          "classes": {
+            "negative": 626,
+            "neutral": 907,
+            "positive": 604
+          }
+        }
+      },
+      "test_texts_also_in_train": 4
+    },
+    "jira": {
+      "splits": {
+        "train": {
+          "n": 4110,
+          "classes": {
+            "negative": 551,
+            "neutral": 2769,
+            "positive": 790
+          }
+        },
+        "fit": {
+          "n": 3288,
+          "classes": {
+            "negative": 441,
+            "neutral": 2215,
+            "positive": 632
+          }
+        },
+        "dev": {
+          "n": 822,
+          "classes": {
+            "negative": 110,
+            "neutral": 554,
+            "positive": 158
+          }
+        },
+        "test": {
+          "n": 1758,
+          "classes": {
+            "negative": 235,
+            "neutral": 1185,
+            "positive": 338
+          }
+        }
+      },
+      "test_texts_also_in_train": 111
+    },
+    "so": {
+      "splits": {
+        "train": {
+          "n": 3097,
+          "classes": {
+            "negative": 842,
+            "neutral": 1186,
+            "positive": 1069
+          }
+        },
+        "fit": {
+          "n": 2478,
+          "classes": {
+            "negative": 674,
+            "neutral": 949,
+            "positive": 855
+          }
+        },
+        "dev": {
+          "n": 619,
+          "classes": {
+            "negative": 168,
+            "neutral": 237,
+            "positive": 214
+          }
+        },
+        "test": {
+          "n": 1326,
+          "classes": {
+            "negative": 360,
+            "neutral": 508,
+            "positive": 458
+          }
+        }
+      },
+      "test_texts_also_in_train": 33
+    }
+  }
+}

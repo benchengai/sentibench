@@ -1,0 +1,997 @@
+{"id": "gh-00003-1827828", "text": "Didn't look at SpellTargetRestrictions XD", "label": "positive"}
+{"id": "gh-00006-3504879", "text": "That's why I didn't close after sending the close frame.  On 06/26/2013 01:49 AM, Norman Maurer wrote: > > The client channel should wait for the close response of the server,  > as mention in the websockets rfc. So I think we should make to do it so... >", "label": "neutral"}
+{"id": "gh-00015-2025991", "text": "We can only compare our results to json.parse on browser that have the native method. I agree it's not optimal to test this everywhere but where we actually use it. Perhaps we dump this test's attempt to compare since we don't care about the native result.", "label": "neutral"}
+{"id": "gh-00022-701241", "text": "thanks. always don't understand the sense of such stupid restrictions", "label": "negative"}
+{"id": "gh-00034-1260002", "text": "[Really](http://bugs.jquery.com/ticket/8421)?", "label": "neutral"}
+{"id": "gh-00042-1412776", "text": "Inscrutable huge changesets like this one tend to undermine the \"open-source-ness\" of this effort.  Would it be possible to get the actual change history in here?", "label": "neutral"}
+{"id": "gh-00046-366321", "text": "@jboesch: Rarely you can say that a documentation is also a specification for something. First one is generally a more user-friendly version of the second. In case of jQuery, documentation is certainly not the specification. Is it needed? Maybe, but it is", "label": "neutral"}
+{"id": "gh-00054-263007", "text": "> The file src/shared/revision_sql.h must be updated  Fixed in [11116]. Thank you :)", "label": "positive"}
+{"id": "gh-00057-242635", "text": "Can't compile X64 under vs2010, returnng this error :   5>d:\\mangos\\mangos\\src\\game\\spellmgr.cpp(1226): error C4716: 'DoSpellProcEvent::AddEntry' : must return a value", "label": "neutral"}
+{"id": "gh-00073-2819780", "text": "Aw man, you can't grow trees instantly anymore :(", "label": "negative"}
+{"id": "gh-00076-2341569", "text": "I dev. Plugins and my Plugins doesnt work now can i have the new Bukkit Code?", "label": "neutral"}
+{"id": "gh-00080-136336", "text": "@jeresig: committed and made pull request (http://github.com/rkatic/jquery/commit/452c292daa8de2d45cf283bd51cc98d90e04327f).", "label": "neutral"}
+{"id": "gh-00092-2275192", "text": "@Runemoro https://github.com/Bukkit/CraftBukkit/commit/8f12382e8efc8c39a919af9180dd884caf3720ff#commitcomment-2275167 > @mbax , @Wolvereness There's 355 comments on this commit. 90% of them want you to revert it. Why won't you listen to the others want?", "label": "negative"}
+{"id": "gh-00113-2029487", "text": "Stop using offline mode and you will be fine.", "label": "neutral"}
+{"id": "gh-00140-80487", "text": "It fix thing at level that exist at this moment. Apply more generic sollutions is another porblem not related to this specific problem. Added code in same way as old will be reused and not big affected in more generic use applied.   One from really bad thi", "label": "neutral"}
+{"id": "gh-00141-79892", "text": "X-53 Touring Rocket (New RAF reward) uses the same mechanic as these mounts. It's a two-seater though, so I don't know how you'll deal with that. Probably just not be able to use the second seat, which is treated as a vehicle.", "label": "neutral"}
+{"id": "gh-00142-76379", "text": "Why by default set 1 ?", "label": "neutral"}
+{"id": "gh-00146-64726", "text": "Can someone provide proper SQL for gossip working?", "label": "neutral"}
+{"id": "gh-00155-46097", "text": "sounds like a good plan to me... i belive the term that comes to mind then is \"put up or ....\" you know the rest...", "label": "positive"}
+{"id": "gh-00156-45348", "text": "Graz! ;)", "label": "positive"}
+{"id": "gh-00160-3964234", "text": "@pablopaul Oh missed that one, was totally focused on line (38). I think I need another cup of coffee.", "label": "positive"}
+{"id": "gh-00166-3758599", "text": "Good call. I'll add that in.", "label": "positive"}
+{"id": "gh-00171-3782733", "text": "wrong test spell :P  flame shock has SPELL_DIRECT_DAMAGE", "label": "positive"}
+{"id": "gh-00184-2760554", "text": ":) Thanks again, @renanbr.", "label": "positive"}
+{"id": "gh-00187-2458008", "text": "Something like this?  ```php <?php  spl_autoload_register(function ($class) {     if (file_exists($file = __DIR__.'/'.str_replace('\\\\', '/', $class).'.php')) {         require_once $file;     } });  ```", "label": "neutral"}
+{"id": "gh-00200-178845", "text": "Just blogged this: http://paulirish.com/2010/the-protocol-relative-url/ :)", "label": "positive"}
+{"id": "gh-00211-1182927", "text": "@randx relying on very specific releases of MySQL sounds like a bad idea. Just my $0.02.", "label": "neutral"}
+{"id": "gh-00222-3260294", "text": "@agrobbin if you put a sample application on github that reproduces the issue, we would love to take a look at it too!", "label": "positive"}
+{"id": "gh-00223-300747", "text": "I am sorry to see this code removed, but if you want it to simplify, I can understand that... But then, there is no reason to read the permission of the parent and set it to the child, you could actually use shutil.copymode and then you could remove impor", "label": "negative"}
+{"id": "gh-00228-600577", "text": "@isaacs  ```js function Deflate(opts) {   if (!(this instanceof Deflate)) return new Deflate(opt);   Zlib.call(this, opts, binding.Deflate); } ```  it should be `new Deflate(opts)`  (The commit is to big to add proper line comments ;o)", "label": "positive"}
+{"id": "gh-00236-1121309", "text": "0xFF == 255", "label": "neutral"}
+{"id": "gh-00243-145341", "text": "Won't he be notified of my comments here? He's the author of the commit after all.", "label": "neutral"}
+{"id": "gh-00248-2642049", "text": "https://github.com/TrinityCore/TrinityCore/blob/master/src/server/shared/Logging/LogWorker.cpp Check LogWorker::svc() it's deleted there.", "label": "neutral"}
+{"id": "gh-00252-789588", "text": "This is a dead store to i", "label": "neutral"}
+{"id": "gh-00265-466609", "text": "Good point about the copying - However, I find it rather worrying that copying a world and loading both the copy and original is now a valid way to crash your server...", "label": "neutral"}
+{"id": "gh-00269-584211", "text": "i would have merged this into master instead of stable =(  edit: im stupid", "label": "negative"}
+{"id": "gh-00272-2361784", "text": "No, old way was incorrect, maybe someone can do a config for this allowing to don't send whispers instead blizzlike way.", "label": "neutral"}
+{"id": "gh-00273-2347735", "text": "Ooo, I want to kill it!", "label": "negative"}
+{"id": "gh-00275-276540", "text": "[Re: Well it was more because I've had 3+ users running 254 who SWEAR they are running the latest CraftBukkit build..] I'm getting 2-3 posts like this per day.  I wrote some code in to check that they have at least the minimum required build number, and", "label": "neutral"}
+{"id": "gh-00317-2199749", "text": "I think the cleanest would be:  - leave material API as it is - add color coupling lock to Editor UI - for Editor default starting object initialize ambient and diffuse to the same color  Using `null` is kinda tempting because of convenience but it's", "label": "neutral"}
+{"id": "gh-00319-39456", "text": "Hey! This problem prevents all European folks from usage of paperclip... I am sad about it :-(", "label": "negative"}
+{"id": "gh-00321-60755", "text": "@benschwarz as far as I lives in Russia, I have to tend to develop interfaces for at least two languages - Russian and English. I18n is best for it ;)", "label": "positive"}
+{"id": "gh-00323-1466660", "text": "Because a hidden input field is still affected by positioning rules, like another element would appear with `visibility: hidden;` being set.", "label": "neutral"}
+{"id": "gh-00327-2471261", "text": "I did some experiments on using the Closure API for compressing code remotely. You just gather the code to compress (as we do in the build.py script right now), and post it to their endpoint, then grab the compressed results if all went fine. It's somethin", "label": "neutral"}
+{"id": "gh-00329-1677490", "text": "Ah, ok cool!", "label": "positive"}
+{"id": "gh-00333-1188221", "text": "It is, but it also returns a result set. See the `optimize_table()` and `optimize_database()` logic.", "label": "neutral"}
+{"id": "gh-00351-1422288", "text": "Thank you for that Malcrom :)", "label": "positive"}
+{"id": "gh-00352-1408153", "text": "Gunship rocks", "label": "positive"}
+{"id": "gh-00354-1373538", "text": "mhm, okay", "label": "neutral"}
+{"id": "gh-00361-1314983", "text": "Fixed in 5057a8156dc0b2f8664ca952d1da2954f385b2f2. Thanks and sorry. :)", "label": "positive"}
+{"id": "gh-00363-1246406", "text": "and missing sql for add :P", "label": "positive"}
+{"id": "gh-00365-1209116", "text": "codestyle^^", "label": "neutral"}
+{"id": "gh-00366-1198174", "text": "Fixes one of sources in #5538 (not all)", "label": "neutral"}
+{"id": "gh-00373-1116683", "text": ":O Thanks.", "label": "positive"}
+{"id": "gh-00403-217164", "text": "I don't want to blame you all, but you shouldn't take joindiaspora.com that much as reference. Especially in this topic it's far more common to have an open sign up. Just keep in mind that with every commit you're not only deploying to joindiaspora.com but", "label": "neutral"}
+{"id": "gh-00406-190790", "text": "Could you please put somewhere Blender model which throws this exception so I could debug it?   There can be many edge cases, this exporter is not yet hardened by tackling real word models :)", "label": "positive"}
+{"id": "gh-00408-965025", "text": "It's more disappointing how long it takes @Subv to add a simple Typeid check :)", "label": "positive"}
+{"id": "gh-00422-678172", "text": "SMART_ACTION_ENTER_VEHICLE should be removed and its implementations by SMART_ACTION_CAST_SPELL (sp?) and cast the appropriate vehicle riding spell. SMART_ACTION_LEAVE_VEHICLE should remove the aura on the target vehicle from the specified caster. Not sur", "label": "neutral"}
+{"id": "gh-00425-639243", "text": "@Shauren 0bb86a3e97cf720512ae00c9bee209a30c5fb928 This patch still needs some further fix.", "label": "neutral"}
+{"id": "gh-00439-504170", "text": "its commit fix this issue? https://github.com/TrinityCore/TrinityCore/issues/2356", "label": "neutral"}
+{"id": "gh-00456-436553", "text": "This. Is. BEAST!", "label": "positive"}
+{"id": "gh-00466-405491", "text": "Now Valithria Dreamwalker and mobs around respawn in a loop in 10 sec) Seems working ValithriaDespawner by action ACTION_DEATH of combat trigger. BTW there are double threat check.", "label": "neutral"}
+{"id": "gh-00468-402200", "text": "This breaks gossip options :(", "label": "negative"}
+{"id": "gh-00477-344482", "text": "Fixed https://github.com/TrinityCore/TrinityCore/commit/3a2fb99f1f1109098da97a471524afb4c87431ad", "label": "neutral"}
+{"id": "gh-00482-294884", "text": "Need this to Kologarn too", "label": "neutral"}
+{"id": "gh-00493-235922", "text": "Would it not be clearer / more readable to stay with 0 instead of NULL here? (since VehicleSeat::passenger is no pointer anymore)", "label": "neutral"}
+{"id": "gh-00508-3068152", "text": "this probably should not be here ;-)", "label": "positive"}
+{"id": "gh-00512-47129", "text": "fork commits get applied much quicker than a diff in a ticket.. :)", "label": "positive"}
+{"id": "gh-00517-3411503", "text": "This is causing the year to return always with the current year, ignoring the default **maxYear** since the value will always be greater than the maxYear.  I don't know if this should be done in the formHelper by who is coding and check if the value year", "label": "neutral"}
+{"id": "gh-00561-1526217", "text": "@akaariai small comment typo.", "label": "neutral"}
+{"id": "gh-00570-1301331", "text": "+1, merge!", "label": "positive"}
+{"id": "gh-00574-798284", "text": "This isn't parallel, if that should be the case", "label": "neutral"}
+{"id": "gh-00585-4006566", "text": ":) cool, thanks.", "label": "positive"}
+{"id": "gh-00590-735662", "text": "Merged! And thank you for contributing yet another nice patch.", "label": "positive"}
+{"id": "gh-00593-2707534", "text": "Is 10 intentional?", "label": "neutral"}
+{"id": "gh-00625-977402", "text": "grats - first stable thing in eden i guess :D *running*", "label": "positive"}
+{"id": "gh-00639-531789", "text": "Well, the db (item) path holds: davs://dirtomovie/stack/movie.avi  But the actual itemlist (items[] in CGUIWindowVideoNav::LoadVideoInfo()) path holds: stack://davs://dirtomovie/stack/movie.cd1.avi.  And first stacking items[] here doesn't work. So the", "label": "neutral"}
+{"id": "gh-00648-460327", "text": "`Lets say the refreshrate is 24 hertz, and the current video playing is 23.976 fps, then you want to speed up the clock by 0.1% to make the vblank ticks increment the same as the video timestamps, but if the video is 23.976 fps but is reported as 24 fps th", "label": "neutral"}
+{"id": "gh-00674-3129573", "text": "This pass code analysis?  It'd think it'd complain about the out parameters", "label": "neutral"}
+{"id": "gh-00677-1266357", "text": "@heldopslippers Very little of what's in Rails is \"that hard to create\". That's not the metric by which we gauge progress. Rails is progress by a thousand improvements.", "label": "neutral"}
+{"id": "gh-00688-385117", "text": "aha, I had stacking off, never used it since I don't have videos with multiple part files anymore, and with stacking on now it flattens to just one level with every info/flag available per item. Cool, ty :) Titles instead of file/foldernames in list is som", "label": "positive"}
+{"id": "gh-00707-2659248", "text": "@tenderlove @lucascaton I've just reverted this commit. Look for an explanation here https://github.com/rails/rails/commit/6871bd9818a9a7d9d8c7e21e253d64c0410fde1d", "label": "neutral"}
+{"id": "gh-00715-2228985", "text": "They added travis;  prettyprint would probably be about the same amount of work.", "label": "neutral"}
+{"id": "gh-00719-852049", "text": "Fixed at https://github.com/lifo/docrails/commit/274607708c010a18d1d6a4fe1df1c04c88130158", "label": "neutral"}
+{"id": "gh-00725-3332412", "text": "There are other elements that this applies to also. Applying padding 0 by default to last elements in a section doesn't seem sensible. It throws padding in buttons off (and maybe other elements).  I ended up having to overwrite button padding as well bec", "label": "neutral"}
+{"id": "gh-00736-2967428", "text": "Don't put this on the prototype.  People will get clever with it.", "label": "neutral"}
+{"id": "gh-00739-1550851", "text": "VERY crashy - if GetCreatorGUID returns null, server crashes.", "label": "negative"}
+{"id": "gh-00748-872872", "text": "Crap, I thought I had set the author right... *confused*  This was entirely done by Lordron", "label": "negative"}
+{"id": "gh-00753-460133", "text": "Note that it doesn't have anything to do with UTF-8, as only certain ASCII chars, FFFE and FFFF are forbidden. The spec says \"any Unicode character, excluding the surrogate blocks, FFFE, and FFFF\".", "label": "neutral"}
+{"id": "gh-00773-1319719", "text": "Take this out of the loop to cut out 16383 unnecessary field dereferences", "label": "neutral"}
+{"id": "gh-00775-3055190", "text": "Well, the only impact would be, that for all php environment request, the simple stream response and console response senders are tested first. In most applications we have only php environment responses. Removing it means deprecating the php environment r", "label": "neutral"}
+{"id": "gh-00776-2733181", "text": "I agree! That sounds optimal, but I haven't had the time to implement that. This is just a bandaid for something better :P  At the moment, when you bring up a video, it will instantly play. When it finishes, the next picture is shown. If you interrupt th", "label": "positive"}
+{"id": "gh-00797-341971", "text": "But, hum, coffee-script is written in javascript, so, how can it generate .js from .coffee files without having a javascript compiler like node.js installed (and, don't tell me that we send everything to the browser and let it deal with the whole thing)", "label": "neutral"}
+{"id": "gh-00807-834912", "text": "Great that this was started!", "label": "positive"}
+{"id": "gh-00810-4149648", "text": "blame CastedCreatureOrGO removal xD https://github.com/TrinityCore/TrinityCore/blob/7776016106e748fee8cb3e052ec3c8e575e84a55/sql/updates/world/2013_08_30_06_world_eai_sai.sql", "label": "neutral"}
+{"id": "gh-00845-417511", "text": "looks like you changed your line endings.. thus every line was changed. please fix your line endings and try again.. hard to see what you changed", "label": "neutral"}
+{"id": "gh-00857-102301", "text": "Try $ gem install bundler --pre  instead of update", "label": "neutral"}
+{"id": "gh-00858-99032", "text": "Any performance info available? i.e. did it speed up development mode a further 50% ? :-D", "label": "positive"}
+{"id": "gh-00860-3271341", "text": "Is this pip installable?", "label": "neutral"}
+{"id": "gh-00867-2312478", "text": "This is wrong 'distance' calculation. If you have several coordinates (x, y, z, f) than distance between two point is sqrt( (x1-x2)^2 + (y1-y2)^2 + (z1-z2)^2 + (f1 - f2)^2). It's not depend on positive/negative deltas.", "label": "neutral"}
+{"id": "gh-00869-64585", "text": "That assumes that it's a module, which may not be the case, right?", "label": "neutral"}
+{"id": "gh-00878-1171326", "text": "weird - built fine for me on win32, though it was a while back.  Probably needs only a (float) in front of files.size().  Please confirm (or just commit the fix immediately).", "label": "neutral"}
+{"id": "gh-00889-593014", "text": "Is this different than the \"default viewmode for 4x3 material\" ?", "label": "neutral"}
+{"id": "gh-00895-531777", "text": "> Well won't the instanceof check basically fail always except for within util.js?  No. Are you confusing modules with contexts? What you say is true only if `NODE_MODULE_CONTEXTS=1` - but I don't think anyone actually uses that.", "label": "neutral"}
+{"id": "gh-00900-32481", "text": "This is cool. Now really cool would be this:  script/generate scaffold MyModule::MyModel --seed or  script/generate scaffold MyModule::MyModel --seed  creates the file:  ..\\db\\seeds\\my_module\\my_model.rb  and then the command  rake db:seed Modu", "label": "positive"}
+{"id": "gh-00901-19363", "text": "+1 for for 2.3", "label": "neutral"}
+{"id": "gh-00910-356852", "text": "Something is very wrong if it's dog slow.  It will be a hell of a lot faster than PNG or JPG (assuming not HW accelarated) - essentially it's just bit twiddling.", "label": "neutral"}
+{"id": "gh-00913-12309", "text": "This makes the test pass (as all of the query forms used by the adapters are in IGNORED_SQL), but it renders it meaningless. There's no testing of the caching!", "label": "neutral"}
+{"id": "gh-00914-13487", "text": "i see.  too bad, the oop'ish style made it much simpler to extend and reuse things.  anyway. thanks for all your great work :)", "label": "positive"}
+{"id": "gh-00919-1519202", "text": "This assumes composer is run within ZF2. Would it be acceptable to also check `__DIR__ . '/../../../autoload.php'` (when zf is installed as dependency)?", "label": "neutral"}
+{"id": "gh-00932-2430867", "text": "total 392   8 -rw-r--r--   1 andriytyurnikov  wheel    1734 Oct 11  2011 ACKNOWLEDGEMENTS   8 -rw-r--r--   1 andriytyurnikov  wheel     983 Oct  4 01:29 AGREEMENT 280 -rw-r--r--   1 andriytyurnikov  wheel  140111 Oct  9 01:54 CHANGES   8 -rw-r--r--   1", "label": "neutral"}
+{"id": "gh-00952-1042964", "text": "@stevenh512 Do we even know that GitHub was not using attr_accessible? They could have just opened up columns that are only accessible to admins to all users because of the bluntness of attr_accessible (somewhat remedied by the new role based feature).", "label": "neutral"}
+{"id": "gh-00953-383761", "text": "Thank you, Adam ;)", "label": "positive"}
+{"id": "gh-00960-999084", "text": "Guess there is a typo here: `translate`.", "label": "neutral"}
+{"id": "gh-00963-2190210", "text": "Hmmm, @rafaelfranca?", "label": "neutral"}
+{"id": "gh-00979-1586940", "text": "obviously :( And fixed in 12052", "label": "negative"}
+{"id": "gh-00990-1455590", "text": "ugh, sorry... I replied to these when I should've been napping. Sorry for sounding like a cranky brat.", "label": "negative"}
+{"id": "gh-00995-1054268", "text": "Jenkins is not amused, *you will feel his botty wrath!* http://swarm.jquery.org/job/983/", "label": "negative"}
+{"id": "gh-00996-1053209", "text": "I'm disappointed by this commit, unless it fixes a bug. Does it fix a bug? I also wanted to get rid of the code duplication, but @rwldrn had asked me to wait till grunt was integrated before making further changes to the test suite. My plan was to have php", "label": "negative"}
+{"id": "gh-01010-1300812", "text": "u broke tests :(", "label": "negative"}
+{"id": "gh-01012-242980", "text": "pff... you're destroying the identifying part of mangos: the denglish & engrish !! stop doing it :(", "label": "negative"}
+{"id": "gh-01015-225764", "text": "So stupid errors I did, jeez... I'm gonna kill myself right now =/", "label": "negative"}
+{"id": "gh-01028-3523639", "text": "What is dead may never die!", "label": "negative"}
+{"id": "gh-01037-178636", "text": "anyway crashes still exist :( http://getmangos.com/community/viewtopic.php?id=9445&p=2 last 5 posts", "label": "negative"}
+{"id": "gh-01039-170703", "text": "it was copy-pasted from the old code :\\ thanks", "label": "negative"}
+{"id": "gh-01051-2273216", "text": "I really hate this changes so some of my plugins are broken x.x", "label": "negative"}
+{"id": "gh-01058-2280511", "text": "Is anyone getting tired of being called a lazy developer?  The way we were brought into this discussion was not very respectful.  Who does this commit allow to become lazy, anyway?...", "label": "negative"}
+{"id": "gh-01060-2293452", "text": "@TnTBass problem is, GitHub doesn't support pages :(", "label": "negative"}
+{"id": "gh-01062-2294803", "text": "@bergerkiller Really sad to hear that..", "label": "negative"}
+{"id": "gh-01070-2307470", "text": "Sick to death of this argument. can everyone stop arguing and just get back to bukkit?. i think the staff have enough input.  and @bukkit staff, banning people who are rather justifiably upset about this and acting out. not really good form. you might thi", "label": "negative"}
+{"id": "gh-01079-43857", "text": "Ahhh yes. Brain fail, sorry!", "label": "negative"}
+{"id": "gh-01080-124990", "text": "Totally sorry, author of this is Schmoozerd. Wires from brain to keyboard failed, and I pushed without amend with author.", "label": "negative"}
+{"id": "gh-01112-80959", "text": "ofc :( I will fix in next commit", "label": "negative"}
+{"id": "gh-01119-58063", "text": "Confirm, this breaks compile. :[", "label": "negative"}
+{"id": "gh-01122-48836", "text": "gc, sorry for way how i write comment :/ I misundestand it and think that this complaint. :( I often first post and then only think :/", "label": "negative"}
+{"id": "gh-01127-3889462", "text": "Try out the patch i've posted, this is definitely not an outdated ace issue, sorry for the inconvenience.", "label": "negative"}
+{"id": "gh-01128-3887952", "text": "Seems like something is leaking memory :(", "label": "negative"}
+{"id": "gh-01136-2673044", "text": "Ugh, sucks that means inconsistent post presentation. Those timestamps are so ugly. :(", "label": "negative"}
+{"id": "gh-01137-3261017", "text": "Still needs another include, sorry about the commits, was hoping to fix it without an actual full recompile", "label": "negative"}
+{"id": "gh-01138-3101592", "text": "sql/updates/auth/2013_04_25_00_auth_misc.txt WTF!? Have you even read the commits that make?", "label": "negative"}
+{"id": "gh-01139-4153630", "text": "duh, posted too quickly, I do not have this speed loss because I have an error because phpunit_autoload is not defined...", "label": "negative"}
+{"id": "gh-01154-769625", "text": "Sorry! My poor English... :(", "label": "negative"}
+{"id": "gh-01155-1097198", "text": "@ofTheo sorry! i can do all changes as pull requests. i understand that it's easier to review it in a pr.", "label": "negative"}
+{"id": "gh-01161-685590", "text": "I'm also a bit sad to see this go.  But if it's too taxing on the servers, it's too taxing ...", "label": "negative"}
+{"id": "gh-01162-685662", "text": "^ FUCK TAXES!  :(", "label": "negative"}
+{"id": "gh-01164-838962", "text": "This is pretty irritating, the flag should be an english one, failing that a british one as the language originates from Blighty!", "label": "negative"}
+{"id": "gh-01178-37406", "text": "Well my comment was related to przemratajczak's one. I'm sorry for accidentaly being somewhat cruel, anyway.", "label": "negative"}
+{"id": "gh-01180-2488801", "text": "ty, that was really annoying", "label": "negative"}
+{"id": "gh-01184-763888", "text": "To continue working the functions this way is silly @dinnerbone!", "label": "negative"}
+{"id": "gh-01186-629838", "text": "I was just about to do that.. :( oh well.", "label": "negative"}
+{"id": "gh-01188-31313", "text": "yes, :( Last time i specially check mangos.sql Db version at real use with server start. So must be fixed now... and no other simialr problems", "label": "negative"}
+{"id": "gh-01199-2357938", "text": "holy damn >_>!", "label": "negative"}
+{"id": "gh-01200-346477", "text": "Java5? Eww imho :\\ Legacy, I guess.", "label": "negative"}
+{"id": "gh-01203-277499", "text": "I believe that Chunk.java line 47 is causing an NPE :( - http://mibpaste.com/PCUVYv", "label": "negative"}
+{"id": "gh-01211-2532290", "text": "Yep, sorry for confusing things.", "label": "negative"}
+{"id": "gh-01219-22811", "text": "off course, sorry bother you, i return to 7906 so i cant provide data :(", "label": "negative"}
+{"id": "gh-01222-21077", "text": "sorry, but I don't understand you :/", "label": "negative"}
+{"id": "gh-01232-39155", "text": "ah man :( why is everyone so semi-colon crazy, especially after a function literal :S", "label": "negative"}
+{"id": "gh-01236-392940", "text": "hm and now it's overwritten :(", "label": "negative"}
+{"id": "gh-01239-1666814", "text": "Looks ugly =( it would be enough http://pastebin.com/ggB7iduP and http://pastebin.com/TLdepdae", "label": "negative"}
+{"id": "gh-01246-1387929", "text": "Fag, learn to read the source!", "label": "negative"}
+{"id": "gh-01251-1315176", "text": "<pre>one quest and milion commits -.-</pre> I'm sorry, @Chipsi. I'll just keep my fixes for my own instead of pushing them for public use, is that what you want? Asshole.", "label": "negative"}
+{"id": "gh-01253-1298937", "text": "My bad - misread!", "label": "negative"}
+{"id": "gh-01258-1174130", "text": "> \\ No newline at end of file  :( Also, this might fix #4517", "label": "negative"}
+{"id": "gh-01264-1137954", "text": "Aparently those missing parts are what is fucking shit up. I know what you are doing and hope you figure out, but while you don't, I beleave those pushbacks are too bad to deserve some place in here. TC was vulnerable to these \"packet spoofers\" for all its", "label": "negative"}
+{"id": "gh-01300-741828", "text": "That typo was just crazy!", "label": "negative"}
+{"id": "gh-01307-595491", "text": "i have build crash :( whan add to my core", "label": "negative"}
+{"id": "gh-01319-527829", "text": "Close your mouth stupid Shauren !", "label": "negative"}
+{"id": "gh-01330-439301", "text": "ok, sorry for my reaction, fixed in recent commit", "label": "negative"}
+{"id": "gh-01336-412692", "text": "hate github bugs !", "label": "negative"}
+{"id": "gh-01340-396306", "text": "sorry - its my error. previous comment not deleted with \"There was a problem with your request, please try again\"", "label": "negative"}
+{"id": "gh-01343-336418", "text": "yeah i have that problem too on my server. :\\", "label": "negative"}
+{"id": "gh-01355-4097188", "text": ":heart: thank you!", "label": "positive"}
+{"id": "gh-01364-873620", "text": "God I am awful at this :)", "label": "positive"}
+{"id": "gh-01366-3893673", "text": "It's quite a bad practice to do so :)", "label": "positive"}
+{"id": "gh-01369-3146138", "text": "ahaha :+1:", "label": "positive"}
+{"id": "gh-01370-3892944", "text": "That's a great idea. Would be a way to also solve Diego's issues with context switching.", "label": "positive"}
+{"id": "gh-01375-3990961", "text": "Nice, one less fork!", "label": "positive"}
+{"id": "gh-01377-4151132", "text": "@dmethvin Ok ok :P  ![drclaw](https://f.cloud.github.com/assets/4303/1188033/df33612e-23af-11e3-9e61-a54e04eb02e2.jpg)", "label": "positive"}
+{"id": "gh-01384-1860014", "text": "rofl?", "label": "positive"}
+{"id": "gh-01390-2556734", "text": "Ok, cool. I've passed it along.", "label": "positive"}
+{"id": "gh-01395-3832990", "text": "OH GOD THANK YOU!", "label": "positive"}
+{"id": "gh-01403-2238994", "text": "No, go ahead, I'll have gibson's changes to integrate later on anyway. It'll just remind me of the ajax rewrite days :P", "label": "positive"}
+{"id": "gh-01408-2091033", "text": "Lol, yes of course, that's what I meant :open_mouth:", "label": "positive"}
+{"id": "gh-01423-1035121", "text": "ok, bcs I have old core and some issues after fixing are not closed :) anyway thanks", "label": "positive"}
+{"id": "gh-01429-1035158", "text": "Lol, didn't see that one coming. I'm proud of you, son(s?).", "label": "positive"}
+{"id": "gh-01431-1033035", "text": ":D funny  now uve added it xD", "label": "positive"}
+{"id": "gh-01445-1009778", "text": "@Vincent: I just did.. all good now :)", "label": "positive"}
+{"id": "gh-01452-1010197", "text": "alil late a dollar short, nay .... the moments passed... :D nice language btw... i got over it... so np <3 ;)", "label": "positive"}
+{"id": "gh-01465-842658", "text": "Can we revert it now on master? =)", "label": "positive"}
+{"id": "gh-01487-758063", "text": "+1 This looks super useful!", "label": "positive"}
+{"id": "gh-01492-842550", "text": "@drogus nice! I missed that, thanks :)", "label": "positive"}
+{"id": "gh-01501-1759894", "text": "Thank you so much!", "label": "positive"}
+{"id": "gh-01513-2026256", "text": "FWIW, I requested the ability to test for strict mode compatibility without actually using strict mode: https://github.com/jshint/jshint/issues/504  It was apparently closed 2 months ago with no explanation :-(", "label": "negative"}
+{"id": "gh-01515-1608079", "text": "Yes. Sorry for this. Schmoo asked me about the author and I didn't pay too much attention to the patch itself. I thought it was something else.", "label": "negative"}
+{"id": "gh-01516-1543627", "text": "Yes - my bad. I totally forgot about this SD2 implementation and that we discussed this", "label": "negative"}
+{"id": "gh-01525-1454610", "text": "So... did you bother looking at the follow up commit that fixed this? Less noise please.", "label": "negative"}
+{"id": "gh-01545-1312297", "text": "that seems to do the trick.  ... now some cuke is failing, though :/", "label": "negative"}
+{"id": "gh-01557-1188756", "text": "whoa, weird...", "label": "negative"}
+{"id": "gh-01560-186357", "text": "Poor waypoint ...", "label": "negative"}
+{"id": "gh-01565-165788", "text": "revert this commit fix ^ http://gist.github.com/619376 crash. very strange.", "label": "negative"}
+{"id": "gh-01572-2269995", "text": "The joke about this commit is, that it does not help at all for bug fixing and neither better error handling.", "label": "negative"}
+{"id": "gh-01580-2277208", "text": "Guys, it's over. They do not want to hear your arguments. They will delete posts that come up with examples of where this commit will lead them. And they try to muzzle me because I already busted a gigantic hole through this commit with my artillery (NoVer", "label": "negative"}
+{"id": "gh-01584-2293325", "text": "@goldblattster  please, \"work around\" = bypass or \"work around\" = live with it? locking plugins to versions is simply lame :/", "label": "negative"}
+{"id": "gh-01588-2300956", "text": "@coelho  I'm a bit upset just to see @bergerkiller go, I've used NoLagg for so long...", "label": "negative"}
+{"id": "gh-01593-2311344", "text": "Right now i doubt that this pays off.  Anything you really want to know?", "label": "negative"}
+{"id": "gh-01601-2349632", "text": "Some people still feel the urge to voice their disdain, and I certainly don't blame them.", "label": "negative"}
+{"id": "gh-01610-2181014", "text": "No. We are not adding this. The gains would NOT EVER outweigh the problems caused. You want to try this out? Grab the code and run a custom build, but you lose all support from us in doing so. Even if, for whatever insane reason, you personally DO see some", "label": "negative"}
+{"id": "gh-01615-133012", "text": "I thought you meant 3-bytes, sorry.", "label": "negative"}
+{"id": "gh-01623-105884", "text": "hoooooly crap.", "label": "negative"}
+{"id": "gh-01624-1241316", "text": "Honestly I don't think it could ever be inappropiate. But if it hurts the project, that definitely sucks.", "label": "negative"}
+{"id": "gh-01629-34686", "text": "I majorly dig that. Keeping submodules up to date is a pain.", "label": "negative"}
+{"id": "gh-01634-73589", "text": "yeah okay my bad... disregard last 24hrs of comments", "label": "negative"}
+{"id": "gh-01642-49933", "text": "If you see crash in script code the WHAT HELL this related to core. GO AND FIX script.", "label": "negative"}
+{"id": "gh-01645-49245", "text": "Hardcoded one day is not good solution... Without any dependency...", "label": "negative"}
+{"id": "gh-01646-48548", "text": "not have a database that supports, or the path caused schizo in all NPCs! It is all the time loading waypoint of creatures... =/", "label": "negative"}
+{"id": "gh-01664-3416148", "text": "Ups, my commit, my fault... just set up a new system...", "label": "negative"}
+{"id": "gh-01668-2936090", "text": "I'm the only one who can see some weird stuff at the end of this line? As in 2 extra chars after ;", "label": "negative"}
+{"id": "gh-01669-2868401", "text": "Looks like automatic conversion to me (also the original script author is an idiot)", "label": "negative"}
+{"id": "gh-01675-890466", "text": "Ah crap.  Thanks for pointing this out", "label": "negative"}
+{"id": "gh-01680-1542133", "text": "@ofTheo :( really? this removes the feature of being able to change the style of the grid (e.g. before you could make a white grid if you liked, or change the S,B values of the colour yourself, with this change, it's now completely fixed.", "label": "negative"}
+{"id": "gh-01681-184338", "text": "Unable to delete my comment. asdf...  <b>Ed.</b> yah.. very weird things afoot.", "label": "negative"}
+{"id": "gh-01682-1192547", "text": "is it broken? the commit history looks quite weird.", "label": "negative"}
+{"id": "gh-01696-39400", "text": "spells like mind flay or shadowstep won't work @ hostile targets with this", "label": "negative"}
+{"id": "gh-01713-2399603", "text": "'Tis not a man. 'Tis a remorseless committing machine.", "label": "negative"}
+{"id": "gh-01715-554875", "text": "I was the one who found the memory leak, not @Zeerix. :/", "label": "negative"}
+{"id": "gh-01719-2344839", "text": "Damn... Maybe this is the reason why casting 71203 to all players on the map failed so hard...", "label": "negative"}
+{"id": "gh-01721-278729", "text": "I'm worried that this change will break existing sites with no way to recover the old behavior if they are relying on it. Thoughts?", "label": "negative"}
+{"id": "gh-01745-833201", "text": "Because we are locked in a version of webrat since it has Rails 3.x related bugs. :(", "label": "negative"}
+{"id": "gh-01748-21924", "text": "what about 15   EVENT_T_FRIENDLY_IS_CC ? DispelType masks are still missing in docs:(", "label": "negative"}
+{"id": "gh-01752-107038", "text": "Yes. You will have to change your session key :(", "label": "negative"}
+{"id": "gh-01765-456346", "text": "I kind of want to get rid of all of these... the smileys in particular look worse than ascii smileys.", "label": "negative"}
+{"id": "gh-01770-1578910", "text": "why not convert in aura script :-(", "label": "negative"}
+{"id": "gh-01779-1389540", "text": "one of the WORST looking codes I have ever encountered in oficial TC repository... blah", "label": "negative"}
+{"id": "gh-01780-1373947", "text": "damnit, I hate it when everyone is telling sth else, and i dont play on blizz...", "label": "negative"}
+{"id": "gh-01792-1016976", "text": "Blame on me for that...  Sorry >.<", "label": "negative"}
+{"id": "gh-01794-1016679", "text": "And... when i do weird search and replaces i use to add as comment what i've used to change it, so others can reproduce with custom code.", "label": "negative"}
+{"id": "gh-01795-1010451", "text": "evil fix!", "label": "negative"}
+{"id": "gh-01797-1145530", "text": "There is something weird going on indeed. I managed to get the terrain shape but lighting is very odd.   And even with the original `PlaneGeometry` and standard materials I'm getting some lighting anomalies when poking around. I think there may be some b", "label": "negative"}
+{"id": "gh-01800-314082", "text": "I think this breaks video embedding :\\", "label": "negative"}
+{"id": "gh-01801-311930", "text": "Oooops totally my fault. Yeah, couldnt find pending, ill look into xit and xdescribe once I'm on a computer.", "label": "negative"}
+{"id": "gh-01809-288118", "text": "Awesome thanks for the fast response! Yeah I figured this wasn't the best place, but didn't know any other except Issues which this isn't... :\\", "label": "negative"}
+{"id": "gh-01830-775281", "text": "wtf??", "label": "negative"}
+{"id": "gh-01832-682901", "text": "Bad commit name.. Of course this *prevents* people from gaining fishing skill when wielding fishing pole in offhand slot (titan grip)", "label": "negative"}
+{"id": "gh-01853-549045", "text": "Stop bothering. Aokromes is right about 1st sunday of the month  if calendar ingame is related to DBC, then it's simply wrong implementation. If you are so skilled, fix whole calendar...", "label": "negative"}
+{"id": "gh-01865-181801", "text": "merge commits suck.  sorry about this.  i thought i was up to date, shouldn't have worked on master directly on my local.", "label": "negative"}
+{"id": "gh-01868-444628", "text": "These were 4 separate commits, git rebase (with tortoise git) crashed for me, so i had to merge them into one :(", "label": "negative"}
+{"id": "gh-01872-148269", "text": "AGPL == epic fail. Don’t count on getting all that many contributors.", "label": "negative"}
+{"id": "gh-01876-385130", "text": "quest one :/", "label": "negative"}
+{"id": "gh-01883-253004", "text": "i keep getting segmentation fault o.0 wtf is causing that??", "label": "negative"}
+{"id": "gh-01884-248870", "text": "AH sorry there was a mistake :-( this SQL should be correct ... it does remove some of the dupes, but not all of them: SELECT * FROM character_inventory ci LEFT JOIN item_instance ii ON ci.item=ii.guid WHERE ii.guid IS NULL; and  DELETE ci FROM charact", "label": "negative"}
+{"id": "gh-01886-2378208", "text": "What the fuck. We ported this from a BSD...", "label": "negative"}
+{"id": "gh-01891-474879", "text": "So we can't put file larger than 4GiB in index? Sad.", "label": "negative"}
+{"id": "gh-01892-1838123", "text": "OK this was a stupid 4am commit on my part, I borked the copy + paste fixed this commit and re-ran it: https://github.com/ServiceStack/ServiceStack/commit/d43c62d0167ba8f01bda9ec6ab832bb8d4ec4f2f  Running for 10000 times... MVC Razor took 418ms (1385363 ti", "label": "negative"}
+{"id": "gh-01900-216556", "text": "was this really necessary? I really hate the idea of a additional dependency just because of readability.", "label": "negative"}
+{"id": "gh-01901-804177", "text": "this seems weird as the PEAR convention is a subset of PSR-0 meaning that it is already covered by the beginning of the sentence", "label": "negative"}
+{"id": "gh-01904-376509", "text": "My bad, I wrote that comment a bit to fast, proper comment is at #866.", "label": "negative"}
+{"id": "gh-01933-2133793", "text": "What is the workaround for implication #2? ever since this update, just running `brew upgrade` fails :(", "label": "negative"}
+{"id": "gh-01939-1765592", "text": "Really you shouldn't relink it after, because they install the same binaries. Suggesting it is a bad idea!", "label": "negative"}
+{"id": "gh-01953-883591", "text": "When did we decide to use daemonic = on as default? It has consequences, and I'm not totally convinced of the benefits to have it default on.", "label": "negative"}
+{"id": "gh-01958-3930854", "text": "i will fix it, sorry", "label": "negative"}
+{"id": "gh-01960-3790480", "text": "oops. bad rebase. truly sorry. will fix it. update: correction pushed.", "label": "negative"}
+{"id": "gh-01962-2987296", "text": "I've opened a pr here: #2588. I'm really sorry!", "label": "negative"}
+{"id": "gh-01969-2260856", "text": "Obviously.. Crap..", "label": "negative"}
+{"id": "gh-01971-2045805", "text": "Damn sorry for messing/merging in your area theuni ...", "label": "negative"}
+{"id": "gh-01972-2028572", "text": "ok guys - will revert - sorry for the inconvenience. Any idea when 1646 is being merged?", "label": "negative"}
+{"id": "gh-01988-2646037", "text": "Uh oh. :( Hmmm", "label": "negative"}
+{"id": "gh-01991-1189268", "text": "Ah yes that is weird. Silly c&p error. I'll correct it.", "label": "negative"}
+{"id": "gh-02003-2067904", "text": ":worried:", "label": "negative"}
+{"id": "gh-02006-1873694", "text": "RIP `attr_accessible` :cry:", "label": "negative"}
+{"id": "gh-02015-1529396", "text": "I'm :disappointed: that this shipped along with a critical security fix. I can't apply the patch until this issue is resolved.", "label": "negative"}
+{"id": "gh-02034-4025650", "text": "Yeah I got this fixed on my local copy as well, weird the previous commit would send changes without trying to build first.", "label": "negative"}
+{"id": "gh-02035-422698", "text": "sorry for that", "label": "negative"}
+{"id": "gh-02042-2348546", "text": "no only season 11 no pvp damage gems and its weird on linux the damage is atleast working (lower dmg but its working) but on windows its just keep missing each attack for me :/", "label": "negative"}
+{"id": "gh-02044-2412541", "text": "I'm tired of this sh*t please don't touch it again !", "label": "negative"}
+{"id": "gh-02045-2413764", "text": "Fuuuu ! copy paste fail :'(", "label": "negative"}
+{"id": "gh-02053-1129737", "text": "-1. This just seems like petty stubbornness.", "label": "negative"}
+{"id": "gh-02062-1040375", "text": "Not sure if this is the best way to prove your point :rage:", "label": "negative"}
+{"id": "gh-02067-1040737", "text": "@DouweM I would consider that a proof of concept. Ah, but didn't he post an issue for that?  @abuffy full ack!  I, for one, am very disappointed by github and consider canceling my subscription :( P.S.: And if I do so, I will send him 1 year worth of", "label": "negative"}
+{"id": "gh-02068-1040898", "text": "@homakov is an impatient little fuck who needs to be put to death.", "label": "negative"}
+{"id": "gh-02080-2975932", "text": "For some reason this commit did some really weird things to the diff making it somewhat hard to read.", "label": "negative"}
+{"id": "gh-02082-1377418", "text": "This patch does introduce a huge performance regression for target that don't use COM, it can't be merged like this.", "label": "negative"}
+{"id": "gh-02090-824748", "text": "@jonleighton sorry bro, I should have run the tests before merging this!", "label": "negative"}
+{"id": "gh-02093-3339073", "text": "Ah, never mind, you included the change and then reverted. I was confused :(", "label": "negative"}
+{"id": "gh-02100-2995070", "text": "Oh... Ugly... (that _typeface_js thingie)", "label": "negative"}
+{"id": "gh-02114-1281743", "text": "```diff -m_afFirstNagaCoord +FirstNagaCoord ```  Should be done everywhere. :(", "label": "negative"}
+{"id": "gh-02120-2332221", "text": "Well that's annoying.", "label": "negative"}
+{"id": "gh-02123-569975", "text": "@vijaydev Shit... I miss spelled it. Sorry about that.", "label": "negative"}
+{"id": "gh-02125-574056", "text": "The performance of some Rails 3.1 apps after this was 500ms or more slower :(  `lazy_zones_map` gets called for every `TimeZone#[]` lookup, and if that's doing a `require` every time things get really slow.  https://gist.github.com/1200301  If we're going", "label": "negative"}
+{"id": "gh-02139-830320", "text": "Github's editor bug, sorry :(", "label": "negative"}
+{"id": "gh-02154-1161368", "text": "abused as poor man’s option", "label": "negative"}
+{"id": "gh-02157-1742342", "text": "My bad. Suggestion was only pseudo code. It doesn't handle 'folder creation failed' and returning: true or false.  I meant something like: https://github.com/itofzo/Sick-Beard/commit/247339e45aef0a915b0208c27de8c8621bdc57e0", "label": "negative"}
+{"id": "gh-02163-229963", "text": "Forgot 4 spaces here =/ Damn... how to add them now? =(", "label": "negative"}
+{"id": "gh-02189-1324638", "text": "That's a lot of fixes to my patch, sorry for that.", "label": "negative"}
+{"id": "gh-02191-1323662", "text": "Thx for the suggestion. Thought it might be the perfect place since it's contextual, but now that you mention that I realize I'm probably polluting core members' notifications :\\", "label": "negative"}
+{"id": "gh-02193-276493", "text": "mergefail!  :'(", "label": "negative"}
+{"id": "gh-02198-3696624", "text": "yeah 150 is correct. that 300 is a old lie based form skyfire. they didnt want belive that they are only 150 cuz they parsed over 300 from wowhead... pretty bad idea...", "label": "negative"}
+{"id": "gh-02201-3511782", "text": "Yes, it's my mistake, sorry :S", "label": "negative"}
+{"id": "gh-02207-1322767", "text": "ah right right. js needs first-class mixins :(", "label": "negative"}
+{"id": "gh-02230-123567", "text": "This change at such a late time (just before RC/release) looks scary to me", "label": "negative"}
+{"id": "gh-02231-1315997", "text": "Prints you can't silence are evil :(", "label": "negative"}
+{"id": "gh-02234-94477", "text": "Shoot! Let's get this resolved :(", "label": "negative"}
+{"id": "gh-02235-73809", "text": "Thanks for applying so quickly, I'm a little embarrassed one that slipped by me.", "label": "negative"}
+{"id": "gh-02241-1270475", "text": "sorry ... that one was unneeded ... i do a pr in some mins. i've removed aesinkfactory because we don't use it on osx :(. And everything else why the build was broken for osx i've already done too. But i wasn't at home today. Should have mentioned that bef", "label": "negative"}
+{"id": "gh-02256-663912", "text": "I don't like the idea of this patch, I see no reason for us to be able to change tracking mid run (which this patch allows.) For that matter I'm kindof against the whole idea to change buffering number based on advancedsettings (which I have stated before", "label": "negative"}
+{"id": "gh-02265-487259", "text": "I don't get why time utils was moved into XbmcThreads from CTimeUtils... The old location was much more logical :(", "label": "negative"}
+{"id": "gh-02268-610505", "text": "What is wrong with strncpy? snprintf is possibly vulnerable to format-string attacks.", "label": "negative"}
+{"id": "gh-02272-19939", "text": "I think it's kind of weird that a method named validate_response! actually validates @request... Changing the name to validate_request! would be less confusing.", "label": "negative"}
+{"id": "gh-02284-10134", "text": "yeah. I also liked the way it was.  I think that the default 404 is going to cause the most confusion, It makes me think \"I dont want to return a 404!\", and I'd probably delete it.  Saying that, a magical \"super\" is probably equally as brittle.  A", "label": "negative"}
+{"id": "gh-02287-5491", "text": "Why was this reverted? :(", "label": "negative"}
+{"id": "gh-02290-2838", "text": "Oops like Josh sent to me in a private message, render_file was already deprecated earlier. My bad!", "label": "negative"}
+{"id": "gh-02294-1785", "text": "This kind of makes this commit (http://github.com/rails/rails/commit/888d5059bdb71e6d034d0c09d7e3b3e235fd8507) useless..", "label": "negative"}
+{"id": "gh-02295-1935", "text": "sorry for the bad formatted code...", "label": "negative"}
+{"id": "gh-02300-196", "text": "Most users has winrar installed, which afaik has some command line interface. A bit weird to rely on winrar, though.", "label": "negative"}
+{"id": "gh-02301-2460", "text": "And WOW, how the crap did _that_ happen? Apologies for the double-post. I blame sunspots.", "label": "negative"}
+{"id": "gh-02308-5769", "text": "I don't see any benefit for the community to get involved into this highly controversial issue. The name itself is very political and brings nothing but argument. No one would ever introduce his friends from Taiwan as \"from Taiwan, Province of China\", so w", "label": "negative"}
+{"id": "gh-02332-598837", "text": "Yes, my bad I didn't review it properly.", "label": "negative"}
+{"id": "gh-02339-2398678", "text": "Good point, will update it", "label": "positive"}
+{"id": "gh-02353-1670404", "text": "nice one :)  btw- is there any reason you made this as pull request and then merged with github instead ofdoing a direct push?", "label": "positive"}
+{"id": "gh-02354-1661317", "text": "nice catch :)", "label": "positive"}
+{"id": "gh-02355-1612722", "text": "I thought compilers do this for you :D", "label": "positive"}
+{"id": "gh-02368-1568554", "text": "Hooray for @Ambal's return. Nice to see you man. :)", "label": "positive"}
+{"id": "gh-02370-1568705", "text": "Just passing by :)", "label": "positive"}
+{"id": "gh-02377-2851422", "text": "ok perfect.. then ignore me :)", "label": "positive"}
+{"id": "gh-02382-1447488", "text": "yes :D I hope be soon. Thx for your response and sorry for offtopic xD", "label": "positive"}
+{"id": "gh-02389-1206226", "text": "@Schmoozerd  thx for a fast, good review and your help in develop", "label": "positive"}
+{"id": "gh-02406-916848", "text": "Method of \"trial and error\" - the most efficient in the case of the development of open source. Welcome to the real world :)", "label": "positive"}
+{"id": "gh-02428-613953", "text": "Thank you all for contributing, fixed in 11811", "label": "positive"}
+{"id": "gh-02436-568513", "text": "Congratulations!", "label": "positive"}
+{"id": "gh-02444-1357104", "text": "Awesome.  We can finally remove: https://github.com/jupiterjs/jquerypp/blob/master/dom/dimensions/dimensions.js.  Great job!", "label": "positive"}
+{"id": "gh-02446-1357250", "text": "@justinbmeyer: Yes, and even corrects for whichever box-sizing you're using :-)", "label": "positive"}
+{"id": "gh-02447-1349806", "text": "Yep, I noticed I'd forgotten that when I got back to the ticket. Thanks!", "label": "positive"}
+{"id": "gh-02454-468300", "text": "point for you =)", "label": "positive"}
+{"id": "gh-02458-467985", "text": "That is just amazing. Thank you.", "label": "positive"}
+{"id": "gh-02469-1236178", "text": "Must have been a keyboard spasm on my part. Stray text outside elements in `$()` is ignored which explains why it has no effect. I will clean it up on the next commit in this area. Thanks for keeping an eye open!", "label": "positive"}
+{"id": "gh-02471-1448982", "text": "Cool, it's great to see this headed toward Promises/A!  I think it's gonna become the norm for multiple promise implementations to be in play in any reasonably interesting app.  I found a situation where I believe it still isn't fully compliant, so I creat", "label": "positive"}
+{"id": "gh-02496-731439", "text": "Yes, that is nice. Thanks for the follow through haha.", "label": "positive"}
+{"id": "gh-02535-3831593", "text": "Have  great trip, @yihui .", "label": "positive"}
+{"id": "gh-02540-400902", "text": "i hope the next change will be fixing a bug that aura 269 affects resilience =)", "label": "positive"}
+{"id": "gh-02548-392827", "text": "This is so cool!!! Arcane Missiles spell works great for now ^^", "label": "positive"}
+{"id": "gh-02549-3431309", "text": "Ah, sure. Thanks for explaining and sorry for the noise! :-)", "label": "positive"}
+{"id": "gh-02565-1561494", "text": "Done. :-)", "label": "positive"}
+{"id": "gh-02569-3250091", "text": "Thanks Ben!", "label": "positive"}
+{"id": "gh-02571-3221014", "text": "Exciting improvement.  How do nested spawns work within this framework? I don't think jobs could be nested prior to Windows 8. That's probably really rare, and this truly looks like a net improvement.  LGTM.", "label": "positive"}
+{"id": "gh-02577-366500", "text": "all auction code expected executed in main world thread only, not in map threads. So remark about not safe just lol.", "label": "positive"}
+{"id": "gh-02580-365832", "text": "As I said, probably I am just a consistency-freak...  and for that I am glad that isArrayLike will be considered. :)", "label": "positive"}
+{"id": "gh-02582-366336", "text": "For users, it probably don't have to be mentioned (it's a documentation). For developers there are unit tests (+docs) :)", "label": "positive"}
+{"id": "gh-02585-359156", "text": "Thank you, Neo2003. Nice patch :)", "label": "positive"}
+{"id": "gh-02590-19663", "text": "Have you thought about using libev? I've switched from libevent to libev and been really happy. It's got a compatibility layer during the transition that's at least as fast as libevent is natively. Plus, libev is really reliable in my experience. :-)", "label": "positive"}
+{"id": "gh-02612-338900", "text": "In [11337]. Thank you :)", "label": "positive"}
+{"id": "gh-02617-1664574", "text": "Nice spotting, sir. Thank you!", "label": "positive"}
+{"id": "gh-02624-791514", "text": "I actually found the problem on my end, thanks!", "label": "positive"}
+{"id": "gh-02625-1328360", "text": "Good call on adding the wiki guides. :)", "label": "positive"}
+{"id": "gh-02627-345296", "text": "I am geeking out over the bug and the fix. srsly awesome.", "label": "positive"}
+{"id": "gh-02628-294701", "text": "and more safe. Thanks :)", "label": "positive"}
+{"id": "gh-02647-264168", "text": "wow! great work.", "label": "positive"}
+{"id": "gh-02651-264405", "text": "Nice commit! This will help me for encounters event :)", "label": "positive"}
+{"id": "gh-02653-262709", "text": "Grats on 11111 commits. :)", "label": "positive"}
+{"id": "gh-02655-263006", "text": "Need preserve tradition. ^^ But note: _not_ specially selected ;)", "label": "positive"}
+{"id": "gh-02657-248070", "text": "I wanted to place MANGOS_ASSERT() there to crash some servers and find out how we can get in this case :D", "label": "positive"}
+{"id": "gh-02660-256351", "text": "congrats guys", "label": "positive"}
+{"id": "gh-02671-233522", "text": "this one is nice :) would be good thing to see gossip future binded to world events (gossips appear when spcified event begins).", "label": "positive"}
+{"id": "gh-02675-230188", "text": "Happy new year guys!", "label": "positive"}
+{"id": "gh-02680-228392", "text": ":) without corrects of scriptmgr calls in SD2 library was not load :)", "label": "positive"}
+{"id": "gh-02688-223345", "text": "Gratz Zergtmn! Very good job!", "label": "positive"}
+{"id": "gh-02695-225966", "text": "Methods are fine too -- something to capture that state info would be great either way :)", "label": "positive"}
+{"id": "gh-02696-1030559", "text": "Thanks.. I really need to remember to run mvn clean package before push changes... I own you some beer", "label": "positive"}
+{"id": "gh-02710-3554405", "text": "Will it work with people who run Java 7 like I do? Also Fantastic job on this project! I'm proud to be in a world of developers!", "label": "positive"}
+{"id": "gh-02716-178962", "text": "Ah. Cool deal. Thanks, John!", "label": "positive"}
+{"id": "gh-02717-199029", "text": "wohoo nice:)", "label": "positive"}
+{"id": "gh-02725-2466491", "text": "@tommytomatoe no lolz for anyone on this anymore :tongue:", "label": "positive"}
+{"id": "gh-02726-2465829", "text": "hehe. I was waiting for the loolz. Thanks :-)", "label": "positive"}
+{"id": "gh-02727-2878338", "text": "Nice. Time to start cancelling Lily-pad boat trampling. ^_^", "label": "positive"}
+{"id": "gh-02728-3583878", "text": "I think that would be great! shall we call the color uniform color_uniform ?   Shall i send a PR? - I'd also add  a fix for a typo in matrixStack.getModelViewPorjectionMatrix() if that's ok =)", "label": "positive"}
+{"id": "gh-02736-2868189", "text": "Wonderful :)", "label": "positive"}
+{"id": "gh-02742-2848427", "text": "Also, the renames in all of the scoreboard classes are highly appreciated!", "label": "positive"}
+{"id": "gh-02747-166709", "text": "Yeah - that was related, I just landed a variation of it. Thanks for the catch!", "label": "positive"}
+{"id": "gh-02753-165615", "text": "@jdalton: Although they're far more likely to find them baffling and unnecessary - as the bevvy of tickets in our bug tracker indicates :) The user is expecting it to do nothing in IE - this change handles that particular case (we already do this for heigh", "label": "positive"}
+{"id": "gh-02773-911706", "text": "Sounds good. We definitely don't need the hassle later. Hopefully Holo endures.", "label": "positive"}
+{"id": "gh-02778-2357126", "text": "Thank you sooooo much ;)", "label": "positive"}
+{"id": "gh-02780-2668305", "text": "Love it!", "label": "positive"}
+{"id": "gh-02784-151310", "text": "great update! thanks..", "label": "positive"}
+{"id": "gh-02798-2317884", "text": "AWESOME", "label": "positive"}
+{"id": "gh-02811-4037417", "text": "Haha thanks :heart: My brain is a bit fried at the moment. :)", "label": "positive"}
+{"id": "gh-02823-2268860", "text": "@LB-- We appreciated your comments, and we appreciate the discussion this has spawned.  I did not think you were trolling, and I felt you made some really good points.", "label": "positive"}
+{"id": "gh-02833-2277429", "text": "Thank you so much for clarifying that, @EvilSeph!  I think those changes are really needed.", "label": "positive"}
+{"id": "gh-02836-2280164", "text": "@Tux2 We're working hard on ensuring the concern over waiting for approval is minimized :)  As for compatibility, abstraction is your best friend.", "label": "positive"}
+{"id": "gh-02850-2326803", "text": "It's good to know that this in stone, it'll help people move forward one way or another.", "label": "positive"}
+{"id": "gh-02857-151544", "text": "i understood that after a chat with vladimir :P", "label": "positive"}
+{"id": "gh-02867-2260775", "text": "Excellent!", "label": "positive"}
+{"id": "gh-02871-147139", "text": "I was confused because darkstalker added that to my patch on forum. Thanks for explanation!", "label": "positive"}
+{"id": "gh-02886-45825", "text": "oh, good luck getting paid in that case. hahaha", "label": "positive"}
+{"id": "gh-02891-2071421", "text": "Thanks good job. Although i loved the powerful books :)", "label": "positive"}
+{"id": "gh-02894-1922931", "text": "FINALLY! Great job guys!", "label": "positive"}
+{"id": "gh-02895-2599658", "text": "err, thanks :) i had those packages installed and thought it was detecting available packages. it should be fixed now but if you can double check", "label": "positive"}
+{"id": "gh-02920-120274", "text": "Love the commit message ^^", "label": "positive"}
+{"id": "gh-02923-117384", "text": "If the latest crash problems is about the crash when loading spell_bonus_data, yes it does fix it :)", "label": "positive"}
+{"id": "gh-02934-110537", "text": "Wow! Thanks. Maybe the patch and has no relation to the infinite spawn chests, but he solved it perfectly.", "label": "positive"}
+{"id": "gh-02935-38432", "text": "Nice change! Better performance without arguments.callee plus much easier to debug :)", "label": "positive"}
+{"id": "gh-02957-921067", "text": "Hooray!! Thanks everyone. :)", "label": "positive"}
+{"id": "gh-02961-1961043", "text": "it is perfect. Thanks", "label": "positive"}
+{"id": "gh-02963-96746", "text": "very helpful, thanks! (especially for creature and gameobjects)", "label": "positive"}
+{"id": "gh-02979-86139", "text": "EPIC!!!!!!!", "label": "positive"}
+{"id": "gh-02981-86146", "text": "I give my congratulation. :)", "label": "positive"}
+{"id": "gh-02986-86062", "text": "vehicle working with custom patch :) but in master is nice dream :D", "label": "positive"}
+{"id": "gh-02991-78896", "text": "Very nice work mate. I know of a fair few quests that hold conversations between NPC/player and/or several NPCs. I can see them being a lot easier to do for you guys now. :)", "label": "positive"}
+{"id": "gh-02993-78383", "text": "Thank you very much for explaining Laise...this will be helpfull in the future ;-)", "label": "positive"}
+{"id": "gh-02999-71232", "text": "I get it.. so you are saying that killing the caster wont immediately stop his DoT's from running thier course... right? sounds good to me!   also, wanted to welcome laise... your work is amazing bud!", "label": "positive"}
+{"id": "gh-03000-71725", "text": "ok, thx for taking the time to answer ;) great work!", "label": "positive"}
+{"id": "gh-03033-49898", "text": "thanks!! we need a lot of more crash fixes!", "label": "positive"}
+{"id": "gh-03042-46023", "text": "now just need db support and vehicle working and more (scriptdev  aswell);)  btw nice work", "label": "positive"}
+{"id": "gh-03046-44524", "text": "By looking at the code, it seems so. Wonderful indeed.", "label": "positive"}
+{"id": "gh-03049-41459", "text": "Nice work all!  I noticed you programmed in the new ticket system for 3.3, but is that a placeholder, or does it actually work? Because I'd love to see surveys and GM responses actually work.", "label": "positive"}
+{"id": "gh-03056-3987565", "text": "That was well worth reading every comment. Thanks for making my day, that was great.", "label": "positive"}
+{"id": "gh-03067-3838760", "text": "@Vincent-Michael You're the best!", "label": "positive"}
+{"id": "gh-03068-3844782", "text": "Now this one would be perfect :) https://github.com/TrinityCore/TrinityCore/issues/493", "label": "positive"}
+{"id": "gh-03073-3807240", "text": "Lmao", "label": "positive"}
+{"id": "gh-03074-493908", "text": "Haha - I'm going to need to hire a proofreader for my commit messages.", "label": "positive"}
+{"id": "gh-03079-3573171", "text": "Yay for improving consistency, +1", "label": "positive"}
+{"id": "gh-03080-3544063", "text": "well great googly moogly", "label": "positive"}
+{"id": "gh-03093-3241151", "text": "Solved, thanks again ;)", "label": "positive"}
+{"id": "gh-03099-2811814", "text": "awesome warpten very good job :) thanks for testing before releasing :+1:", "label": "positive"}
+{"id": "gh-03106-2716840", "text": "OMG, this is great one.", "label": "positive"}
+{"id": "gh-03107-2721548", "text": "Im glad someone finally did something about this instance. Many thanks to Trista and fellas!", "label": "positive"}
+{"id": "gh-03118-1061201", "text": "thanks!", "label": "positive"}
+{"id": "gh-03120-692864", "text": "I'm just greedy -- could you please fix the link of the HTML file as well? it should be `.Rhtml` now; and also `.Rtex` below  thanks :smile:", "label": "positive"}
+{"id": "gh-03125-974400", "text": "If you add `TODO:` in the comment, many code editors will show it in an overview. Might be useful, and more clear to readers that it isn't just commented out code (otherwise, someone that doesn't know might remove it).", "label": "neutral"}
+{"id": "gh-03131-6224542", "text": "I agree about that in that case. But i'm talking about the patch in general. There are several places where you replace a disabled state with a timed out state.", "label": "neutral"}
+{"id": "gh-03142-2602467", "text": "Am 10.01.2013 01:10, schrieb Lars Op den Kamp: > In xbmc/pvr/PVRDatabase.cpp: > >> @@ -609,8 +609,8 @@ bool CPVRDatabase::RemoveStaleChannelsFromGroup(const CPVRChannelGroup &group) >>    if (!group.IsInternalGroup()) >>    { >>      /* First remove chann", "label": "neutral"}
+{"id": "gh-03146-5910736", "text": "Word.", "label": "neutral"}
+{"id": "gh-03152-2785417", "text": "Leaking interfaces?", "label": "neutral"}
+{"id": "gh-03153-2786590", "text": "Style: Long line. Wrap at 80 characters max. I believe I pointed that out last night too. :-/", "label": "negative"}
+{"id": "gh-03156-3383589", "text": "Style: split declaration and assignment.", "label": "neutral"}
+{"id": "gh-03174-4425396", "text": "Btw the catch(Exception ex) will throw up in code analysis.", "label": "neutral"}
+{"id": "gh-03178-4099562", "text": "We use named parameters when passing null or any boolean values.", "label": "neutral"}
+{"id": "gh-03179-4099634", "text": "same as above", "label": "neutral"}
+{"id": "gh-03181-4086621", "text": "Finally", "label": "positive"}
+{"id": "gh-03182-3986877", "text": "the default name should be changed to something more intuitive", "label": "neutral"}
+{"id": "gh-03188-3824432", "text": "Add new line before this to separate variable declarations.  Makes looking at it less confusing.", "label": "neutral"}
+{"id": "gh-03199-3115901", "text": "curious why this was commented out?", "label": "neutral"}
+{"id": "gh-03207-4497542", "text": "This is Rating (unk1)", "label": "neutral"}
+{"id": "gh-03227-51389", "text": "Not sure why the additional threadpool bits are necessary? If you call listener.BeginGetContext straight after EndGetContext, then just run nancy, then that should handle multiple requests fine, without an unnecessary queueuserworkitem?", "label": "neutral"}
+{"id": "gh-03234-5699444", "text": "What happens if the player has multiple bows? Or the bow they are shooting with has enchantments? Does this still work as expected?", "label": "negative"}
+{"id": "gh-03239-1506180", "text": "Yeah. or the other version - restore the nutriton to the old one again.", "label": "neutral"}
+{"id": "gh-03264-5516731", "text": "`_cast` again, also `*` to the left to follow the rest of the docs. anywhere else applicable.", "label": "neutral"}
+{"id": "gh-03271-4833785", "text": "else is not necessary here.", "label": "neutral"}
+{"id": "gh-03276-2871592", "text": ">>This seems disastrous.  >makes me nervious, i don't want to be the guy who breaks stuff, if we go with your solution – it would definitely will not break anything, if we go with mine – it would definitely will, affected amount of code can be relativel", "label": "negative"}
+{"id": "gh-03277-4082777", "text": "why run `data_size = str->Utf8Length()`, just to check for ascii and run it again?", "label": "neutral"}
+{"id": "gh-03281-2282776", "text": "The hard numbers are masked by rounding, but http://jsperf.com/jquery-fragcache shows a ~7% speed improvement from the cache on IE6-7, no significant difference on IE8-9 and Chromium 20, and ~13% on Firefox 17 (not that we really care on newer browsers).", "label": "neutral"}
+{"id": "gh-03284-1557818", "text": "There should be coverage for all manip methods", "label": "neutral"}
+{"id": "gh-03299-705845", "text": "testing", "label": "neutral"}
+{"id": "gh-03305-1999045", "text": "Style: we use license boilerplate like this:  ```c++ // Copyright Joyent, Inc. and other Node contributors. // // Permission is hereby granted, free of charge, to any person obtaining a // copy of this software and associated documentation files (th", "label": "neutral"}
+{"id": "gh-03309-128681", "text": "Should cache `jQuery.support.elementTraversing` to a var locally", "label": "neutral"}
+{"id": "gh-03312-54504", "text": "The style guide actually says to put these at the top: http://docs.jquery.com/JQuery_Core_Style_Guidelines#Assignment", "label": "neutral"}
+{"id": "gh-03314-23696", "text": "However, I'm not sure this is the way to fix it.  My guess is this would be a noticeable performance decrease in selections and manipulation.  This is my main concern.", "label": "negative"}
+{"id": "gh-03316-41446", "text": "It will, if developers choose to throttle the animation mechanism jQuery.fx.throttle = 2 // animation will run at a maximum of 30fps", "label": "neutral"}
+{"id": "gh-03317-20371", "text": "I have updated this test to include a test count as it would \"pass\" as no test would run. Should i add a separate pull request for this? Or you happy to just include it with the next push?", "label": "neutral"}
+{"id": "gh-03323-306793", "text": "Good catch", "label": "positive"}
+{"id": "gh-03327-165487", "text": "Should this be initialized with scale(200)? I believe the default d3.geo.zoom scale is 500.", "label": "neutral"}
+{"id": "gh-03329-39836", "text": "I think we need to wrap the input data so that we store the result on invoking the value accessor. This way, you can have a non-deterministic value accessor (such as returning a random number). Also, this way we don't overwrite any fields in the current d", "label": "neutral"}
+{"id": "gh-03353-6334365", "text": "Missing capital letter for the first word and missing dot at the end.", "label": "neutral"}
+{"id": "gh-03372-3463410", "text": "@bamarni Registering an error handler in the kernel constructor is causing issues, as it is registered several times if you instantiate it several times.", "label": "neutral"}
+{"id": "gh-03389-2147491", "text": "please replace `and` by `&&`", "label": "neutral"}
+{"id": "gh-03390-2075736", "text": "You don't need to use them. Still better then now, or? Maybe you should go into detail whether you agree with this PR in general.", "label": "neutral"}
+{"id": "gh-03404-1225478", "text": "you should not extend collectionType. This is not how the form type hierarchy works", "label": "neutral"}
+{"id": "gh-03405-1607148", "text": "This bit of code used to be up in the driver() call, but was moved down here in #353 to support loading driver libraries with library(). With this change, that check to include the driver base classes needed to move a little deeper into _ci_load_class() f", "label": "neutral"}
+{"id": "gh-03412-685001", "text": "line endings: http://help.github.com/line-endings/", "label": "neutral"}
+{"id": "gh-03421-608837", "text": "Done.", "label": "neutral"}
+{"id": "gh-03431-3858967", "text": "The BC break is necessary since it is currently not working properly :worried:", "label": "negative"}
+{"id": "gh-03461-142442", "text": "yes, the phpdoc must be fixed and the `array` type hint removed.", "label": "neutral"}
+{"id": "gh-03474-3216023", "text": "I'm not familiar with Zend ServiceManager, so if using $requestName is enough to define form section I can remove redundant code.", "label": "neutral"}
+{"id": "gh-03492-6162115", "text": "did you mean to use this somewhere?", "label": "neutral"}
+{"id": "gh-03516-22865", "text": "should probably read: `@return ExtensionInterface|null The default extension or null if no extension should be loaded automatically`", "label": "neutral"}
+{"id": "gh-03527-17042", "text": "You 're right i 'll fix it", "label": "neutral"}
+{"id": "gh-03530-952752", "text": "Interchanges *class-based* and *class based* (side note: Does this warrant a distinct note in the Django specific terminology for documentation?)", "label": "neutral"}
+{"id": "gh-03541-1476965", "text": "Field with initial underscore _paginator", "label": "neutral"}
+{"id": "gh-03547-1413111", "text": "Aren't we generally using dashes (-) as space equivalent in file names in ZF?", "label": "neutral"}
+{"id": "gh-03548-1219750", "text": "This has moved to the zf2-documentation repo.", "label": "neutral"}
+{"id": "gh-03550-1194789", "text": "Sort this constants with the old first", "label": "neutral"}
+{"id": "gh-03553-1186713", "text": "Right, fixed.", "label": "neutral"}
+{"id": "gh-03559-1077780", "text": "A constructor always return a class instance", "label": "neutral"}
+{"id": "gh-03594-5568129", "text": "I agree, but there are a lot of very long lines throughout the file - if hard-wrapping is the right thing to do I think it should be separate from any content change", "label": "neutral"}
+{"id": "gh-03597-1000584", "text": "this should probably be a ``DeprecationWarning``. The feature is already deprecated in 2.3, and will be killed in 2.4, so in accordance with Django's deprecation policy, we should warn loudly in 2.3.", "label": "neutral"}
+{"id": "gh-03598-5059456", "text": "Do not need to use full URI, just add `/`: `/upgrading_ruby_on_rails.html#upgrading-from-rails-3-2-to-rails-4-0`. Also may you split line to multilines to have 80 width.", "label": "neutral"}
+{"id": "gh-03607-15075", "text": "well since it's an undocumented feature, I'd say break it. To do it like Django does ;-)", "label": "positive"}
+{"id": "gh-03612-5940658", "text": "I don't think we need this comment.", "label": "neutral"}
+{"id": "gh-03623-5830575", "text": "These can be `(buildpath/'srcdir').install %w( config driver mk tests timeout)`", "label": "neutral"}
+{"id": "gh-03635-1861193", "text": "That's better, thanks!", "label": "positive"}
+{"id": "gh-03643-5428522", "text": "It looks to me like \"Your session expired.\" and \"Please sign in again to continue.\" are independent clauses, so it is, in fact, incorrect to combine them into one sentence with only a comma.  Other correct ways of writing it are: Your session expired;", "label": "neutral"}
+{"id": "gh-03646-901338", "text": "This is not going to work. The module is included before the configuration options are applied.", "label": "neutral"}
+{"id": "gh-03650-2023968", "text": "1. maybe admin_users_path 2. too long string with condition at the end. Please make it more readable", "label": "neutral"}
+{"id": "gh-03652-1815732", "text": "please fix indentation", "label": "neutral"}
+{"id": "gh-03661-749675", "text": "This means we are modifying the original options, no?", "label": "neutral"}
+{"id": "gh-03666-349277", "text": "Instead of create match objects, could not use the `!~` operator?", "label": "neutral"}
+{"id": "gh-03676-314186", "text": "I think it would be too hard to put all this information in the banner. We should document it in the USAGE though. Now that we use {} for extra information, we could even change the banner to: `field[:type][:index] field[:type][:index]` and put the remain", "label": "neutral"}
+{"id": "gh-03685-4364142", "text": "There is no way for us to know the root of your Octopress directory, as `lib/` will be distributed as a gem, much like `jekyll`. Do you know of a better way to find this directory?  As you can see from the diff, this used to be an absolute directory rel", "label": "neutral"}
+{"id": "gh-03700-298449", "text": "But Makefile.in is only regenerated by automake, no?  This should use `inreplace` rather than sed, e.g.  ```ruby inreplace 'Makefile.in', /<regex>/, '' ```", "label": "neutral"}
+{"id": "gh-03713-146261", "text": "I tried both. The parallel one failed. But, I didn't look into what exactly was causing the failure though.", "label": "neutral"}
+{"id": "gh-03717-4496403", "text": "sounds great", "label": "positive"}
+{"id": "gh-03722-4183728", "text": "I'd probably prefer a simple if:      val interval = routeeProvider.settings.retryLookupInterval     if (interval.isFinite) // Retries enabled        retryTask = Some(context.system.scheduler.schedule(interval, interval, self, RetryTick)(context.dispa", "label": "neutral"}
+{"id": "gh-03724-4132857", "text": "ChannelRegistry and ChannelRegistration needs some scaladoc/comments about expected behavior", "label": "neutral"}
+{"id": "gh-03738-3689927", "text": "I think you are right, I will change to `<code>` http://stackoverflow.com/questions/14537311/tt-vs-code-elements-when-writing-java-docs", "label": "positive"}
+{"id": "gh-03741-3447843", "text": "Lol :)", "label": "positive"}
+{"id": "gh-03749-2940316", "text": "if the manager always is the parent you don't need the constructor parameter, but that is perhaps not the case", "label": "neutral"}
+{"id": "gh-03775-1715770", "text": "yes, that would feel better, they are triggered by these watches, right?      systemGuardian.sendSystemMessage(Watch(guardian, systemGuardian))     rootGuardian.sendSystemMessage(Watch(systemGuardian, rootGuardian))  there is some initialization order to", "label": "neutral"}
+{"id": "gh-03776-1658649", "text": "Yes of course.  Whatever happened to `|blaha|` substitution in these blocks? The Akka version should be a replacement string.", "label": "neutral"}
+{"id": "gh-03779-1779093", "text": "What does that mean?", "label": "neutral"}
+{"id": "gh-03782-508287", "text": "John pointed out that the keySet is a mutable view, so it is automatically refreshed from ZK.", "label": "neutral"}
+{"id": "gh-03785-1561074", "text": "yes that could be hard :)", "label": "positive"}
+{"id": "gh-03792-1542680", "text": "awesome documentation in here!", "label": "positive"}
+{"id": "gh-03813-896495", "text": "See comment on ```ByteArrayIterator```.", "label": "neutral"}
+{"id": "gh-03824-597622", "text": "Ok, no problem. Just out of curiosity: why are Symbols a bad thing here?", "label": "neutral"}
+{"id": "gh-03835-427299", "text": "maybe mention which thing is changed, `m.copy(name = …)`", "label": "neutral"}
+{"id": "gh-03840-392986", "text": "I don’t know, I just copied your code into a new file …", "label": "neutral"}
+{"id": "gh-03851-342686", "text": "So you cannot share the same RouterConfig between multiple Actors?", "label": "neutral"}
+{"id": "gh-03857-309889", "text": "changed to id", "label": "neutral"}
+{"id": "gh-03860-284725", "text": "final class?", "label": "neutral"}
+{"id": "gh-03888-4952985", "text": "`... together with flags that have a direct equivalent in Scala code`?", "label": "neutral"}
+{"id": "gh-03891-4367864", "text": "Indeed, I didn't really seek out the \"second order simplifications\" which this must have enabled in pattern matches.", "label": "neutral"}
+{"id": "gh-03905-2596721", "text": "could we change this (and `inAny` / `inAll`) into vararg methods?      def inNone(x: Mode, xs: Mode*) = this & (xs :\\ x)(_ | _) == NoMode", "label": "neutral"}
+{"id": "gh-03906-2517020", "text": "Yes, readability suffers somewhat. On the plus side, shorter methods are favored by the JIT compiler. In fact, that was a consideration that led to Range.validateRangeBoundaries, but on closer inspection it brought its own disadvantages (basically, making", "label": "neutral"}
+{"id": "gh-03916-1584645", "text": "It seems that `time` is in fact required to be a `FiniteDuration`, because e.g. `isOverdue` fails if `time` is not a `FiniteDuration`; if so, this should be checked statically by making `time`'s type `FiniteDuration`. Consequently, you'd have to move `fro", "label": "neutral"}
+{"id": "gh-03919-1233272", "text": "it's okay to leave this for a future commit, but it would be great to restructure this method so we don't need these returns", "label": "positive"}
+{"id": "gh-03924-6397158", "text": "Can you tell xcodebuild to build to a different directory? This should get built within the `buildpath`.", "label": "neutral"}
+{"id": "gh-03934-2673012", "text": "hmm, not so sure it would actually help; I’d leave this in as a marker for potential benchmarking sessions, though", "label": "neutral"}
+{"id": "gh-03940-2262205", "text": "Yes, but it is only called on each node when it joins or leaves the cluster.", "label": "neutral"}
+{"id": "gh-03941-1675602", "text": "Document as internal.", "label": "neutral"}
+{"id": "gh-03946-5321014", "text": "Do not chain  bang (`!`) methods. I don't now it for sure in ActiveSupport/Rails, but stdlib behaviour is to return nil if there are no changes made.", "label": "neutral"}
+{"id": "gh-03954-6117736", "text": "@jacknagel Got it. But for reinstall to reuse this code, install_formula should really pass on this exception, so I'm planning to put the catch part in the block from install in next commit.", "label": "neutral"}
+{"id": "gh-03955-6024284", "text": "No, I am going to write the creator about this though, and will update the formula if they agree.", "label": "neutral"}
+{"id": "gh-03956-5981072", "text": "This is already pretty early (before anything gets downloaded). I moved it immediately after the requirements checks, but all that means is it doesn't print the `Installing foo` header. Also changed the message to \"Unrecognized architecture for --bottle-a", "label": "neutral"}
+{"id": "gh-03963-1631383", "text": "Client::enableProfiler() with profiler existing profiler service is removed from the container Client::request() -> fatal error, although it should just continue without profiling", "label": "neutral"}
+{"id": "gh-03972-75712", "text": "It's not much, but there is http://edgeguides.rubyonrails.org/contributing_to_ruby_on_rails.html#follow-the-coding-conventions", "label": "neutral"}
+{"id": "gh-03974-6502779", "text": "Also avoids taking the lock.  We can spare the 4 bytes :)", "label": "positive"}
+{"id": "gh-03988-6779808", "text": "So this loads docvalues? and touched the terms, termsenum, tv etc?", "label": "neutral"}
+{"id": "gh-03995-6589021", "text": "Why are we renaming these functions? If we stick the original func name, we will have less code to worry about. No?", "label": "neutral"}
+{"id": "gh-03999-3026080", "text": "(NoAck(null) eq NoAck) must be === true", "label": "neutral"}
+{"id": "gh-04022-6498737", "text": "callbacks\"", "label": "neutral"}
+{"id": "gh-04023-1518766", "text": "No as some of the more global checks are overridden by some of the more local checks, this is on purpose.", "label": "neutral"}
+{"id": "gh-04030-3795536", "text": "No need for the extra line.", "label": "neutral"}
+{"id": "gh-04043-3686444", "text": "We had a solution (ffmpeg event) but unfortunately this part was not accepted upstream. Michael said that it would break some other functionality. Comparing new and old state is the only idea I have so far.", "label": "negative"}
+{"id": "gh-04048-5270585", "text": "the else if must be in its own line, add a linebreak after the }", "label": "neutral"}
+{"id": "gh-04052-5235172", "text": "sure.", "label": "neutral"}
+{"id": "gh-04058-1613924", "text": "I agree. It should never get called given the rest of the code so there's not much point in it being there.", "label": "neutral"}
+{"id": "gh-04065-5640085", "text": "I'm not quite sure what \"context\" you're referring too here. If you're talking about a template context, you're overly specific. `cached_property` is also usable and useful outside of templates contexts.", "label": "neutral"}
+{"id": "gh-04069-6573082", "text": "remove newline", "label": "neutral"}
+{"id": "gh-04075-6778937", "text": "You could lose this log if you want (just make the log below start with \"Loading items:\")", "label": "neutral"}
+{"id": "gh-04079-438544", "text": "I don't think that tabs can occur there, also there should be at least one space, correct? Then I'd do: [ ]+", "label": "neutral"}
+{"id": "gh-04080-2137986", "text": "Doesn't this belong to the other `WithBackendTest`?", "label": "neutral"}
+{"id": "gh-04088-6567018", "text": "I see... looks like an old PHP version issue (early 5.3 versions)", "label": "neutral"}
+{"id": "gh-04091-2215712", "text": "Would adding libelf as a dependency be a cleaner way to provide this header?", "label": "neutral"}
+{"id": "gh-04104-4424871", "text": "Also, I'm not sure how I feel about this being within the ServiceBusMessageBus class, feels more like a ServiceBusConnection function.  However it is this way in other scaleout providers :(", "label": "negative"}
+{"id": "gh-04119-4338837", "text": "Yeah... I don't like this either but too many tools are failing at the moment so we have to sort-of monkey-patch them.", "label": "negative"}
+{"id": "gh-04146-6101204", "text": ":(", "label": "negative"}
+{"id": "gh-04150-5829535", "text": "I'm glad I'm not the only person who hates Cache::set(). That method is all sorts of silly. I'm on board for removing it if others are. It adds a pile of complexity to Cache for almost no benefit other than making the calling code more complicated as well", "label": "negative"}
+{"id": "gh-04153-3788818", "text": "I too dislike having huge lists in classes and the memory overhead. Can't we come up with a better way to avoid the extra memory cost for those who don't need this feature by having the list load conditionally from a config file and/or through `Configure:", "label": "negative"}
+{"id": "gh-04156-87390", "text": "oh yeah just realized it sorry, I will PR again", "label": "negative"}
+{"id": "gh-04157-1518476", "text": "Ah, true. I forgot about that. Browsers... :(", "label": "negative"}
+{"id": "gh-04172-312604", "text": "Gah. I'm an idiot. I undid this particular change in subsequent commits. In case it's not painfully obvious, I'm still figuring out git.", "label": "negative"}
+{"id": "gh-04177-6314564", "text": "Oops forgot indentation :(", "label": "negative"}
+{"id": "gh-04190-897815", "text": "OK, but I just discovered the built binaries this way behave differently. :( Seems like further investigation is needed.", "label": "negative"}
+{"id": "gh-04205-5004340", "text": "I still prefer RAII. Make the compiler do the work of making it leak proof. Safer *and* more convenient.", "label": "positive"}
+{"id": "gh-04212-3685878", "text": "Can you indent these and the 2 below with the above line :)?", "label": "positive"}
+{"id": "gh-04223-775694", "text": "Didn't know that, but I think the names are more speaking than a simple -1 :), look how we guessed what that -1 means here. Would not have happend if we used the error codes.", "label": "positive"}
+{"id": "gh-04224-2666920", "text": "Wrong fork. :-)", "label": "positive"}
+{"id": "gh-04230-6294676", "text": "No, it's not architecture, it's CPU family. In log we get \"x86 64-bit\". I think it's better than \"x86_64 64-bit\" :)", "label": "positive"}
+{"id": "gh-04231-6264884", "text": "sure, sure :)", "label": "positive"}
+{"id": "gh-04235-4110921", "text": "Hehe, yeah looks good.", "label": "positive"}
+{"id": "gh-04239-5306443", "text": "Excellent, thanks.", "label": "positive"}
+{"id": "gh-04242-5118946", "text": "Oh, understood :) I think you're right, swapping buffers around won't make this cleaner.", "label": "positive"}
+{"id": "gh-04243-2934141", "text": "I like what I'm seeing here, :+1:", "label": "positive"}
+{"id": "gh-04245-5095934", "text": "Nice! That actually makes it much more readable, thanks!", "label": "positive"}
+{"id": "gh-04249-5826392", "text": "What a *lovely* addition. Mind boggling we didn't have this before.", "label": "positive"}
+{"id": "gh-04251-5657018", "text": "Oooh, I really like your second suggestion. Stay tuned.", "label": "positive"}
+{"id": "gh-04264-5529226", "text": "I can't find an rb_reg_new_str in the C API anywhere. :cry:", "label": "negative"}
+{"id": "gh-04274-1581568", "text": "Actually, this is really an accident. I'm sure I fixed this because it was wrapping in my editor and saved it without thinking, but I would generally never include a change just to alter indentation. Sorry!", "label": "negative"}
+{"id": "gh-04277-330954", "text": "Argh! My bad. Thanks for having spotted this.  BTW, why commenting out the code instead of removing it?", "label": "negative"}
+{"id": "gh-04301-5335467", "text": "oh I see sorry I understand wrong the documentation i'll fix it now", "label": "negative"}
+{"id": "gh-04304-5409993", "text": "The indentation here is weird. It's not aligned with the rest of the code.", "label": "negative"}
+{"id": "gh-04309-3524596", "text": "I'll move it to a new pull request... but when you merge a pull request all the commits get squished anyways... it's effectively like just moving this it's own commit.", "label": "negative"}
+{"id": "gh-04314-1222306", "text": "Shame on me. You are absolutely right. I reworked the commit according to your comments.", "label": "negative"}
+{"id": "gh-04331-1945505", "text": "Doh!  ![facepalm](http://i.imgur.com/jF5ib.gif)  Now I'm understanding @dmethvin's remark about global settings being a bad idea. Ok. I'm walking out the door. I can look at refactoring this later.", "label": "negative"}
+{"id": "gh-04332-1863969", "text": "regex abuse.  just do: `process.platform.match === \"win32\"`  also excessive parens", "label": "negative"}
+{"id": "gh-04340-642776", "text": "But this adds a call to the stack for poorly performing browsers :\\   I'm thinking the net win in your other PR affords you a few bytes if you need them", "label": "negative"}
+{"id": "gh-04343-2292031", "text": "Well, lets do it this way then `options.fd !== undefined ? ... : ...`. I really dislike `in` keyword.", "label": "negative"}
+{"id": "gh-04359-3873384", "text": "@bschussek sorry, i'm still confused. Is it `$string.$string2` or `$string . $string2`?", "label": "negative"}
+{"id": "gh-04365-3762173", "text": "hmm, actually, we already have 1 compiler pass using a different namespace than in bundles :(", "label": "negative"}
+{"id": "gh-04369-3371412", "text": "This looks weird to me. Adding the tag when it does not have the translator ?", "label": "negative"}
+{"id": "gh-04370-2507857", "text": "hmm, indeed, sorry.", "label": "negative"}
+{"id": "gh-04378-956170", "text": "why closing the PHP tag and opening again just after ? It seems weird", "label": "negative"}
+{"id": "gh-04405-44389", "text": "the naming of these 2 services is weird. The first one uses the extractors but the second one is not an extractor. It uses loaders", "label": "negative"}
+{"id": "gh-04410-3127287", "text": "This points to something weird: if I do `dumpdata --pks 2,3,4 app` I'll get _any_ object of any type with PKs of 2, 3, or 4. That's... weird. I think a better approach would be to make `--pks` only work if you've specified a _single_ model. So `dumpdata -", "label": "negative"}
+{"id": "gh-04414-2003397", "text": "Ohh, I didn't realise this. Sorry my bad - I will amend now.", "label": "negative"}
+{"id": "gh-04424-54071", "text": "Yeah, that's right. My bad. Commit 788a7e4 corrects this issue.", "label": "negative"}
+{"id": "gh-04440-3784743", "text": "@pixeltrix ah yes my bad, haven't thought of this", "label": "negative"}
+{"id": "gh-04448-4186097", "text": "I'm no native speaker but the last part feels odd: \"and are working to keep..\"", "label": "negative"}
+{"id": "gh-04476-3088537", "text": "I must agree. My bad. Will fix.", "label": "negative"}
+{"id": "gh-04484-283419", "text": "Oh crap, sorry about that. Let me fix it up quickly.", "label": "negative"}
+{"id": "gh-04493-4273883", "text": "sorry, I was confused: should have looked at some more context around the diff", "label": "negative"}
+{"id": "gh-04500-3906831", "text": "I find this confusing, if identifyRequest is Some, you're both going to reply AND DeadLetter???", "label": "negative"}
+{"id": "gh-04501-3862678", "text": "I don't like this. This is run for every actor and is going to generate a lot of garbage.", "label": "negative"}
+{"id": "gh-04505-3596649", "text": "This is wrong! The previous was a plain ask, i.e. reacting to a reply. gracefulStop reacts only to termination and not to a reply.", "label": "negative"}
+{"id": "gh-04509-129928", "text": "My bad, it's gone now", "label": "negative"}
+{"id": "gh-04519-2145130", "text": "PlEASE STOP SENDING ME EMAILS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  Best Regards, Alicia Harrison Marketing Manager PH 310-669-8800 Palos Verdes Footwear, INC Volatile,Very Volatile,Volatile Kids,Volatile Kicks, Volatile Handbags,S", "label": "negative"}
+{"id": "gh-04529-1622521", "text": "If removed, all of the metrics multi-jvm tests fail because clusterView.clusterMetrics.size is always 0. So if we don't want it enabled yet then another test strategy is needed :(", "label": "negative"}
+{"id": "gh-04534-1583929", "text": "yes, my bad", "label": "negative"}
+{"id": "gh-04554-852747", "text": "and that wasn't caught by tests? scary", "label": "negative"}
+{"id": "gh-04560-506662", "text": "Because I'm stupid. Fixed.", "label": "negative"}
+{"id": "gh-04561-434677", "text": "Yeah, I’m feeling so BAD today.", "label": "negative"}
+{"id": "gh-04573-5337788", "text": ":\\ Maybe Retry should operate over Future[T] so it can respond to errors accordingly? Can use  ``` future.transform {   case Return(r) => r   case Throw(t) => // log the error and try again }", "label": "negative"}
+{"id": "gh-04576-6343876", "text": "Still intended? I'm a bit dizzy after all the iterations.", "label": "negative"}
+{"id": "gh-04594-5698730", "text": "Right you are! Fixed!", "label": "positive"}
+{"id": "gh-04603-3744703", "text": "So much better. Why do you put up with me? :grin:", "label": "positive"}
+{"id": "gh-04604-3745003", "text": "By the way, I was going to suggest `PTHREAD_MUTEX_RECURSIVE` but then I read http://www.zaval.org/resources/library/butenhof1.html and realized that was just a lazy suggestion. :grinning: (That's a pretty fun read, though.)", "label": "positive"}
+{"id": "gh-04608-4029844", "text": "@vmg you know I love the picking of nits.  They have been moved.", "label": "positive"}
+{"id": "gh-04625-932420", "text": "Jeez Russ, great points as always. I've encountered this problem in the past; now I remember why we cannot export a function that returns a `git_tree_entry`.  We need to work around this. Put your thinking cap, @arrbee... How about pooling the memory for", "label": "positive"}
+{"id": "gh-04630-505392", "text": "These are the same as Ruby's. Awesome!", "label": "positive"}
+{"id": "gh-04638-5081787", "text": "I like that idea even though it has nothing to do with this bug :smile:", "label": "positive"}
+{"id": "gh-04640-685025", "text": "Nice catch. Leftover from the evolved development :)", "label": "positive"}
+{"id": "gh-04652-3921273", "text": "Tho it makes the trace look nice :smile: . Keep this one.", "label": "positive"}
+{"id": "gh-04671-2473671", "text": "Some comments in here would be awesome", "label": "positive"}
+{"id": "gh-04674-2331136", "text": "I changed it after re-looking over it =)", "label": "positive"}
+{"id": "gh-04677-1896396", "text": "Glad you fixed it", "label": "positive"}
+{"id": "gh-04696-241057", "text": "Try fix Gargoyle, and Ill take a screen :D", "label": "positive"}
+{"id": "gh-04697-139548", "text": ":) np", "label": "positive"}
+{"id": "gh-04707-3466408", "text": "Who knows :) Will change.", "label": "positive"}
+{"id": "gh-04710-2514671", "text": "I think this was the only comment you skipped =)", "label": "positive"}
+{"id": "gh-04712-2379361", "text": "some xml comments in here would be good :P", "label": "positive"}
+{"id": "gh-04720-1810292", "text": "I learned something new in clojure core.  that hasn't happened for a while :)", "label": "positive"}
+{"id": "gh-04727-4153660", "text": "Ah, good. Okay, leave it as is.", "label": "positive"}
+{"id": "gh-04734-5903991", "text": "I see ok :)", "label": "positive"}
+{"id": "gh-04746-2460689", "text": "good idea :)", "label": "positive"}
+{"id": "gh-04749-2162944", "text": "yes it is :)", "label": "positive"}
+{"id": "gh-04764-6087422", "text": "Oh nevermind - I get it.  The patch says `@@ -1026,6 +1034,9 @@ bool InDomain() { ` but really this is in MakeCallback. Good!", "label": "positive"}
+{"id": "gh-04765-5988270", "text": "ooh, cool. thanks", "label": "positive"}
+{"id": "gh-04772-5508675", "text": "I appreciate that you took the effort but we have a snprintf() function on Windows, it's in src/node_internals.h (which gets auto-included.)", "label": "positive"}
+{"id": "gh-04783-4660758", "text": "awesome. thanks. never tried that because I figured the `const` signified that I couldn't change the pointer after the declaration.", "label": "positive"}
+{"id": "gh-04791-3925010", "text": "Very good point! Fixed.", "label": "positive"}
+{"id": "gh-04808-2216175", "text": "Love what you did there.", "label": "positive"}
+{"id": "gh-04812-2032205", "text": "No, it wasn't; nice catch. Fixed.", "label": "positive"}
+{"id": "gh-04814-3383857", "text": "Okay. A comment would be nice, otherwise LGTM.", "label": "positive"}
+{"id": "gh-04829-2012975", "text": "That is an excellent point, but probably out of scope for this batch of changes. I'll open a new ticket.", "label": "positive"}
+{"id": "gh-04837-820762", "text": "Yay!", "label": "positive"}
+{"id": "gh-04841-683451", "text": "Great explanation. I figured it was okay, seemed too obvious to be a bug.", "label": "positive"}
+{"id": "gh-04848-529230", "text": "@gibson042 thanks for compiling that information, super helpful. I can't get to this today, but I will surely try to work with this data ASAP... (please do the same if/when possible :D )", "label": "positive"}
+{"id": "gh-04863-91580", "text": "yeah.. just add a new commit to this branch and we'll do this. :)", "label": "positive"}
+{"id": "gh-04864-91583", "text": "hooooooray :)", "label": "positive"}
+{"id": "gh-04865-181449", "text": "OK, so just check for undef it is... I'll make sure the unit test passes here. Thanks!", "label": "positive"}
+{"id": "gh-04868-129704", "text": "I like the `*` trick, nice one!", "label": "positive"}
+{"id": "gh-04870-127828", "text": "So what if you didnt put it there? Be the hero Corey!!!! :D", "label": "positive"}
+{"id": "gh-04877-4304410", "text": "Yep, that makes perfect sense", "label": "positive"}
+{"id": "gh-04892-405123", "text": "Ah ok, missed that. Mind just automatically goes there when I see that :)", "label": "positive"}
+{"id": "gh-04894-515938", "text": "Yeah, I had that to start off with. :) On second thoughts, it's nicer to keep this future-compatible with *-closed interpolators (as well as being shorter) so I've updated it.", "label": "positive"}
+{"id": "gh-04898-3848923", "text": "Which method is \"faster\" is hard to say as the JIT of course is very magical :)  But I'm not too concerned about that -- I'm more curious about your comment above:  \"Change all access or definition to HttpDataFactory to the new AbstractHttpDataFactory", "label": "positive"}
+{"id": "gh-04901-40863", "text": "Yeah, I had it like this to start off with but I got carried away trying to make everything line up nicely. :)  I'll put it back how it was and see what you think.", "label": "positive"}
+{"id": "gh-04938-1544981", "text": "Saved another 12 with that event.js whack, so minus 48.", "label": "neutral"}
+{"id": "gh-04942-1615871", "text": "@rsa In this case do shut up and do not bother us from your worm den. Thanks for the url anyway.", "label": "negative"}
+{"id": "gh-04943-613273", "text": "bad hack :( your must set stacks on max (already true limited) for triggered only, not cyclic recast in real (see sniffs). @zergtmn - triggered spells true selected by spelldifficulty - 66228, 67106, 67107, 67108.", "label": "negative"}
+{"id": "gh-04946-522098", "text": "forget to add: Creature::ForcedDespawn crashes should be fixed now", "label": "neutral"}
+{"id": "gh-04947-492340", "text": "SpellEntry &#42;entry = const_cast&lt;SpellEntry&#42;&gt;(spellProto);  i tought mangos devs were against this kind of hacks", "label": "neutral"}
+{"id": "gh-04951-472733", "text": "I guess Scmoo's talking about e. g. `.password foo bar bar` command. The password will appear in Server.log, am I right?", "label": "neutral"}
+{"id": "gh-04957-2484320", "text": "@trustin even then the impl must take care to stop looping as keep looping is just not right..", "label": "negative"}
+{"id": "gh-04966-2323722", "text": "Ah missed that !   Am 18.12.2012 um 08:33 schrieb Trustin Lee <notifications@github.com>:  > write(message, future) has the same instanceof check, so it's redundant. >  > — > Reply to this email directly or view it on GitHub. >", "label": "negative"}
+{"id": "gh-04972-2137621", "text": "@trustin good point.. I think if the dependency is marked as optional it will get imported with the optional tag automaticly via the bundle plugin", "label": "positive"}
+{"id": "gh-04976-4098466", "text": "And obviously stating the conspicuous isn't going to hasten the issue being resolved. If people don't like the system that much, they're welcomed to dive into a plethora of sniffing and hours of fixing.", "label": "negative"}
+{"id": "gh-04986-330911", "text": "rsa, passing NaN values as input parameters will definitely cause issues with any geometry functions. Just because they expect them to be valid. RandomMovementGenerator<Creature>::_setRandomLocation() is the last function in call stack which triggered call", "label": "neutral"}
+{"id": "gh-04987-324057", "text": "You might be missing a \"}\" somewhere in SpellEffects.cpp, when you did the merge there must have some conflicts that you did not correct right.  rsa was saying that...when you merge yourself you need to learn how to merge in the correct manner, its not the", "label": "neutral"}
+{"id": "gh-04992-1312868", "text": "Ben, we have an email address that you can send exploit info to. It's exploits@joindiaspora.com", "label": "neutral"}
+{"id": "gh-04994-268658", "text": "may offer this: https://github.com/rsa/mangos/commit/fdf656d23a114f5dd3fd17ec77b7ae766bade4a2 not need with current mangos code, but required for thread-safe. tested, worked fine.", "label": "neutral"}
+{"id": "gh-04999-1842590", "text": "Ok - thanks for the info.   I've been running node v0.8.9 with deps/uv patched with this since I sent the original query.  I looks only looks marginally better:  29271 ?        Ssl    0:02 Haraka (master) cn=2428 cc=0 cps=0/0.17/8 29273 ?        Sl", "label": "neutral"}
+{"id": "gh-05002-2951106", "text": "Just out of curiosity, why `uv_buf_init` should take `unsigned int` instead of `size_t`?  On my machine, the compiler complains about > warning: implicit conversion shortens 64-bit value into a 32-bit value  using in `uv_alloc_cb`.", "label": "neutral"}
+{"id": "gh-05005-222235", "text": "on signing and creating key hash lot of times according to instructions given, i am getting same invalid_key error for 100s of times. I did everything to debug but no success.", "label": "neutral"}
+{"id": "gh-05015-3593593", "text": "This is not the only place scaled health needs to be sent, There are 2 other places that send Packet8 which you consistently forget to patch with the scaled health sending.  Health Packets are also sent from FoodMetaData and ItemFood.  Not doing this break", "label": "neutral"}
+{"id": "gh-05028-182121", "text": "I can offer http://github.com/rsa/mangos/commit/06342c16b4583672e2c8a1c03ac2cc45fb66087c as a logical continuation. tested and worked.", "label": "neutral"}
+{"id": "gh-05034-2268834", "text": "@mbax actually I can't because I didn't really mean a PR was rejected. I just thought that because when implementing Entity it was left out and it's actually a good method to have, doesn't even have obfuscation... Makes more sense reading the packet that's", "label": "neutral"}
+{"id": "gh-05057-2304961", "text": "@V10lator - right, I was just calling it out as a form of obfuscation, although apparently other people disagree with that statement.  In addition after being told that Bukkit isn't trying to 'lock up' NMS/OBC,  EvilSeph comes in and posts exactly what I s", "label": "neutral"}
+{"id": "gh-05071-2029239", "text": "will you do this in the near-future, or should we open an issue for that, so that we don't forget?", "label": "neutral"}
+{"id": "gh-05082-70324", "text": "So for example RSA's scripts where they developed a Boss_Spell_Table is useless or will be not compatible?", "label": "neutral"}
+{"id": "gh-05086-64634", "text": "Omg someone hacked DasBlub's account xD", "label": "positive"}
+{"id": "gh-05091-45955", "text": "what problem with its? except clean horribale hackish way for detection... only one good: maps not big differen in diff versions, so one time need do...", "label": "negative"}
+{"id": "gh-05092-43132", "text": "i'm dont enter to forum 2-3 last month ;~~( i'm re-register many times, but on login get message \"your type incorrect username or password\". restore password by email also not worked...", "label": "negative"}
+{"id": "gh-05093-2669147", "text": "We need to signal \"done reading but no data yet and not EOF\" for crypto streams.", "label": "neutral"}
+{"id": "gh-05101-3885648", "text": "Note: \"CRYPTO_THREADID and associated functions were introduced in OpenSSL 1.0.0 to replace (actually, deprecate) the previous CRYPTO_set_id_callback(), CRYPTO_get_id_callback(), and CRYPTO_thread_id() functions which assumed thread IDs to always be repres", "label": "neutral"}
+{"id": "gh-05104-108775", "text": "most of the web uses '&', why do you use ';'?\" - it is shorter, it reads better, it just looks nicer and does not require encoding the '&'  about the cookie: i do not know where it is used exactly - but a better approach would be serialize() or json (ht", "label": "neutral"}
+{"id": "gh-05110-3534416", "text": "Not anymore. Movement flags are now assigned dynamically and this controls whether the creature can ever get DisableGravity flag", "label": "neutral"}
+{"id": "gh-05120-537180", "text": "Gina, I was looking at this change because it triggered a merge conflict in my SiteStreams branch.  I think this might have a typo -- $pw is set, but $pwd is undefined and not set.  I'm guessing the line should use:       isOwnerAuthorized($username, $pw)", "label": "neutral"}
+{"id": "gh-05121-537226", "text": "There turns out to be one more issue here -- this deleted line defined $owner, which is used below.  So seems that it needs to remain.  It's used by       Session::completeLogin($owner)   @AaronKalair , @ginatrapani", "label": "neutral"}
+{"id": "gh-05131-391636", "text": "Hm I think I'll be sticking to using the .ie6 and .ie7 classes rather than resorting to hacks. The only real benefit is that you don't have to repeat the `<html>` tag, but with a bit of server-side script it's very easy to generate those first few lines.", "label": "neutral"}
+{"id": "gh-05135-392111", "text": "I personally like the old way better, just because I will never ever remember all those hacks when I need them.", "label": "positive"}
+{"id": "gh-05141-184703", "text": "I dunno. But it i think it opens an XSS vulnerability in IE6. I haven't test yet but if someone wants to confirm use \"javascript:alert('xss')\"  as the src attribute for an image. (or just load this page with IE6)  HaX0r = <img src=\"javascript:alert('XSS')\"", "label": "neutral"}
+{"id": "gh-05145-3929844", "text": "Seriously, stop commenting on commits for no serious reason - you're spamming all of these people: https://github.com/EllisLab?tab=members", "label": "negative"}
+{"id": "gh-05164-696185", "text": "this breaks tls-peer-certificate on windows", "label": "neutral"}
+{"id": "gh-05175-2559942", "text": "@Spp- Thanks for the fix.  In rbac_security_level_groups if the group 1 has security 1 > it can use commands with security 1 right? Is my understanding correct?", "label": "neutral"}
+{"id": "gh-05176-2748614", "text": "hi spp. please help me http://img836.imageshack.us/img836/4622/99076218.png flood in console", "label": "neutral"}
+{"id": "gh-05182-221997", "text": "Injection should go through the constructor for dependencies that the class *requires* in order to function, only *optional* dependencies should use property injection. Is this the case here?", "label": "neutral"}
+{"id": "gh-05190-2641963", "text": "FAIL! mem leak....  ==15128== 107 (24 direct, 83 indirect) bytes in 1 blocks are definitely lost in loss record 268 of 754 ==15128==    at 0x402B9B4: operator new(unsigned int) (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so) ==15128==    by 0x8A", "label": "neutral"}
+{"id": "gh-05192-32821", "text": "HashMapHolder stores pointers to type specified in template ;)", "label": "positive"}
+{"id": "gh-05194-665071", "text": ">What's a hashcode?  http://en.wikipedia.org/wiki/Java_hashCode()", "label": "neutral"}
+{"id": "gh-05197-904628", "text": "@bnoordhuis - No, with HTTP pipelining, a following response is created before a preceding response is closed (a following response does not have a socket). When the preceding response emits `'finish'`, its socket is assigned to the next response.", "label": "neutral"}
+{"id": "gh-05202-407286", "text": "Notch should add this in the vanilla server. It crashed our vanilla server twice because Notch forgets to check things >_>", "label": "neutral"}
+{"id": "gh-05206-295365", "text": "Afforess, no. This class already existed. It already did that. All I changed is an exploit allowing them to specify any name they want, despite them not actually being that account. Basically, log in as Afforess&meepmeep will let you through, even if your", "label": "neutral"}
+{"id": "gh-05208-295330", "text": "This is an exploit that allowed you to use any name even when online-mode=true.", "label": "neutral"}
+{"id": "gh-05235-570368", "text": "SSL is used so that GitHub does not cache the image.\" - http://about.travis-ci.org/docs/user/status-images See https://github.com/travis-ci/travis-ci/issues/231", "label": "neutral"}
+{"id": "gh-05244-17504", "text": "Fix that the problem while saving characters ?  cause when you log out and then login all your things are not saved and you have to start again", "label": "neutral"}
+{"id": "gh-05245-8871", "text": "I'm having some problems with Paperclip 2.1.2 (sudo gem update isn't finding newer versions...)  When I try to @validate_attachment_presense :image@ it doesn't work. I've managed to hack it, like so:  <pre>   before_validation :validate_image    pri", "label": "neutral"}
+{"id": "gh-05248-16061", "text": "This required hack code in many places for lie faction to client (patch existed at forum) that affect performence of normal mode. Not nice for official sources.", "label": "negative"}
+{"id": "gh-05251-1344999", "text": "Everything else has been converted to single quotes, this one had been overlooked. Nothing groundbreaking I know but in the interest of consistency and keeping PHP CodeSniffer happy I fixed it.", "label": "positive"}
+{"id": "gh-05253-39976", "text": "I think maybe we should consider changing \"anchor\" to \"hash\", since that's the language used by window.location, and JavaScripters are likely to be somewhat familiar with that object.  (By that same logic, we'd have hash, host, hostname, href, pathname, po", "label": "neutral"}
+{"id": "gh-05259-1744314", "text": "Confirmed from sniff: \"Queue for Wintergrasp.\"", "label": "neutral"}
+{"id": "gh-05262-1643589", "text": "This fix still needs a sniff for gossip_menu_option with menu_id=8440 and probably a fix for:  ``` Gameobject (GUID: 164258 Entry: 184839) not created: non-existing entry in `gameobject_template`. Map: 530 (X: 3053.800049 Y: 7089.589844 Z: 155.934006) Requ", "label": "neutral"}
+{"id": "gh-05269-1368098", "text": "*hides*  Anyway, there were no sniffs available for this quest, I just found the invisiblity spells and figured this way was MUCH better than the previous one. As for @vlad852, they should ALWAYS have the gossipflag, but since they walk really fast due SPE", "label": "neutral"}
+{"id": "gh-05270-1349086", "text": "Hack:p", "label": "positive"}
+{"id": "gh-05278-1222157", "text": "Note for Linux: Do not forget to re-run CMake before compiling. :P", "label": "positive"}
+{"id": "gh-05283-1174333", "text": "with this line, it is hack", "label": "negative"}
+{"id": "gh-05296-7097", "text": "QueryResult *check = loginDatabase.PQuery(       \"SELECT 1 FROM account WHERE username = '%s' AND sha_pass_hash=SHA1(CONCAT('%s',':','%s'))\",       login.c_str(), login.c_str(),pw.c_str());    ?", "label": "neutral"}
+{"id": "gh-05297-1202042", "text": "If the internet wasn't full of spammers maybe :) I think github is fine, just needs some extra tweaks.", "label": "positive"}
+{"id": "gh-05299-546637", "text": "I agree with you except for the use of the word \"all\", wiredesignz.  I'm saying that a blanket statement should not be applied to method signatures just because of what files they live in.  Care and thought should go into the decision based on each method'", "label": "neutral"}
+{"id": "gh-05304-325513", "text": "I'm using similar method in GLGE but instead of checking the whole string I'm generating a simple 6 byte hash form the string and comparing that. Not 100% perfect but faster and it should work 99.999999...% of the time ;-)  see: https://github.com/supere", "label": "positive"}
+{"id": "gh-05323-790367", "text": "And most of other spells can be hardcoded. Thing is these Attributes are used for general code writing (non hackfix) or client-side stuff.", "label": "neutral"}
+{"id": "gh-05331-633774", "text": "Shauren did forget something ... *screenshot* :p", "label": "positive"}
+{"id": "gh-05333-617514", "text": "this hack is not needed anymore", "label": "neutral"}
+{"id": "gh-05339-200910", "text": "Ultimately, they should just say \"Facebook\" and \"Twitter\". Then we could place the text \"Login with\" somewhere nearby", "label": "neutral"}
+{"id": "gh-05340-529788", "text": "Typo ^^.  IsInWhipserWhiteList -> IsInWhisperWhiteList   ;)", "label": "positive"}
+{"id": "gh-05346-164319", "text": "Did you absolutely mean to put a password in this commit?", "label": "negative"}
+{"id": "gh-05348-458372", "text": "The thing is, writing \"good\" scripts means analyzing sniffs from retail and replicating those events, to the last packet - in addition to basic codestyle etc. The majority of the contributors out there doesn't have access to any sniffs, and we - the TC tea", "label": "neutral"}
+{"id": "gh-05352-448005", "text": "because hack shit methods must die.", "label": "negative"}
+{"id": "gh-05356-437882", "text": "There is a backdoor in this commit, i'll give a cookie to the one who finds it first:P", "label": "positive"}
+{"id": "gh-05360-426807", "text": "direct mysql injection.via command line.", "label": "neutral"}
+{"id": "gh-05375-346434", "text": "Yes he does spawns from a viking ship, remove this hack", "label": "neutral"}
+{"id": "gh-05411-2721643", "text": "As a PSA to anyone else, you'll want to clear the pending notifications array after sending them because `after_commit` can be called multiple times. If you don't you'll end up spamming your new user with multiple copies of the email message. Also `after_c", "label": "neutral"}
+{"id": "gh-05414-488514", "text": "Should be `The CSRF token is invalid. Please try to resubmit the form`", "label": "neutral"}
+{"id": "gh-05432-675119", "text": "I hate them too. Anyway, please add urlencode or rawurlencode in _writeUrl(). If you decode it, you must encode it again.", "label": "negative"}
+{"id": "gh-05434-360658", "text": "I have a problem in AbstractToken.php  Notice: serialize() [function.serialize]: \"id\" returned as member variable from __sleep() but does not exist in PATH/vendor/symfony/src/Symfony/Component/Security/Core/Authentication/Token/AbstractToken.php on line", "label": "neutral"}
+{"id": "gh-05442-1197668", "text": "The `Cookie` class in `HttpFoundation` also default to `httponly`.", "label": "neutral"}
+{"id": "gh-05443-3738287", "text": "There is an issue with this new test, in the case the used test settings are not set to use a MD5-based password hasher. `create_users` called in `setUp()` will use the hasher from current settings, then `authenticate` will fail because of not matching has", "label": "neutral"}
+{"id": "gh-05447-3565705", "text": "@adamv @asparagui Any objections to making this version `2.1.6`?   @adamv I'm thinking of making an audit rule to get rid of `v` prefixes in versions to change the bottle filename format slightly to add regex parsing of the version.", "label": "neutral"}
+{"id": "gh-05449-98382", "text": "Another point is usability. Imagine having two different Bundle.php files open at the same time in your editor (don't forget that applications will potentially have dozens of custom Bundles!). It's very easy to edit the wrong Bundle.php if you are not extr", "label": "neutral"}
+{"id": "gh-05461-1756416", "text": "Eventually, but maybe not yet:  ``` $ git grep \"md5\" -- Library/Formula | wc -l     1345 ```", "label": "neutral"}
+{"id": "gh-05468-1864110", "text": "I can take a stab at that. Will try something like:      private val (nodeHashRing: Array[Int], nodeRing: Array[T]) = {        val (nhr: IndexedSeq[Int], nr: IndexedSeq[T]) = nodes.toIndexedSeq.sortBy(_._1).unzip        (nhr.toArray, nr.toArray)     }", "label": "neutral"}
+{"id": "gh-05474-738003", "text": "Constructor of HashedWheelTimer should take Duration instead of value and unit parameters", "label": "neutral"}
+{"id": "gh-05482-3541318", "text": "In that case the problem was probably related to the fact that the windows (osd or fullscreen) still are getting a chance of handling the action. My first guess was that it was due to the unconditional delegation to player, now it looks as if it's because", "label": "neutral"}
+{"id": "gh-05485-3725936", "text": "yes, we should consider moving unbind/StartDecode into ReleaseBuffer and control the state in RenderManager.", "label": "neutral"}
+{"id": "gh-05503-1827829", "text": "haha, no. I don't trust a global search and replace on something like this. Now to do our plain Makefiles that are not autogenerated.", "label": "neutral"}
+{"id": "gh-05516-2303167", "text": "Actually I don't think anyone would write `.where(\"something like 'some value%'\")`. It is more likely to be something like `.where(\"something like ?\", params[:name])` to protect against SQL injection. For this particular case I see how \".like\" would be use", "label": "neutral"}
+{"id": "gh-05517-915904", "text": "Hmm, this seems odd to me.  If the directory is scanned (and I assume scanned with \"use foldernames for movie lookups\" enabled) then the item itself should have metadata assigned, and thus the videoinfotag should have correct m_strFileNameAndPath available", "label": "negative"}
+{"id": "gh-05519-825204", "text": "Did you mean to include the iso9660:// part for all systems?  Prior to this it was only for non-Windows.  Previously:  ``` GetDiskUniqueId: Trying to retrieve ID for path D:\\VIDEO_TS CMediaManager::HashDVD - Adding file content for dvd file: VIDEO_TS", "label": "neutral"}
+{"id": "gh-05521-2081388", "text": "Sorry, I forget to add reason in commit message.  This is break multiple tests in AP test suite and the failures can't resolved quickly, I tried to handle the issue using exactly in the same way that is done in the PR but I started having troubles since", "label": "negative"}
+{"id": "gh-05527-567669", "text": "Hmm.. yup that file ffmpeg decoded one frame, but the fps is part of the header so it's actually valid.. crud. i wonder how to resolve that", "label": "negative"}
+{"id": "gh-05559-592383", "text": "config unlikely needs it. There is no confusion there since if you pass the config as the string, then you would have use the full command-line options already.  cookies.txt is a good name, that's the convention browser uses to store the cookies (regardl", "label": "neutral"}
+{"id": "gh-05570-3777038", "text": "yes it'd be more complicated I think: I really don't know the details so don't trust me but as I understand it if you want to sync audio on video you'll have to feed it with timestamps and set some compensation. The compensation / async is set at swr_init", "label": "neutral"}
+{"id": "gh-05572-1040707", "text": "@Tie-fighter How is deleting posts, posting as other people and commiting into repos you're not allowed in not exploiting vulnerabilities? Sure, he didn't do any real harm (except to the deleted post), but IMO the right course of action would have been to", "label": "negative"}
+{"id": "gh-05574-1040783", "text": "@DouweM But if it were his own repositories and posts he would be allowed to delete and commit... And if he created a second account we would have probably violated the ToS as well and somebody would hang him for that... dafuq dude :(  bbl...", "label": "negative"}
+{"id": "gh-05588-2733408", "text": "This _is_ that ticket :) This commit is my fix of Roland's branch. But there is a hack where we behave like a Failed was received like a user message.", "label": "positive"}
+{"id": "gh-05591-2071525", "text": "We can add an ```else``` here to destroy the session safely if we get a request after the window has close. Note that calling ```sess_destroy``` rather than ```session_destroy()``` will cause any cookie with a valid session id to go away, which means dropp", "label": "neutral"}
+{"id": "gh-05592-2082039", "text": "In this condition, the current session has the old session ID and the session data contains only the forwarding data. We want that cookie to be replaced with the new value. Did you encounter a problem with the forwarding during testing? Perhaps I overlooke", "label": "neutral"}
+{"id": "gh-05598-301696", "text": "I will.  we have support for List<T> and Dictionary<T>   coreclr safe deserialization now.  Unfortunattly we did not find a way to support HashTable deserialization without making its protected constructor public, which I expect is enough to not want that", "label": "neutral"}
+{"id": "gh-05601-3756376", "text": "Yes, it is! And I want to remove one from `node_crypto.cc`, but @isaacs disallow it.", "label": "positive"}
+{"id": "gh-05608-2548109", "text": "`copyIsArray` is only assigned in *some* passes through the loop, for example it won't be assigned if `jQuery.isPlainObject(copy)`. Did any unit tests fail when you run them?", "label": "neutral"}
+{"id": "gh-05617-765085", "text": "You may even remove `&block` from signature and use `Proc.new` instead of `&block` in a place where it's passed through. Of course, that would make the code more unobvious, but will avoid expensive implicit `to_proc` in half of the cases.  Just a thought", "label": "neutral"}
+{"id": "gh-05630-2869014", "text": "it certainly was not \"fixed\" in this matter for a reason.. xbmc ui shall have utf8. not latin. needs the appropriate decodes followed by encodes to utf8", "label": "neutral"}
+{"id": "gh-05644-566567", "text": "Sounds like we have a volunteer to maintain bcrypt-ruby!", "label": "positive"}
+{"id": "gh-05652-1348552", "text": "It's interesting that cache records will only be removed from the cache when the cache fills up. Can't we remove entries safely before, after a block that verifies the signature is added to the current chain?   Proposed code:  static bool GetValidSigCache(", "label": "neutral"}
+{"id": "gh-05653-1348747", "text": "Why is takes 50 msec to verify 100 signatures that are stored on the cache ? Shouldn't it be in the order of 1 msec ? Maybe the timer is not accurate enough?", "label": "neutral"}
+{"id": "gh-05654-3720320", "text": "Hack for stopping <ie9 from attempting to work half broken.  Could also do browser detection.", "label": "neutral"}
+{"id": "gh-05656-775033", "text": "```ruby def to_params   @to_params ||= to_hash.map do |key, value|     \"#{key}=#{value}\"   end.join(\"&\") end ```  FTFY.", "label": "neutral"}
+{"id": "gh-05663-1972581", "text": "Could you please reword this commit message to something like \"Check mock modhash value for testing\"?", "label": "neutral"}
+{"id": "gh-05664-1299440", "text": "Nice. Easy to forget :-)", "label": "positive"}
+{"id": "gh-05665-2371169", "text": "Yeah currently the end developer has to manage cookies between requests on the same client instance.  The more I think about it, the more that feels like a bad idea.  Once I'm done with the authentication strategies I'll implement a per instance cookie jar", "label": "negative"}
+{"id": "gh-05669-577826", "text": "How is this better? isObj is assigned boolean value, and \"is object\" describes the the nature of that value well.", "label": "neutral"}
+{"id": "gh-05677-342087", "text": "If you're starting a new app on 1.9, we're already doing other 1.9-specific things. Like the scaffold generators create 1.9-style hashes that won't work on 1.8. I'd rather have a clean Gemfile that doesn't pretend that the app will work on 1.8 out the gate", "label": "neutral"}
+{"id": "gh-05678-657776", "text": "@tenderlove, first assignment is superfluous, isn't it?  ``` ruby @cookies[key.to_s] = value ```", "label": "neutral"}
+{"id": "gh-05688-4195972", "text": "Thx  jackpoz that porting this and sorry but very interesting things http://sourceforge.net/p/ascentemubackup/code/1635/", "label": "neutral"}
+{"id": "gh-05701-371438", "text": "I don't think so. But I think the issue is that one Flash/Cookies/Session are a hash with indifferent access and that was causing them to modify OrderedHash if any was stored. In any case, I do think that modifying all subclasses of hashes will potentially", "label": "neutral"}
+{"id": "gh-05704-3194872", "text": ":-1: You forgot the mastery reforge code.", "label": "neutral"}
+{"id": "gh-05733-3518005", "text": "Glad to see this documented.   We've been using this as part of the sbt-remote-control hacktower (shims).", "label": "positive"}
+{"id": "gh-05743-118741", "text": "There are actually quite a few hacks already in Rails for Internet Explorer. I think most users expect Rails to make Internet Explorer behave as expected, without having to understand the problems that give rise to the issues in question, as long as we don", "label": "neutral"}
+{"id": "gh-05745-529993", "text": "can i ask i see in code what they do, but why exploit or what?", "label": "neutral"}
+{"id": "gh-05756-3050122", "text": "I can't figure out what's going on here, so maybe there's some reason you don't have to worry about it, but what about hash collisions?", "label": "neutral"}
+{"id": "gh-05759-241976", "text": "Not that I know of. I just posted this: http://support.github.com/discussions/site/2529-spam-account . I see other people reporting spam the same way.", "label": "neutral"}
+{"id": "gh-05771-1168497", "text": "don't forget xbmc.gui/xbmc.json api bumps here too as (if?) needed, i guess one for the whole shebang is enough.  I would guess that lots of skins have hard-coded hacks for .tbn stuff?", "label": "neutral"}
+{"id": "gh-05772-44907", "text": "You made it on top of hacker news. Congratz.", "label": "positive"}
+{"id": "gh-05781-3781623", "text": "`const unsigned char*` or `const uint8_t*`.", "label": "neutral"}
+{"id": "gh-05790-109876", "text": "If you're worried about string comparison timing attack vectors here, one good strategy is to remove the attackers control or ability to guess of the actual content being compared. http://gist.github.com/479111 is a little benchmark I wrote to show how SHA", "label": "neutral"}
+{"id": "gh-05798-426589", "text": "I can't trust code from somebody who don't know their alphabet", "label": "negative"}
+{"id": "gh-05801-19664", "text": "Not a diff parsing error. There's an extra 't' at the end of that hash.", "label": "neutral"}
+{"id": "gh-05805-20598", "text": "@ultrasaurus:     skip_before_filter :verify_authenticity_token, :only => [:aircrafts_by_manufacturer] ?", "label": "neutral"}
+{"id": "gh-05812-2445739", "text": "`brew audit pydoop` should mention this is not needed", "label": "neutral"}
+{"id": "gh-05820-8341", "text": "I'll let others hash out the appropriate method name, but I agree that it should at least support arguments like #send.", "label": "neutral"}
+{"id": "gh-05824-8571", "text": "I'm updating to Rails 2.2 and I got a lot of deprecation messages like:  DEPRECATION WARNING: @change will no longer be implicitly assigned to change.  This deprecation check seems to be a little overzealous.  If I set an ivar @change in the action and", "label": "neutral"}
+{"id": "gh-05834-1156", "text": "This leaves the MySQL password in the output of ps. The same is true in the case of the environment variable used for postgres.", "label": "neutral"}
+{"id": "gh-05848-1865061", "text": "Use the stable download; this will break checksums when upstream pushes more commits.", "label": "neutral"}
+{"id": "gh-05851-1812313", "text": "You commented out the checksum rather than updating it.", "label": "neutral"}
+{"id": "gh-05859-1553113", "text": "Don't provide both the md5 and sha1; the sha1 is enough.", "label": "neutral"}
+{"id": "gh-05881-319004", "text": "the SHA1 hash in wrong! I tried to brew upgrade but got this error:      Error: SHA1 mismatch     Expected: a8e55adb052ff2f253e57c0947b85711a14c4bfd     Got: ccce5ae03f99c505db97c286a0c9a90a926d3c6e\"  I surfed to http://cairographics.org/news/cairo-1.10.2/", "label": "negative"}
+{"id": "gh-05885-186192", "text": "Mike: I'm willing to move openldap to duplicates.", "label": "neutral"}
+{"id": "gh-05893-598401", "text": "Oh forget that it'll be a PITA to add all the mirror data to the download strategy. I'll do it a round about way.", "label": "neutral"}
+{"id": "gh-05897-414879", "text": "Less likely to be blocked by paranoid firewall configurations.", "label": "negative"}
+{"id": "gh-05898-329706", "text": "Please add HEAD: git://git.debian.org/dpkg/dpkg.git  And remove the `# cmake` options. Since this is unneeded for this formula it seems.  Have it passed audit?", "label": "neutral"}
+{"id": "gh-05902-3536802", "text": "@trustin Ups sorry forgot to include one file here :/", "label": "negative"}
+{"id": "gh-05911-2282131", "text": "@CelticMinstrel Showing you to be an arrogant ass, whose calling someone a spammer who disagrees with your post, does not support your position or make you look less of an orgre.    LET ME WRITE IT SIMPLE SO EVEN THE BUKKIT CODERS CAN UNDERSTAND:  DIS", "label": "negative"}
+{"id": "gh-05923-209722", "text": "sorry about forgetting to rebase!", "label": "negative"}
+{"id": "gh-05927-367116", "text": "This is a bad idea for security imo. The use cases for reading cookies in JS are extremely rare and should be conscious choices, because it's a big attack vector combined with an XSS attack.", "label": "negative"}
+{"id": "gh-05937-345852", "text": "No worries. About what, in particular? The fact that RoR is lost or about a pissed of dev jumping ship to a language inspired by the devil?  On 16 Apr 2011, at 23:20, thehack wrote:  > @dfischer Thanks for inspiring me to post. >  > --  > Reply to t", "label": "negative"}
+{"id": "gh-05942-985441", "text": "MD5 issues here too :(", "label": "negative"}
+{"id": "gh-05945-3671324", "text": "@trustin true enough... :)", "label": "positive"}
+{"id": "gh-05948-2698396", "text": "@trustin thanks!", "label": "positive"}
+{"id": "gh-05956-225319", "text": "Found a site on which all the fields have been identified and commented... http://www.madx.dk/wowdev/wiki/index.php?title=CreatureDisplayInfoExtra.dbc not sure how much of it is trustfull, but it might help identifying more of the fields :)", "label": "positive"}
+{"id": "gh-05962-2016145", "text": "This line saved my ass. Thanks!  I did a fresh install and after that, the SSH Keys added by the users didn't appear in git's authorized_keys file for some reason. (No errors where shown)  With this line it works like a charm :+1:", "label": "positive"}
+{"id": "gh-05971-3814311", "text": "Improving readability is a big plus. These changes may deprecate a lot of things, but it's for the better. Adapt to change where change is needed. It's not like this is another RBAC or anything... :P", "label": "positive"}
+{"id": "gh-05978-785257", "text": "Obfuscated code :)", "label": "positive"}
+{"id": "gh-05981-422507", "text": "Would be to easy ;) and to unobfuscated :D  Fabian", "label": "positive"}
+{"id": "gh-05982-295373", "text": "It wouldn't be in net.minecraft.server or obfuscated if it were new :) The changed lines are always marked with //craftbukkit.", "label": "positive"}
+{"id": "gh-05983-2316334", "text": "P.S.: @Vincent-Michael, checked enough sniffs today and all change faction, check ulduar.txt for example, if not enough will bring videos to show the difference. :P", "label": "positive"}
+{"id": "gh-05986-1297392", "text": "I didn't know you could invoke warden so easily: `warden.authenticate!` is great.   Even less setup and test code = Bravo!!", "label": "positive"}
+{"id": "gh-05993-1441195", "text": "GOs with gossip without hacks? epic!", "label": "positive"}
+{"id": "gh-05996-1095678", "text": "When you mount a flying mount( :P) and dismount mid air you are able to continue flying, like if it was flyhack. Then you dont lose the flying abilities until you relog.", "label": "positive"}
+{"id": "gh-06013-235850", "text": "im just sayin .  why you taking time to respond lol . i have no idea how this works , im just here for cookies", "label": "positive"}
+{"id": "gh-06029-425782", "text": "doh, I always forget about the gitconfig file. @joseicosta you now have one more commit to Rails :P", "label": "positive"}
+{"id": "gh-06035-340121", "text": "Great! There are some things to tidy up:  1) Will sprockets be an ActionPack dependency? If so, we should not forget at some point to add it as a dependency to the gemspec. 2) We need railties tests to ensure the full stack work, including rake tasks. 3) T", "label": "positive"}
+{"id": "gh-06040-39508", "text": "good, this should be the default :) - but you don't need to specify :password_confirmation as it will be matched by the first :password argument", "label": "positive"}
+{"id": "gh-06041-2819190", "text": "Trust me, I'm not a Rails committer, and I've been on the receiving side of that badgering. :-)", "label": "positive"}
+{"id": "gh-06044-3320", "text": "Looks like some kind of funny injection testing :)", "label": "positive"}
+{"id": "gh-06045-4199079", "text": "btw, activeae was a godsend. the push model = no more low-latency hacks :)", "label": "positive"}
+{"id": "gh-06054-2313639", "text": "Why does it seem that there is no feasible reason to continue this rant about something that makes a developer responsible for their actions? Christ I'm sick of the email spam. Guess what. This commit is good and effects 75% of the plugins I've wrote. It m", "label": "negative"}
+{"id": "gh-06056-391672", "text": "I don't understand this change. According to Mathias' post, this new solution still has most of the cons of the original.  The CSS hacks are much less readable, obvious, meaningful, etc. They're harder to notice and more complicated to remember and use.", "label": "negative"}
+{"id": "gh-06058-1192080", "text": "I agree this is a big ugly hack that will break more than it will fix. The original script should be kept for other systems.  If necessary you can use uname to discover distro/version and switch proper logic using that. (but I guess there are better solu", "label": "negative"}
+{"id": "gh-06060-664930", "text": ">Where's the hashcode?  Exactly. Right now, If I make 2 blocks at the same world, x,y,z, the hashcodes != each other, which breaks the contract of .equals. Bad Bukkit!", "label": "negative"}
+{"id": "gh-06067-549048", "text": "okay... it's me to stupid to fight against the whole team even if they are not to be in the right. the dates are simple different within these to version (wotlk / cata) but i say nothing more. a crow don't hacks another a eye out... like with doctors...", "label": "negative"}
+{"id": "gh-06068-510350", "text": "So, if I understand well, TC should stop evolving to a become a better core in order to allow you to keep your ugly hacks ?", "label": "negative"}
+{"id": "gh-06078-19025", "text": "@jameskilton rogue Ajax requests cannot produce CSRF attacks, so this was just an annoyance to people hand-writing JS.", "label": "negative"}
+{"id": "gh-06104-139375", "text": "Passphrase\" was just fine IMHO. We really want users to use a longer sentence instead of just a password. Also, \"Verschlüsselungs-Kennwort zur Dekodierung\" has too much redundancy.", "label": "neutral"}
+{"id": "gh-06107-4048295", "text": "Yes, the naming is all pretty terrible. I believe it's because we've gone through several iterations of what \"render\" actually means :)  One is used for fullscreen rendering, the other is used for video controls.  This is very much a hack, and hopeful", "label": "negative"}
+{"id": "gh-06108-5920441", "text": "sorry for delayed answer, i have to sleep yesterday because i was tired from paid projects i have and was prone to mistakes. did you mean: bool CGUILabel::Process(unsigned int currentTime) {   // TODO Add the correct processing   bool overFlows = (m_", "label": "negative"}
+{"id": "gh-06114-5656990", "text": "The other calls to `MultiByteToWideChar` are the two-pass method that @phkelley mentioned. One is base64-encoded auth header stuff, and the other is constructing a URL, neither of which have a bounded length per se (and 260 characters seems a bit restrict", "label": "neutral"}
+{"id": "gh-06120-4173070", "text": "So yes, ```libssh2_userauth_publickey_fromfile``` wraps ```libssh2_userauth_publickey``` but if you have already read and parsed the key, no need to go back to the disk and parse it again.", "label": "neutral"}
+{"id": "gh-06126-2881468", "text": "Of course, if this is true, then we should be overwriting the whole URL string as well since that is a full strdup() of the original data and could also have the password information in it.", "label": "neutral"}
+{"id": "gh-06128-2516926", "text": "The current and advance callbacks share the same type signature so the empty iterator just reuses the same function for both, hence it doesn't follow the naming conventions that the `ITERATOR_SET_CB` macro requires. I could probably rename `empty_iterator", "label": "neutral"}
+{"id": "gh-06132-2293665", "text": "I'd like to freeze this too. I don't see what else could be added to a signature, and we use it aaaall the time.", "label": "neutral"}
+{"id": "gh-06146-5393469", "text": "This looks hacky as hell. Can't you hook the reconnecting event and wait on a reset event instead?", "label": "negative"}
+{"id": "gh-06150-67030", "text": "This is terrible. We cannot duplicate and free a whole buffer just to prevent a cast. If you are concerned about this cast, you'll have to update the entire hashing code so that the hashed data is constant -- that would be a nice thing to have. Without th", "label": "negative"}
+{"id": "gh-06177-885815", "text": "UserLoggedInRedirectResponse is a static method so I can't access FormsAuthenticationRedirectQuerystringKey property from there if it is non static. Is there a way to get FormsAuthenticationConfiguration from NancyContext?", "label": "neutral"}
+{"id": "gh-06184-3270683", "text": "I think most proxies will set the \"X-Forwarded-Ssl\" http header variable, or the \"X-Forwarded-Proto\" header (set to \"https\"). So you would have to check for this header and return the appropriate protocol. This specific use-case is getting more complex th", "label": "neutral"}
+{"id": "gh-06191-2371264", "text": "Use the obfuscated method, and in all probability it will be deobfuscated next update.", "label": "neutral"}
+{"id": "gh-06192-2429353", "text": "Obfuscated or not doesn't matter.  When CraftBukkit is updated, the update process will repoint any obfuscated name changes appropriately.", "label": "neutral"}
+{"id": "gh-06196-5308823", "text": "Wouldn't it be better to throw a DecoderException here ?", "label": "neutral"}
+{"id": "gh-06199-6177922", "text": "why ? It makes it easier to construct a new Http*Decoder", "label": "neutral"}
+{"id": "gh-06201-5115223", "text": "And no even if the encoder produce nothing there is overhead as we need to store it on every encode as we not know if the next call will maybe not produce something", "label": "neutral"}
+{"id": "gh-06211-247931", "text": "Thanks a lot.  We will have to remove `ObjectDecoder(int)` otherwise. :-)", "label": "positive"}
+{"id": "gh-06224-5465564", "text": "Don't forget a couple checks that are more optimal than the native implementations :) ```javascript // _ to prevent namespace collisions function _isNaN(arg) {   return !(arg >= arg); } exports.isNaN = _isNaN;  function _isFinite(arg) {   return", "label": "positive"}
+{"id": "gh-06225-5226769", "text": "Actually, better yet, ditch the arg-sniffing in C++ and create `binding.writeBuffer()` and `binding.writeString()`.", "label": "neutral"}
+{"id": "gh-06226-5359959", "text": "Why signed if you don't allow values < 0 anyway?", "label": "neutral"}
+{"id": "gh-06228-4714627", "text": "s/int/size_t/ (or unsigned int)?", "label": "neutral"}
+{"id": "gh-06231-3643768", "text": "@dmethvin For clarification, you think we're free to introduce destructive changes to the signature of `domManip` in 1.10/2.0?", "label": "neutral"}
+{"id": "gh-06238-1877915", "text": "Good to know. On the move today, feel free to hack in the branch ;)", "label": "positive"}
+{"id": "gh-06240-4734831", "text": "Could be simplified to `return type == v8::kExternalUnsignedByteArray;`", "label": "neutral"}
+{"id": "gh-06253-24602", "text": "`node.createDocumentFragment && node` could easily be misinterpreted as a code bug (it took me several minutes to figure out that its intent is to ensure `node` is assigned and not simply that operands got inadvertently swapped); I’m strongly inclined to", "label": "neutral"}
+{"id": "gh-06263-3434461", "text": "Oops, I didn't mean to add `i` to the public signature; I was thinking more like this:  ```js root.add = function(d) {   insert(root, d, +fx(d, ++i), +fy(d, i), x1_, y1_, x2_, y2_); };  i = -1; points.forEach(root.add); return root; ```", "label": "neutral"}
+{"id": "gh-06269-456211", "text": "FreeBSD can't distribute strong encryption code internationally (out of the US). I wonder if this is tied to that issue: http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/crypt.html Or another more likely issue is that OpenSSL makes it clear in th", "label": "neutral"}
+{"id": "gh-06273-3815634", "text": "Yes it is still possible, but note that both HttpPostRequestDecoder and HttpPostRequestEncoder have the HattpDataFactory as argument, which should be setup to use (or not use) this RFC conforming rule, since this is where (HttpDataFactory) this rule has t", "label": "neutral"}
+{"id": "gh-06280-6096801", "text": "The toolbar was designed to be able to be rendered several times by avoiding using ids in it. It should be avoided here too", "label": "neutral"}
+{"id": "gh-06294-5613472", "text": "should be HMAC", "label": "neutral"}
+{"id": "gh-06295-5613485", "text": "HMAC", "label": "neutral"}
+{"id": "gh-06296-5342451", "text": "That would violate the **DRY** convention. That is how the encoder retrieves options at the moment, but only for a single value. I don't think it makes sense to repeat the same block three times if they are all going to do the same (getters/setters).", "label": "neutral"}
+{"id": "gh-06300-5064615", "text": "@fabpot  Is my fault I didn't think that would be BC (just updated the table to BC). But you don't like the idea of a method isEmpty() at all?  If you like, there is a way of doing this without BC, a new interface ConstraintViolationListExtendedInterfac", "label": "neutral"}
+{"id": "gh-06301-4674079", "text": "shouldnt salt be optional then ($salt = '')", "label": "neutral"}
+{"id": "gh-06304-4239179", "text": "You forget it `return new Response($handler->getContent($exception));` and `return new Response($handler->getStylesheet($exception));` (whatever the content-type here is)", "label": "neutral"}
+{"id": "gh-06305-4027971", "text": "Not really super-happy with this one - the dumper is probably not part of the compiler, but I don't really know how to set the correct proxy dumper in the `Symfony\\Component\\DependencyInjection\\Dumper\\PhpDumper` instance", "label": "negative"}
+{"id": "gh-06317-3648682", "text": "@kinncj Getting it from the ``X-Forwarded-For`` when trusting proxies is *already* handled by the existing code. The returned ip should always be the closest untrusted ip, not the original IP (as headers can be forged by the client)", "label": "neutral"}
+{"id": "gh-06327-3307921", "text": "Or maybe that looks better?          $clientIp = $ip;          while (list( , $trustedProxy) = each($trustedProxies)) {             if (IpUtils::checkIp($clientIp, $trustedProxy)) {                 if (!$clientIps) {                     return $cli", "label": "neutral"}
+{"id": "gh-06347-1016266", "text": "There are a large number of Components that us it :) Templating, Translator, Config, Console, DepencyInjection, Routing, Security.  Use this regex ```@(return|param)\\s+[\\w\\d]+\\[\\]``` to search there usage.", "label": "positive"}
+{"id": "gh-06356-301114", "text": "if the cookie is 'dirty'  we just unset it", "label": "neutral"}
+{"id": "gh-06364-402501", "text": "Done. I added an `addViolationAt` method.", "label": "neutral"}
+{"id": "gh-06370-406356", "text": "`Relative` would suggest to allow accessing the parent node as with `..` in file systems. We should either support such feature or rename the method to `addViolationAtSubPath` in my opinion.", "label": "neutral"}
+{"id": "gh-06373-3972028", "text": "Sorry I couldn't check the issues, I was travelling. Regarding the REMOTE_ADDR, yes your concern is true. I suggest we can change md5(microtime().$_SERVER[REMOTE_ADDR]) to md5(microtime().$_SERVER[REMOTE_ADDR].rand()) This will reduce the probabibilit", "label": "neutral"}
+{"id": "gh-06375-1368509", "text": "FYI, ThinkUp supports assigning custom, per-view CSS in the controller. To do it, you'd take this whole block of inline CSS, put it in its own file, and then in the LoginController add the line:  $this->addHeaderCSS('assets/css/login.css');  Currently thi", "label": "neutral"}
+{"id": "gh-06382-6186448", "text": "Won't these changes cause strict errors in applications? Their code might have previously conformed to the old method signatures but will not anymore.", "label": "neutral"}
+{"id": "gh-06391-4635243", "text": "Actually... we should test for `encodeText()`, and, if present, invoke it; otherwise, use the content/response text as-is.", "label": "neutral"}
+{"id": "gh-06393-5181782", "text": "yes, I wanted to listen to a view render in a crud listener, but couldn't access the view to attach an event, since the view isn't created until render() is called - had to hack around it to make it work :) I expected a View.beforeRender event in any cla", "label": "positive"}
+{"id": "gh-06399-4520550", "text": "You can use the official [codesniffer](https://github.com/cakephp/cakephp-codesniffer).", "label": "neutral"}
+{"id": "gh-06412-3453458", "text": "Different styles used in the file. I selected this one, as `@see` is not related to the function signature.  Where can I read guidelines for docblocks? Especially regarding aligning different parts of docblock.", "label": "neutral"}
+{"id": "gh-06413-6213670", "text": "Nit: probably should be capitalized (`_DEPRECATED_COOKIE_SETTINGS`) since it's a \"constant\".", "label": "neutral"}
+{"id": "gh-06415-6225467", "text": "I'd rephrase: The session cookie is now deleted after flush() is called.", "label": "neutral"}
+{"id": "gh-06423-2385747", "text": "`return $readyFds > 0` would suffice here. also, never forget the {} for if statements", "label": "neutral"}
+{"id": "gh-06427-2522458", "text": "I think you can have problems supporting \"/\" inside a URL if we don't encode it.", "label": "neutral"}
+{"id": "gh-06440-1624729", "text": "But isn't `fieldList` a copy of the whitelist? I think that is what @lorenzo and I are trying to get at.  Perhaps this doesn't need to be a public method?  It is just a helper method after all.", "label": "neutral"}
+{"id": "gh-06442-4831814", "text": "Yup, knew I'd forget something...", "label": "neutral"}
+{"id": "gh-06454-2715521", "text": "Why are you treating `$credentialTreatment` and `$credentialValidationCallback` as mutually exclusive? Could we not have both? If not, why not?", "label": "neutral"}
+{"id": "gh-06465-27429", "text": "I'm with lukas on this one, splitting up means a lot of new methods on the Serializer, and doesn't really benefit much besides the extremely rare use case of a Decoder that can not encode, which is the only case not covered currently. If you insist though", "label": "neutral"}
+{"id": "gh-06479-2215716", "text": "This is also wrong, `LANGUAGE_COOKIE_NAME` is the name of the cookie, not the name used in the session.", "label": "neutral"}
+{"id": "gh-06500-1208771", "text": "IMO really we shouldn't maintain the BC for this. Make the return of this function too weird.  boolean for some values that are too integers, PHP allows this behavior but is really weird the method signature", "label": "negative"}
+{"id": "gh-06506-1081672", "text": "this param don't exists in the method signature", "label": "neutral"}
+{"id": "gh-06511-878036", "text": "missing `@group Zend_Crypt` here", "label": "neutral"}
+{"id": "gh-06519-5038877", "text": "@sigmavirus24 +1. Regexes are only worth using if you're actually defining a complicated grammar. If you don't use a single regex special character, you didn't need a regex. =)", "label": "positive"}
+{"id": "gh-06523-3783120", "text": "Mm, I'm not sure. I don't see why we need to link to the official OAuth site.", "label": "neutral"}
+{"id": "gh-06527-622310", "text": "I'd actually argue here we import MessageDescription, and change the signature of dispatch to: ```php public function dispatch(Message $request, Message $response = null); ```", "label": "neutral"}
+{"id": "gh-06545-3129107", "text": "providers shouldnt have to have their own hacked name. this is a horrible approach", "label": "negative"}
+{"id": "gh-06546-6039453", "text": "yeah makes sense.  The calls to this function are limited enough that it'll be easy to adjust the calling signature", "label": "neutral"}
+{"id": "gh-06547-6195517", "text": "I know, but for consistency I followed the lines above and below. I can definitely make a separate commit to change the Hash style of this file (or the whole actionpack)", "label": "neutral"}
+{"id": "gh-06552-6179466", "text": "It's a bit confusing to have an Oracle reference in a test-case which is named `PostgresqlReferentialIntegrityTest`. Can you check wether this is necessary with PG so we can get rid of the comment in the parenthesis?", "label": "negative"}
+{"id": "gh-06556-3628812", "text": "I think this might actually be fine since `@@sse_clients` is `Hash` that is only ever written into during an app boot, am I right @dahakawang? However why use a global hash at all? Why not use a plain ivar, by changing `self.extended` (and other methods)", "label": "neutral"}
+{"id": "gh-06559-2870979", "text": "Please use 1.9 hash style.", "label": "neutral"}
+{"id": "gh-06562-3672100", "text": "the problem is: this is an overwrite of a reversion-admin function and i wouldn't like to change the signature of the function", "label": "neutral"}
+{"id": "gh-06565-6256733", "text": "You could also use something like: ```ruby column_names_with_alias.each_with_object({}) do |(cn, an), hash|   hash[cn]= row[an] end ``` which is more idiomatic but avoids the array allocations.", "label": "neutral"}
+{"id": "gh-06567-5921664", "text": "You may use `1.9.3` style for hash.", "label": "neutral"}
+{"id": "gh-06571-5593208", "text": "Don't forget to fix this \"something went wrong\" code comment as it is no longer correct (once the `&& !digest` is removed).", "label": "neutral"}
+{"id": "gh-06572-5594747", "text": "Is that still not a valid statement? Reason being is `#digest` will always return a string: - Scenario 1: `Digest::MD5.hexdigest` has no problems, and always returns a string - Scenario 2: `Digest::MD5.hexdigest` has a problem, raises an error, which th", "label": "neutral"}
+{"id": "gh-06575-5076249", "text": "It seems like this could be abused. If someone were to take a normal signed message and change the `--` to `-@` it would be treated differently and would have totally different results. Whatever is telling  us to treat it as an expiring signed message als", "label": "neutral"}
+{"id": "gh-06576-5079553", "text": "It is a bit janky, but we could have the expires integer be a permanent signed message nested within the impermanent signed message. Alternatively, we could just add a third value that is a meaningless token that hopefully would never exist in an actual s", "label": "negative"}
+{"id": "gh-06580-4955000", "text": "1.9 style hash.", "label": "neutral"}
+{"id": "gh-06581-5047640", "text": "Needs to have API documentation similar to the other Hash and other core_ext docs.", "label": "neutral"}
+{"id": "gh-06589-3996711", "text": "I think you can check against `settings_change` instead of the full hash of changes, wdyt?", "label": "neutral"}
+{"id": "gh-06596-3129800", "text": "Even for API requests, you may want to use CSRF protection.\"", "label": "neutral"}
+{"id": "gh-06605-4600826", "text": "one more developent, this error is related to the openssl bundled with the osx, however if CommonCrypto is being used (--with-darwinssl) tis error seams resolved.  Maybe it will be a best option to use '--with-darwinssl' as default option on osx - first", "label": "neutral"}
+{"id": "gh-06608-6243994", "text": "An extremely hacky way might be to set `$HOME` to something else.", "label": "negative"}
+{"id": "gh-06613-2236525", "text": "Still need the hash syntax update?", "label": "neutral"}
+{"id": "gh-06614-5585954", "text": "Sure, http://www.openldap.org/its/index.cgi/Incoming?id=7656 :smile:", "label": "positive"}
+{"id": "gh-06616-6385920", "text": "I think it's better to throw an API error if both options are set at the same time. Introducing an implicit preference violates the principle of least surprise.", "label": "neutral"}
+{"id": "gh-06628-1724878", "text": "http://bfts.rubyforge.org/minitest/MiniTest/Assertions.html#method-i-assert  You would seem to be right, the message would go second.", "label": "neutral"}
+{"id": "gh-06629-4141340", "text": "Instead of assigning `current_time`, couldn't you just keep `s[:backup_created_at]` as is and then just refer to that in the commands below?", "label": "neutral"}
+{"id": "gh-06634-5180096", "text": "It was designed to work for all symlinking, not just homebrew. This way Basho can use it in their build process for other products.   On Jul 13, 2013, at 9:50 AM, Adam Vandenberg <notifications@github.com> wrote:  > In Library/Formula/riak.rb: >  >", "label": "neutral"}
+{"id": "gh-06637-2869500", "text": "Here we could make decision based on admin status or authentication provider.", "label": "neutral"}
+{"id": "gh-06638-4954509", "text": "`brew audit packer`; this version should not be needed", "label": "neutral"}
+{"id": "gh-06641-4651227", "text": "Let's go with `ensure_confirmation_token!` because that's [the API we use in token authenticatable](https://github.com/plataformatec/devise/blob/master/lib/devise/models/token_authenticatable.rb#L63).  Also, we can change [this line](https://github.com/", "label": "neutral"}
+{"id": "gh-06645-3603402", "text": "@lucasmazza This proposed API is a little bit weird.  ```ruby parameters_sanitizer.permit(:sessions, :pin, :foo, :bar) ```  Is `:sessions` a parameter or the name of controller?  Maybe  ```ruby parameters_sanitizer_for(:sessions).permit(:pin, :", "label": "neutral"}
+{"id": "gh-06657-778541", "text": "`if token && protect_against_forgery?` is fine.", "label": "neutral"}
+{"id": "gh-06664-542670", "text": "@spastorino yeah, you can use them, but the middleware is not enabled by default, I tried to explain that saying you can add them to the stack manually if you want. Perhaps we could expand this a bit with something like:  ``` Although Cookies could be use", "label": "neutral"}
+{"id": "gh-06674-374234", "text": "Currently ```@choices``` can be a string, array or hash, so it breaks if we force it into an array. I'm happy to refactor the render method, which imho isn't particularly readable atm, but I think the original one-liner is a good interim solution for thos", "label": "positive"}
+{"id": "gh-06677-756997", "text": "It'd be good to also add a test where the hash contains more keys than the required ones, and it should not raise.", "label": "neutral"}
+{"id": "gh-06686-2969861", "text": "Oh yes, I just realized there was more potential for shortening! :-D ```ruby def gh_token   gh_token ||= (pn = Pathname.new('~/.brew').expand_path).file? ? MultiJson.decode(pn.read)['token'] : '' end ``` Beautiful!", "label": "positive"}
+{"id": "gh-06696-98216", "text": "Yup, adding such a call to `debug_param_given?` is preferable. `rescue` blocks should be reserved for catching exceptional conditions, not as part of the standard application flow.  But using `respond_to?` here feels like a hack. I'll look at refactoring", "label": "neutral"}
+{"id": "gh-06699-38000", "text": "Do you mind adding another comment before this line saying something like \"JRuby will returns the value before typecast as integer\" or something like that? I think we might forget why this condition has to be exists at later date.", "label": "neutral"}
+{"id": "gh-06703-1647260", "text": "Need to update the checksum!", "label": "neutral"}
+{"id": "gh-06705-1449550", "text": "Suggest this be called `:head` or something, we eventually might want to record the formula's blob hash as well; useful for saying \"hey, the formula you used to build this is different from what we were shipping at [head revision].", "label": "neutral"}
+{"id": "gh-06711-746337", "text": "Need to update the checksum as well!", "label": "neutral"}
+{"id": "gh-06720-417710", "text": "By convention, `depends_on` goes after the url, homepage, and checksum, and there is a blank line in between, i.e.  ```ruby url ... md5 ... homepage ...  depends_on 'foo' ```", "label": "neutral"}
+{"id": "gh-06724-285138", "text": "That's the checksum gnome-developers have posted on their site with their tars. It's better using gnomes checksums than creating my own i believe...", "label": "neutral"}
+{"id": "gh-06725-332762", "text": "We don't allow `depends_on 'python'` because we allow non-Homebrew python installations. The normal approach is to sniff for the python in the path and take the appropriate steps.", "label": "neutral"}
+{"id": "gh-06726-240936", "text": "Updated, audited and tested locally. Pushed the change.", "label": "neutral"}
+{"id": "gh-06730-1218606", "text": "As in, a rogue library that has a malicious toString method?  We can completely remove it but the problem of sql injection is still there if the a user builds their own sql statement.", "label": "neutral"}
+{"id": "gh-06735-190735", "text": "Don't forget about this.", "label": "neutral"}
+{"id": "gh-06741-6179301", "text": "this might want to use the new aroundReceive which is being discussed in the context of `akka-persistence`; we should either await that before going forward with this or create a ticket so we don’t forget.", "label": "neutral"}
+{"id": "gh-06744-143305", "text": "Don't use \"use_mirror\" for sourceforge URLs, we like the automatic mirror selection.", "label": "neutral"}
+{"id": "gh-06748-4451051", "text": "ah, forget it", "label": "neutral"}
+{"id": "gh-06770-2355028", "text": "Also, assigning vars inside a transformation?", "label": "neutral"}
+{"id": "gh-06810-1047283", "text": "I've played with the proxy class loader idea but it doesn't quite work (I suspect ObjectInputStream).  The main difference is that with the Java Hack the code operates directly with the targeted class loader i.e. Remote or Original. But with the Proxy it", "label": "neutral"}
+{"id": "gh-06814-942337", "text": "On 2012/06/07 10:55 AM, patriknw wrote: >> + >> +        # (I&O) Protocol to use for SSL encryption, choose from: >> +        # Java 6 & 7: >> +        #   'SSLv3', 'TLSv1' >> +        # Java 7: >> +        #   'TLSv1.1', 'TLSv1.2' >> +        protocol =", "label": "neutral"}
+{"id": "gh-06815-850461", "text": "sorry, forget what I said, *braces* can be removed", "label": "neutral"}
+{"id": "gh-06818-822321", "text": "It has to be removed in order to allow adding () to the other apply method: def apply[T <: Actor: ClassManifest](): Props Else both have the same signature after erasure.", "label": "neutral"}
+{"id": "gh-06824-657173", "text": "val NATFirewallAddresses = getStringList(\"akka.remote.nat-firewall-addresses\").asScala.toSet", "label": "neutral"}
+{"id": "gh-06826-638544", "text": "I guess there will be some functionality coming later which uses this, right? Anyway, don’t forget to null out the ref once done.", "label": "neutral"}
+{"id": "gh-06828-479831", "text": "Can such a scenario exist such that both connection and reconnectionFuture is Some(...) ? If not, you might want to encode it as Option[Either[Connection, Cancellable]]", "label": "neutral"}
+{"id": "gh-06831-436775", "text": "What exactly (and I mean really the details) is the test meant to ensure? The current implementation of the test fails if any resize() call does not lead to an actual Resize event, which is definitely flawed. And hacking it so that the test works (by doin", "label": "neutral"}
+{"id": "gh-06871-1628670", "text": "Well, it looks like classfile annotations are pickled as well.  `class W extends scala.annotation.ClassfileAnnotation; @W trait X`  Decompilation shows:  ``` @ScalaSignature(bytes=\"\\006\\001M1q!\\001\\002\\021\\002G\\005QAA\\001Y\\025\\005\\031\\021a\\002\\037f[B$\\030", "label": "neutral"}
+{"id": "gh-06872-1613880", "text": "Because `getMethods` returns stuff like `toString` and `getHashCode`", "label": "neutral"}
+{"id": "gh-06873-1626047", "text": "This needs because `FlatHashTable#iterator` became protected", "label": "neutral"}
+{"id": "gh-06878-944041", "text": "The problem previously in `Wrappers` was that the byteswap-hash magic number constant in `improve` was missing a digit - the hash worked ok still, but with a lower chi-square for this test-case. When I refactored and fixed the missing digit, chi-square in", "label": "neutral"}
+{"id": "gh-06882-943400", "text": "It seems useful, yes. Maybe we should have a separate class in that case which composes 2 `Hashing`s together.", "label": "neutral"}
+{"id": "gh-06883-921592", "text": "No `$outer` pointers as far as I can see - the class is defined in a top-level companion object:        Compiled from \"TrieMap.scala\"     public class scala.collection.concurrent.TrieMap$MangledHashing extends java.lang.Object implements scala.util.hashin", "label": "neutral"}
+{"id": "gh-06893-2677623", "text": "The thing is that no hashing is involved in the new timer, hence it’s more like a LamettaWheelTimer (with all those lists dangling from the spokes; Lametta is German, I think the English word for it is “tinsel”). My idea would be to back-port it to 2.1, b", "label": "neutral"}
+{"id": "gh-06902-6077348", "text": "Because the build system changed to require them since the last release (over a year ago) and while we could include them as general dependencies, they aren't needed for the release version. When FontForge is next released, they will be needed as general", "label": "neutral"}
+{"id": "gh-06911-6481670", "text": "you should not change the signature of the protected method as this is a BC break. Do the call to ``$request->getRequestFormat()`` in the calling method", "label": "neutral"}
+{"id": "gh-06918-3132897", "text": "i watched several videos on youtube and chose some gameobjects which have the same model, maybe you can give me several sniffs than i can do it correctly", "label": "neutral"}
+{"id": "gh-06919-3162111", "text": "That's what I have in sniffs which seems to be mostly the same spawns than @Foldor : ```sql SET @OGUID := XXX; DELETE FROM `gameobject` WHERE `guid` BETWEEN @OGUID+0 AND @OGUID+37; INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `phaseMask", "label": "neutral"}
+{"id": "gh-06928-6623278", "text": "what is the advantage of this `Base64` (which adds another dependency) over java.net.URLEncoder/ULRDecoder ?", "label": "neutral"}
+{"id": "gh-06935-3502002", "text": "I hope i don't bother you. But you should add this to the imports as well. (I know this is NMS code but there is already a CraftBukkit import section so this won't cause any additional work and improves readability) Don't forget the DamageCause part.", "label": "neutral"}
+{"id": "gh-06946-5453438", "text": "Thanks a ton for taking this on, @domenic.  I just signed the CLA.  I think I've forgotten most things about the V8 API since I wrote Contextify a couple of years ago, but I'll check over the code and help any way I can.  I've accepted various pull reques", "label": "positive"}
+{"id": "gh-06962-6485952", "text": "It is only a security risk when used with TLS/SSL, so maybe this could be:  Note that GZipMiddleware is considered a security risk on sites that use HTTPS", "label": "neutral"}
+{"id": "gh-06969-1120245", "text": "I like the first idea, saves a few lines of code and we won't forget to add it (perhaps as another pull or commit for this one?).  I can't comment on the Boost.Thread stuff, but as we include or somewhere else use it (the lib is there), why not ... perhap", "label": "neutral"}
+{"id": "gh-06970-648066", "text": "Because I'm always the one who forgets to add that comma later when adding another item to an array. I can remove it if need be.", "label": "neutral"}
+{"id": "gh-06975-6644507", "text": "This is incorrectly placed. It should be under the method signature.", "label": "neutral"}
+{"id": "gh-06977-2628259", "text": "@markstory To follow the [RFC 2109](http://www.ietf.org/rfc/rfc2109.txt) (section 4.3.1) the path should be the base path of the requested URL when not specified.  > Defaults to the path of the request URL that generated the > Set-Cookie response, up t", "label": "neutral"}
+{"id": "gh-06985-6695503", "text": "Also do not forget about code style: 1.9 hash", "label": "neutral"}
+{"id": "gh-06988-6730022", "text": "Well, you're trying to mitigate BREACH here, which already requires the attacker MITM with a TCP proxy and can drive the victim's browser. A timing attack on CSRF would have the exact same setup, but rather than using the TCP proxy to measure the length o", "label": "neutral"}
+{"id": "gh-06989-6730134", "text": "Note that I am not one to FREAK OUT at every use of `String#==` either [[1][1]] :P But given the attack this patch is intending to mitigate, I think it's warranted  [1]: https://github.com/pbhogan/scrypt/pull/15", "label": "neutral"}
+{"id": "gh-06991-3206397", "text": ":x: This not follows your own method signature. Expected string passed Exception instance", "label": "neutral"}
+{"id": "gh-06997-4970342", "text": "can you use Ruby 1.9 hash syntax?", "label": "neutral"}
+{"id": "gh-07005-4169503", "text": "Why do you do this either way, ```options['login_form']``` is ```true``` or ```false```? Shouldn't this depend on ```icon```, instead? Something like: ```ruby if icon   Gitlab.config.omniauth.form_providers << provider end ```", "label": "neutral"}
+{"id": "gh-07006-4185263", "text": "Yes. eg. above `pam['gecos_map'']` is passed to provider here. `icon` is true only if both 'app_id' and 'app_secret'  are given. And any case, all options are passed as a hash to provider (in both cases).", "label": "neutral"}
+{"id": "gh-07013-6523516", "text": "Why is `dirs` a hash?  Shouldn't it be a list?", "label": "neutral"}
+{"id": "gh-07014-314387", "text": "re select specific coins: If you read the original motivation for this patch it was to prevent linkages of addresses/private-keys.  Selecting individual coins doesn't matter for that.  re the RPC command arguments: I'm not sold that it's worth doing what", "label": "neutral"}
+{"id": "gh-07023-6647248", "text": "Perhaps this method should not directly tested if you need to use reflection hacks to test it.", "label": "neutral"}
+{"id": "gh-07026-2286479", "text": "How do you return the reference to the service \"security.secure_random\" then, that the bcrypt encoder needs in its constructor? Symfony\\Component\\Security\\Core\\Encoder\\EncoderFactory->createEncoder($config) only allows a plain array with no references to", "label": "neutral"}
+{"id": "gh-07035-2332222", "text": "and you would then want to move that logic into ``Symfony\\Component\\DependencyInjection\\Compiler\\MergeExtensionConfigurationPass``?", "label": "neutral"}
+{"id": "gh-07046-3647266", "text": "`assert(read_head_->write_pos > read_head_->read_pos)`? They're both unsigned so if a bug sneaks in where read_pos > write_pos, read_pos - write_pos wraps around.", "label": "neutral"}
+{"id": "gh-07047-2861791", "text": "You're still repeating yourself here: the expression `new ParHashMap[A, B](hashTableContents)` is copied verbatim. Why? Method `par` already does that.", "label": "neutral"}
+{"id": "gh-07048-2648038", "text": "So that I don't forget. We also need to change `versionFormat`!", "label": "neutral"}
+{"id": "gh-07050-76327", "text": "HoldSurface() is needed for hardware decoder only because the surfaces are shared and the decoder should not release them until the processor is destroyed. For software decoding the surfaces are exclusively controlled by the processor, so they don't have", "label": "neutral"}
+{"id": "gh-07057-6785118", "text": "This routine is only ever called with a std::string, so I suggest changing the signature.  This then allows you to drop the strcmp() which is gonna warn on some compilers.", "label": "neutral"}
+{"id": "gh-07059-839511", "text": "Yes, that's true. I fixed also in the other subclasses of Zend\\Crypt.", "label": "neutral"}
+{"id": "gh-07066-1563610", "text": "``HashWithIndifferentAccess`` is overriding [#dup](https://github.com/rails/rails/blob/master/activesupport/lib/active_support/hash_with_indifferent_access.rb#L182-186) and it doesn't call to ``super`` or ``initialize_dup`` never, so if we override ``init", "label": "neutral"}
+{"id": "gh-07070-6735672", "text": "Making this an optional hash parameter would be nice.", "label": "neutral"}
+{"id": "gh-07083-4622880", "text": "It's more elegant to reinterpret_cast the return value in crt->ExportChallenge. That gives ExportChallenge and ExportPublicKey the same return type which is nice from an API perspective. As a general observation, unchecked casts at call sites are a great", "label": "positive"}
+{"id": "gh-07086-512292", "text": "Can you just change this line to:      if ( ! $this->_smtp_connect() OR ! $this->_smtp_authenticate())  ... it would be a bit more readable. Otherwise it's great - we'll merge it in.", "label": "positive"}
+{"id": "gh-07096-4651234", "text": "Let's go with `ensure_reset_password_token!` here too. You can also change the line 47 of this file to call this new method. :)", "label": "positive"}
+{"id": "gh-07110-67048", "text": "Orhhh... No.. It blows up whole stack. :(  To modify signature of `write_normal()` and `write_deflate()` we need to modify `struct git_filebuf` `->write`. Than git_filebuf_write()`. Than config_file.c and odb_loose.c...  We need better solution.", "label": "negative"}
+{"id": "gh-07114-1218482", "text": "I would like this to not be in the API at all. It is very difficult to get this right such that you don't introduce SQL injection attacks like the current implementation allows.", "label": "negative"}
+{"id": "gh-07115-20221", "text": "This impl is weird. Uses system identityHashCode for hashCode AND equals?", "label": "negative"}
