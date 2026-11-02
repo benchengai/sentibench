@@ -57,6 +57,7 @@ Full references are in [docs/benchmark.md](docs/benchmark.md#references).
 | `sentibench llm` | LLM classification with strict JSON output through OpenAI or Ollama; per-item cache on disk, resumable, failures recorded and counted, a hard spend cap (`--budget`) |
 | `sentibench examples` | The selected classifiers on the demo's example sentences |
 | `sentibench report` | Applies the dev selection rule, computes every table (macro-F1, per-class F1, κ, bootstrap CIs, paired differences, cross-platform, cost, variance, agreement, error tags) into [docs/benchmark.md](docs/benchmark.md), and exports the web demo's data and browser models |
+| `sentibench resume` | Finishes every planned run that is incomplete (only the missing items), then the examples, then rebuilds the report |
 | `sentibench classify "…"` | One sentence through VADER, TF-IDF and optionally an LLM |
 | `web/` | Next.js static site: results dashboard, error browser, an offline try-a-sentence box, method page, Research basis and Limitations panels |
 
@@ -106,11 +107,11 @@ Headlines:
   of labels changed zero-shot, 3.3 % few-shot; macro-F1 moved by up to 0.03.
 
 **API spend: $3.42** (dev tuning $1.10, test $2.32, embeddings $0.01, plus a
-few unrecorded probe calls under $0.01), under the $6 budget. The shared API account ran out of credits during the test
-runs, so `gpt-6-luna` few-shot, the repeated runs for the three API models, half
-of the cross-platform LLM cells and the API models' outputs on the demo's
-example sentences were not completed (about $1.8 left to run; see
-"Not done" below).
+few unrecorded probe calls under $0.01), under the $6 budget. **Not done: OpenAI credits ran out.** The shared API account
+ran out of credits during the test runs, so `gpt-6-luna` few-shot, the repeated
+runs for the three API models, half of the cross-platform LLM cells and the
+API models' outputs on the demo's example sentences are missing; nothing was
+estimated in their place (see "Not done" below).
 
 ## Quick start
 
@@ -155,17 +156,21 @@ checks that they match and stops if a selected configuration is missing.
 
 ## Not done
 
-- **Runs cut short by API credits.** The shared OpenAI account ran out of
+- **Not done: OpenAI credits ran out.** The shared OpenAI account ran out of
   credits during the test runs. Missing: `gpt-6-luna` few-shot (121 of 900
   sample items, 863 of 5,221 full-test items), runs 2 and 3 of the variance
   study for `gpt-6-luna`, `gpt-6.1-terra` and `gpt-6.1-sol` (the local
   `qwen3:8b` variance runs are complete), three of the six `gpt-6-luna`
   cross-platform cells, and the API models' outputs on the try-box example
-  sentences (the Embeddings + LR outputs for them too, since they need the
-  embeddings API). Billing errors were not counted as model failures; once
-  credits are added, re-running the same `sentibench llm` commands and
-  `sentibench examples` resumes exactly the missing items (about $1.8), and
-  `sentibench report` (without `--partial`) then rebuilds everything.
+  sentences (Embeddings + LR too, since it needs the embeddings API). Billing
+  errors were not counted as model failures, and the report and demo show
+  only completed runs. Once credits are added, one command finishes the
+  missing items (finished ones are cached) and rebuilds the report and demo
+  data; it can be repeated safely if it stops again:
+
+  ```bash
+  uv run sentibench resume
+  ```
 - Not deployed: the site builds as a static export for Vercel, but there is no
   account.
 - SentiStrength-SE and Senti4SD were not run (no Python package); no

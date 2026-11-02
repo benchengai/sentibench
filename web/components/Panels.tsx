@@ -55,10 +55,16 @@ export function ResearchPanels() {
           </li>
           <li>
             LLM outputs vary between runs; numbers are from one run except in the variance table (3 runs on 100
-            items per dataset). Model behaviour can change when the provider updates a model.
+            items per dataset, completed for the local model only). Model behaviour can change when the provider
+            updates a model.
           </li>
           <li>
             The example sentences in the try-box are synthetic, written for this demo; they have no gold label.
+          </li>
+          <li>
+            Not done: OpenAI credits ran out. Some planned runs (gpt-6-luna few-shot, the API models&apos; repeated runs,
+            half of the cross-platform LLM cells, the API models&apos; outputs on the example sentences) are missing; the
+            Results page lists them. Nothing is estimated in their place.
           </li>
         </ul>
       </details>

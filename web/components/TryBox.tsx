@@ -5,6 +5,8 @@ import type { Classifier, Dataset } from "@/lib/results";
 import { Tfidf, type TfidfModel } from "@/lib/tfidf";
 import { Vader, vaderLabel, type VaderData } from "@/lib/vader";
 
+const NOT_DONE = "not done: OpenAI credits ran out";
+
 export type Example = {
   id: string;
   text: string;
@@ -118,20 +120,20 @@ export function TryBox({ examples, note, names, tuned, classifiers }: Props) {
               <table className="data">
                 <tbody>
                   <tr><td>RoBERTa-Twitter (general domain)</td><td><strong>{example.roberta ?? "–"}</strong></td></tr>
-                  <tr><td>Embeddings + LR trained on {names[domain]}</td><td><strong>{example.embed_lr[domain] ?? "not run"}</strong></td></tr>
+                  <tr><td>Embeddings + LR trained on {names[domain]}</td><td><strong>{example.embed_lr[domain] ?? NOT_DONE}</strong></td></tr>
                   {llms.map((c) => {
                     const label = example.llm[c.key]?.[domain];
                     return (
                       <tr key={c.key}>
                         <td>{c.name}{c.kind === "few-shot" ? `, examples from ${names[domain]}` : ""}</td>
-                        <td><strong>{label === undefined ? "not run" : label ?? "failed"}</strong></td>
+                        <td><strong>{label === undefined ? NOT_DONE : label ?? "failed"}</strong></td>
                       </tr>
                     );
                   })}
                 </tbody>
               </table>
               <p className="note" style={{ marginTop: 8 }}>
-                {note} &quot;Not run&quot;: the shared API account ran out of credits before these calls were made.
+                {note} Rows marked &quot;{NOT_DONE}&quot; have no output: those calls were never made, and nothing is shown in their place.
               </p>
             </>
           ) : (

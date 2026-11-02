@@ -58,10 +58,12 @@ intervals are 95 % bootstrap intervals.
 8. **Strict JSON output removed parsing failures.** No LLM call in the test
    runs returned an invalid label: 0 failures in 11,919 calls
    (schema-constrained decoding through the OpenAI Responses API and Ollama).
-9. **Not completed:** the shared API account ran out of credits during the
-   test runs, so `gpt-6-luna` few-shot, the repeated runs of the three API
-   models and half of the cross-platform LLM cells are missing (see "Runs not
-   completed"). The findings above do not depend on them.
+9. **Not done: OpenAI credits ran out.** The shared API account ran out of
+   credits during the test runs, so `gpt-6-luna` few-shot, the repeated runs
+   of the three API models, half of the cross-platform LLM cells and the API
+   models' outputs on the demo's example sentences are missing (listed under
+   "Runs not done"). No numbers were estimated for them; the findings above
+   use only completed runs.
 
 ## Setup
 
@@ -129,7 +131,7 @@ SentiCR (bag of words with a supervised classifier).
    results and choose nothing.
 4. **Samples.** The cheap classifiers (VADER, RoBERTa, TF-IDF, embeddings,
    `gpt-6-luna` zero-shot) were scored on every test item; the full-test
-   `gpt-6-luna` few-shot run was cut short. All classifiers, including
+   `gpt-6-luna` few-shot run is not done (OpenAI credits ran out). All classifiers, including
    `gpt-6.1-terra`, `gpt-6.1-sol` and `qwen3:8b`, were scored on the LLM test
    sample: the first 300 items per dataset of a fixed stratified order of the
    test split, so every row of the main table is on the same items. The
@@ -297,7 +299,7 @@ Novielli et al. (2020) found for bag-of-words tools. Embeddings + LR loses
 +0.01 to +0.04 above its zero-shot prompt on the target (GitHub examples on
 Jira 0.61, on Stack Overflow 0.82; Jira examples on GitHub 0.84; zero-shot:
 0.57, 0.81 and 0.80). The within-platform few-shot cells and the Stack
-Overflow-source cells were not run (credits ran out).
+Overflow-source cells are marked "–": not done, OpenAI credits ran out.
 
 ## Cost, latency and failures
 
@@ -328,8 +330,8 @@ batch throughput on the same laptop's CPU.
 | qwen3:8b (local), zero-shot (zs-guided) | 0.740 (0.739–0.742) | 4 of 300 (1.3%) | 0.99 |
 | qwen3:8b (local), few-shot (fs-guided) | 0.740 (0.727–0.757) | 10 of 300 (3.3%) | 0.96 |
 
-Only the local model's repeated runs were completed; those of the three API
-models were cut short (see "Runs not completed"). With its default sampling
+Only the local model's repeated runs were completed. The three API models'
+repeated runs are not done: OpenAI credits ran out (see "Runs not done"). With its default sampling
 (temperature 0.6), `qwen3:8b` changed the label of 4 of 300 items (1.3 %)
 zero-shot and 10 of 300 (3.3 %) few-shot across three runs. Mean macro-F1
 moved by 0.003 zero-shot and 0.03 few-shot. That is smaller than the sampling
@@ -504,20 +506,28 @@ What the examples show:
 | text-embedding-3-small | all splits | – | $0.010 |
 | **Total** |  | 18923 | **$3.42** |
 
-## Runs not completed
+## Runs not done: OpenAI credits ran out
 
 The shared OpenAI account ran out of credits at about 17:45 on 2 November
-2026, during the test runs ("You have no credits remaining"; spend recorded by
-SentiBench up to then is in the table above; other projects use the same
-account). The calls that hit the billing error were not counted as model
-failures: the runner treats them as not run, and stops at the first such error.
-Running the same `sentibench llm` commands again resumes exactly these items;
-`sentibench report` refuses to build while they are missing unless given
-`--partial`, which is how this report was built. Classifiers whose
-300-item sample is incomplete (`gpt-6-luna` few-shot) are left out of the
-tables rather than shown on fewer items. Estimated cost to finish: about $1.8.
+2026, during the test runs ("You have no credits remaining"; the spend
+SentiBench recorded up to then is in the table above; other projects use the
+same account). The calls that hit the billing error were not counted as model
+failures: the runner treats them as not run and stops at the first such error.
+Classifiers whose 300-item sample is incomplete (`gpt-6-luna` few-shot) are
+left out of the tables rather than shown on fewer items, and no number in this
+report is estimated. This report was built with `sentibench report
+--partial`, which lists what is missing below; without `--partial` the report
+refuses to build until every planned run is complete.
 
-| Classifier | Run | Datasets affected | Items classified so far |
+One command completes them. It runs only the missing items (finished ones are
+cached), then the demo's example sentences, then rebuilds this report and the
+demo data, and it can be repeated safely if it stops again:
+
+```bash
+uv run sentibench resume
+```
+
+| Classifier | Run (not done: OpenAI credits ran out) | Datasets affected | Items classified so far |
 |---|---|---|---|
 | gpt-6-luna, zero-shot (zs-guided) | variance run | GitHub, Jira, Stack Overflow | 0 of 600 |
 | gpt-6-luna, few-shot (fs-guided) | LLM test sample | GitHub, Jira, Stack Overflow | 121 of 900 |
@@ -529,6 +539,13 @@ tables rather than shown on fewer items. Estimated cost to finish: about $1.8.
 | gpt-6.1-sol, few-shot (fs-basic) | variance run | GitHub, Jira, Stack Overflow | 0 of 600 |
 | gpt-6-luna, few-shot examples from Jira | cross-platform | Stack Overflow | 153 of 300 |
 | gpt-6-luna, few-shot examples from Stack Overflow | cross-platform | GitHub, Jira | 0 of 600 |
+| Embeddings + LR | example sentences | – | 0 of 36 |
+| gpt-6-luna, zero-shot (zs-guided) | example sentences | – | 0 of 12 |
+| gpt-6-luna, few-shot (fs-guided) | example sentences | – | 0 of 36 |
+| gpt-6.1-terra, zero-shot (zs-basic) | example sentences | – | 0 of 12 |
+| gpt-6.1-terra, few-shot (fs-basic) | example sentences | – | 0 of 36 |
+| gpt-6.1-sol, zero-shot (zs-basic) | example sentences | – | 0 of 12 |
+| gpt-6.1-sol, few-shot (fs-basic) | example sentences | – | 0 of 36 |
 
 ## Limitations
 

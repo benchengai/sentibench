@@ -70,7 +70,7 @@ export default function Home() {
             <p>
               Macro-F1 on the target test split; the diagonal (bold) is within-platform. Moved to another dataset, TF-IDF + LR
               loses {dropRange(r.cross["TF-IDF + LR"])} and Embeddings + LR {dropRange(r.cross["Embeddings + LR"])}.
-              Cells marked – were not run (the API credits ran out).
+              Cells marked – are not done: OpenAI credits ran out.
             </p>
           </div>
         </div>
@@ -96,7 +96,7 @@ export default function Home() {
           <p className="note">
             Three runs of each LLM on the first {r.variance_n} items per dataset of the sample, same prompt, default sampling.
             {r.variance.length < r.classifiers.filter((c) => c.family === "LLM").length &&
-              " Only the runs that completed are shown; the API models' repeated runs were cut short when the credits ran out."}
+              " Only completed runs are shown; the API models' repeated runs are not done: OpenAI credits ran out."}
           </p>
           <div className="scroll-x">
             <table className="data">
@@ -240,10 +240,11 @@ function Incomplete({ gaps }: { gaps: ReturnType<typeof loadResults>["incomplete
   }
   return (
     <details className="panel" style={{ marginBottom: 20 }}>
-      <summary>Not completed: some planned runs were cut short when the shared API account ran out of credits</summary>
+      <summary>Not done: OpenAI credits ran out. Some planned runs are missing</summary>
       <p className="note" style={{ marginTop: 8 }}>
-        These runs are missing or partial. Classifiers and tables that depend on them are left out rather than shown on
-        fewer items; everything shown is from completed runs.
+        The shared OpenAI account ran out of credits during the test runs. These runs are missing or partial;
+        classifiers and tables that depend on them are left out rather than shown on fewer items, nothing is estimated,
+        and everything shown is from completed runs. <code>uv run sentibench resume</code> completes them.
       </p>
       <ul className="note" style={{ margin: 0, paddingLeft: 18 }}>
         {[...groups.entries()].map(([k, v]) => (
