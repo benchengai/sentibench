@@ -1,5 +1,7 @@
 # SentiBench
 
+**Live demo:** [benchengai.github.io/demos/sentibench](https://benchengai.github.io/demos/sentibench/) (static, no API key; every number comes from a real benchmark run)
+
 An evaluation harness for sentiment classifiers on software-engineering text.
 It puts a lexicon (VADER), a general pre-trained model, supervised baselines
 trained on SE data, and four LLMs prompted zero- and few-shot on the same
@@ -166,7 +168,8 @@ uv run sentibench resume
 
 ## Not done
 
-- Deployment is not part of this repository. The site builds as a static
+- Deployment is not part of this repository: the live demo at
+  https://benchengai.github.io/demos/sentibench/ is a copy of `web/out` in the personal-site repository. The site builds as a static
   export; `DEMO_BASE_PATH=/demos/sentibench npm run build` serves it from a
   sub-path.
 - SentiStrength-SE and Senti4SD were not run (no Python package); no
