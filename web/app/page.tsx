@@ -70,7 +70,7 @@ export default function Home() {
             <p>
               Macro-F1 on the target test split; the diagonal (bold) is within-platform. Moved to another dataset, TF-IDF + LR
               loses {dropRange(r.cross["TF-IDF + LR"])} and Embeddings + LR {dropRange(r.cross["Embeddings + LR"])}.
-              Cells marked – are not done: OpenAI credits ran out.
+              {r.incomplete.some((g) => g.what === "cross-platform") && " Cells marked – are not done: OpenAI credits ran out."}
             </p>
           </div>
         </div>

@@ -50,6 +50,8 @@ export function TryBox({ examples, note, names, tuned, classifiers }: Props) {
   const tf = useMemo(() => (tfidf && text.trim() ? tfidf.score(text) : null), [tfidf, text]);
   const example = examples.find((e) => e.text === text.trim());
   const llms = classifiers.filter((c) => c.family === "LLM");
+  const missing = example !== undefined &&
+    (example.embed_lr[domain] === undefined || llms.some((c) => example.llm[c.key]?.[domain] === undefined));
 
   return (
     <div>
@@ -133,7 +135,8 @@ export function TryBox({ examples, note, names, tuned, classifiers }: Props) {
                 </tbody>
               </table>
               <p className="note" style={{ marginTop: 8 }}>
-                {note} Rows marked &quot;{NOT_DONE}&quot; have no output: those calls were never made, and nothing is shown in their place.
+                {note}
+                {missing && ` Rows marked "${NOT_DONE}" have no output: those calls were never made, and nothing is shown in their place.`}
               </p>
             </>
           ) : (

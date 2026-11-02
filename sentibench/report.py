@@ -540,7 +540,8 @@ def prompt_table(dev: dict, selected: dict) -> str:
 def spend_breakdown() -> tuple[str, dict]:
     by = {}
     for path in (RUNS / "preds").glob("*/*/llm_*/run*.jsonl"):
-        split = path.parent.parent.name
+        # preds/<dataset>/<split>/... or preds/examples/<few-shot source or zs>/...
+        split = "demo example sentences" if path.parent.parent.parent.name == "examples" else path.parent.parent.name
         rows = bench.read_preds(path).values()
         spec_slug = path.parent.name
         model = next((m for m in LLM_MODELS if bench.slug(f"llm:{m}/").rstrip("_") in spec_slug), "other")
