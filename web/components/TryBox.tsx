@@ -34,12 +34,12 @@ export function TryBox({ examples, note, names, tuned, classifiers }: Props) {
   const [loadError, setLoadError] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("/data/models/vader.json").then((r) => r.json()).then((d: VaderData) => setVader(new Vader(d)))
+    fetch(`${process.env.NEXT_PUBLIC_BASE_PATH}/data/models/vader.json`).then((r) => r.json()).then((d: VaderData) => setVader(new Vader(d)))
       .catch((e) => setLoadError(String(e)));
   }, []);
   useEffect(() => {
     if (models.current[domain]) return;
-    fetch(`/data/models/tfidf_${domain}.json`).then((r) => r.json()).then((m: TfidfModel) => {
+    fetch(`${process.env.NEXT_PUBLIC_BASE_PATH}/data/models/tfidf_${domain}.json`).then((r) => r.json()).then((m: TfidfModel) => {
       models.current[domain] = new Tfidf(m);
       setLoaded((n) => n + 1);
     }).catch((e) => setLoadError(String(e)));

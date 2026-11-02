@@ -34,7 +34,7 @@ export function ErrorBrowser({ classifiers, names }: { classifiers: Classifier[]
   const name = Object.fromEntries(classifiers.map((c) => [c.key, c.name]));
 
   useEffect(() => {
-    fetch("/data/errors.json")
+    fetch(`${process.env.NEXT_PUBLIC_BASE_PATH}/data/errors.json`)
       .then((r) => (r.ok ? r.json() : Promise.reject(new Error(`HTTP ${r.status}`))))
       .then((d) => {
         setItems(d.items);
