@@ -462,16 +462,34 @@ def coverage(all_rows: list[dict], selected: dict) -> list[dict]:
             for ds in DATASETS:
                 got, need = done(ds, row["spec"](ds), n, run)
                 if got < need:
-                    gaps.append({"classifier": row["name"], "what": what, "dataset": ds, "done": got, "needed": need})
+                    gaps.append({"classifier": row["name"], "what": what, "dataset": ds, "done": got,
+                                 "needed": need, "spec": row["spec"](ds), "n": n, "run": run})
     luna = selected.get("openai:gpt-6-luna")
     if luna:
         for src in DATASETS:
             for tgt in DATASETS:
                 if src != tgt:
-                    got, need = done(tgt, f"llm:openai:gpt-6-luna/{luna['few-shot']}@{src}", SAMPLE_N)
+                    spec = f"llm:openai:gpt-6-luna/{luna['few-shot']}@{src}"
+                    got, need = done(tgt, spec, SAMPLE_N)
                     if got < need:
                         gaps.append({"classifier": f"gpt-6-luna, few-shot examples from {NAMES[src]}",
-                                     "what": "cross-platform", "dataset": tgt, "done": got, "needed": need})
+                                     "what": "cross-platform", "dataset": tgt, "done": got, "needed": need,
+                                     "spec": spec, "n": SAMPLE_N, "run": 1})
+    # The demo's example sentences: every LLM setting, and Embeddings + LR per training set.
+    if EXAMPLES.exists():
+        ids = [ex["id"] for ex in json.loads(EXAMPLES.read_text(encoding="utf-8"))["sentences"]]
+        targets = [("Embeddings + LR", RUNS / "preds" / "examples" / ds / f"embed-lr-at-{ds}" / "run1.jsonl")
+                   for ds in DATASETS]
+        for row in all_rows:
+            if row["family"] == "LLM":
+                sources = DATASETS if row["kind"] == "few-shot" else DATASETS[:1]
+                targets += [(row["name"], RUNS / "preds" / "examples" / (ds if row["kind"] == "few-shot" else "zs")
+                             / bench.slug(row["spec"](ds)) / "run1.jsonl") for ds in sources]
+        for name, path in targets:
+            got = sum(i in bench.read_preds(path) for i in ids)
+            if got < len(ids):
+                gaps.append({"classifier": name, "what": "example sentences", "dataset": None, "done": got,
+                             "needed": len(ids), "spec": None, "n": None, "run": 1})
     return gaps
 
 
@@ -481,10 +499,11 @@ def coverage_md(gaps: list[dict]) -> str:
     grouped: dict[tuple, list] = {}
     for g in gaps:
         grouped.setdefault((g["classifier"], g["what"].rstrip(" 0123456789")), []).append(g)
-    body = [[name, what, ", ".join(sorted({NAMES[g["dataset"]] for g in gs})),
+    body = [[name, what, ", ".join(sorted({NAMES[g["dataset"]] for g in gs if g["dataset"]})) or "–",
              f"{sum(g['done'] for g in gs)} of {sum(g['needed'] for g in gs)}"]
             for (name, what), gs in grouped.items()]
-    return _table(["Classifier", "Run", "Datasets affected", "Items classified so far"], body)
+    return _table(["Classifier", "Run (not done: OpenAI credits ran out)", "Datasets affected",
+                   "Items classified so far"], body)
 
 
 def dataset_table(manifest: dict) -> str:

@@ -35,9 +35,17 @@ class LLMError(RuntimeError):
     pass
 
 
-class QuotaExhausted(RuntimeError):
-    """The API account has no credits left. Not a model failure: the run stops and the
-    item stays unclassified, so a later run picks it up."""
+class RunStopped(RuntimeError):
+    """The service cannot answer at all. Not a model failure: the run stops and the item
+    stays unclassified, so a later run (`sentibench resume`) picks it up."""
+
+
+class QuotaExhausted(RunStopped):
+    """The API account has no credits left."""
+
+
+class OllamaUnreachable(RunStopped):
+    """No Ollama server at OLLAMA_HOST."""
 
 
 def load_dotenv(path: Path) -> None:
@@ -148,7 +156,7 @@ def _ollama(system: str, prompt: str, schema: dict, name: str, model: str,
     except urllib.error.HTTPError as e:
         raise LLMError(f"Ollama error {e.code}: {e.read().decode(errors='replace')[:200]}") from e
     except urllib.error.URLError as e:
-        raise LLMError(f"could not reach Ollama at {host} (is `ollama serve` running?)") from e
+        raise OllamaUnreachable(f"could not reach Ollama at {host} (is `ollama serve` running?)") from e
     except TimeoutError as e:
         raise LLMError("Ollama did not answer within 10 minutes") from e
     if data.get("done_reason") == "length":

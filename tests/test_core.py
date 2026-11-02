@@ -223,12 +223,15 @@ def test_transient_api_errors_are_rerun(monkeypatch, tmp_path):
     assert bench.run_llm("llm:openai:gpt-6-luna/zs-basic", "so", "dev", 3, root=tmp_path)["new"] == 2
 
 
-def test_quota_exhaustion_stops_the_run(monkeypatch, tmp_path):
+@pytest.mark.parametrize("stop", ["QuotaExhausted", "OllamaUnreachable"])
+def test_unavailable_service_stops_the_run(monkeypatch, tmp_path, stop):
+    from sentibench import llm
+
     def broke(text, m, p):
-        raise bench.QuotaExhausted("no credits")
+        raise getattr(llm, stop)("service unavailable")
 
     monkeypatch.setattr(bench, "classify", broke)
     monkeypatch.chdir(ROOT)
-    with pytest.raises(bench.QuotaExhausted):
+    with pytest.raises(getattr(llm, stop)):
         bench.run_llm("llm:openai:gpt-6-luna/zs-basic", "so", "dev", 5, root=tmp_path)
     assert bench.read_preds(bench.pred_path("so", "dev", "llm:openai:gpt-6-luna/zs-basic", root=tmp_path)) == {}

@@ -28,7 +28,7 @@ import numpy as np
 
 from . import classifiers as clf
 from .data import DATASETS, LABELS, load_sample, load_split
-from .llm import LLMError, QuotaExhausted, complete_json, embed
+from .llm import LLMError, QuotaExhausted, RunStopped, complete_json, embed
 from .prompts import SCHEMA, SCHEMA_NAME, system_prompt, user_prompt
 
 RUNS = Path("runs")
@@ -308,8 +308,8 @@ def run_llm(spec: str, eval_ds: str, split: str, n: int | None, run: int = 1, wo
             return
         try:
             row = {"id": item["id"], **classify(item["text"], model_spec, prompt_id)}
-        except QuotaExhausted as e:
-            quota.append(str(e))
+        except RunStopped as e:
+            quota.append(e)
             stop.set()
             return
         with lock:
@@ -322,7 +322,7 @@ def run_llm(spec: str, eval_ds: str, split: str, n: int | None, run: int = 1, wo
     with ThreadPoolExecutor(workers) as pool:
         list(pool.map(job, todo))
     if quota:
-        raise QuotaExhausted(f"stopped, the API account has no credits left: {quota[0]}")
+        raise quota[0]
     if stop.is_set():
         raise BudgetExceeded(f"stopped: total spend ${spent['start'] + spent['run']:.3f} passed the ${budget_usd} cap")
     rows = read_preds(path)

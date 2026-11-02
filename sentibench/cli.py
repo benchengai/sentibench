@@ -5,6 +5,7 @@
     sentibench llm -m openai:gpt-6-luna -p zs-guided fs-guided --split dev -n 150
     sentibench examples                               # selected prompts on the demo's example sentences
     sentibench report                                 # docs/benchmark.md and the web demo data
+    sentibench resume                                 # finish incomplete planned runs, rebuild the report
     sentibench classify "Kill the process and restart the server."
     sentibench spend
 """
@@ -80,7 +81,7 @@ def cmd_llm(args) -> None:
                 for run in range(args.first_run, args.first_run + args.runs):
                     try:
                         r = bench.run_llm(spec, ds, args.split, args.n, run, args.workers, args.budget)
-                    except (bench.BudgetExceeded, bench.QuotaExhausted) as e:
+                    except (bench.BudgetExceeded, bench.RunStopped) as e:
                         sys.exit(str(e))
                     print(f"{spec} {ds}/{args.split} run {run}: {r['items']} items ({r['new']} new), "
                           f"{r['failed']} failed, ${r['cost_usd']:.4f}", flush=True)
@@ -96,7 +97,7 @@ def cmd_examples(args) -> None:
     try:
         bench.run_examples_baselines(sentences, roberta=not args.skip_roberta)
         print("wrote RoBERTa and embeddings + LR outputs for the examples")
-    except bench.QuotaExhausted as e:
+    except bench.RunStopped as e:
         print(f"skipped embeddings + LR for the examples: {e}")
     _, selected = select_prompts()
     no_credits = False
@@ -108,10 +109,34 @@ def cmd_examples(args) -> None:
             key = ds if row["kind"] == "few-shot" else "zs"
             try:
                 print(f"wrote {bench.run_examples(sentences, row['spec'](ds), key)}")
-            except bench.QuotaExhausted as e:
+            except bench.RunStopped as e:
                 print(f"skipped {row['name']}: {e}")
-                no_credits = True
+                no_credits = no_credits or isinstance(e, bench.QuotaExhausted)
                 break
+
+
+def cmd_resume(args) -> None:
+    """Run every planned item that is still missing (cached items are skipped), then the demo
+    examples, then rebuild the report. Safe to repeat: a stop (no credits, no Ollama) loses nothing."""
+    from . import bench
+    from .report import build, classifier_rows, coverage, select_prompts
+
+    _env()
+    _, selected = select_prompts()
+    rows = classifier_rows(selected)
+    for g in [g for g in coverage(rows, selected) if g["spec"]]:
+        try:
+            r = bench.run_llm(g["spec"], g["dataset"], "test", g["n"], g["run"], args.workers, args.budget)
+        except (bench.BudgetExceeded, bench.RunStopped) as e:
+            sys.exit(f"stopped: {e}\nNothing is lost; run `sentibench resume` again to continue.")
+        print(f"{g['spec']} {g['dataset']}/test run {g['run']}: {r['items']} items ({r['new']} new), "
+              f"{r['failed']} failed, ${r['cost_usd']:.4f}", flush=True)
+    cmd_examples(argparse.Namespace(skip_roberta=True))
+    remaining = coverage(rows, selected)
+    for path in build(Path(args.out), Path(args.web), partial=bool(remaining)):
+        print(f"wrote {path}")
+    print("all planned runs complete" if not remaining else
+          f"{len(remaining)} planned runs still incomplete; the report lists them")
 
 
 def cmd_spend(args) -> None:
@@ -172,6 +197,12 @@ def main(argv: list[str] | None = None) -> None:
     p = sub.add_parser("examples", help="run the selected classifiers on the demo's example sentences")
     p.add_argument("--skip-roberta", action="store_true", help="skip RoBERTa (needs the hf extra)")
     p.set_defaults(func=cmd_examples)
+    p = sub.add_parser("resume", help="finish every incomplete planned run, then rebuild the report")
+    p.add_argument("--workers", type=int, default=6)
+    p.add_argument("--budget", type=float, default=6.0, help="stop when total recorded spend passes this (USD)")
+    p.add_argument("--out", default="docs/benchmark.md")
+    p.add_argument("--web", default="web/public/data")
+    p.set_defaults(func=cmd_resume)
     sub.add_parser("spend", help="total recorded API spend").set_defaults(func=cmd_spend)
     p = sub.add_parser("report", help="write the benchmark report and the web demo data")
     p.add_argument("--out", default="docs/benchmark.md")
