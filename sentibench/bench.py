@@ -28,7 +28,7 @@ import numpy as np
 
 from . import classifiers as clf
 from .data import DATASETS, LABELS, load_sample, load_split
-from .llm import LLMError, complete_json, embed
+from .llm import LLMError, QuotaExhausted, complete_json, embed
 from .prompts import SCHEMA, SCHEMA_NAME, system_prompt, user_prompt
 
 RUNS = Path("runs")
@@ -43,12 +43,17 @@ def pred_path(eval_ds: str, split: str, spec: str, run: int = 1, root: Path = RU
     return root / "preds" / eval_ds / split / slug(spec) / f"run{run}.jsonl"
 
 
+# Rate limits and outages that outlasted the retries say nothing about the model, so such
+# records count as "not run yet": they are skipped here and re-run on the next resume.
+TRANSIENT = "API error after"
+
+
 def read_preds(path: Path) -> dict[str, dict]:
     if not path.exists():
         return {}
     with path.open(encoding="utf-8") as f:
         rows = [json.loads(line) for line in f if line.strip()]
-    return {r["id"]: r for r in rows}
+    return {r["id"]: r for r in rows if not (r.get("error") or "").startswith(TRANSIENT)}
 
 
 def _write_preds(path: Path, rows: list[dict]) -> None:
@@ -252,6 +257,10 @@ def run_examples_baselines(sentences: list[dict], root: Path = RUNS, roberta: bo
         out = clf.roberta_predict(texts)
         _write_preds(root / "preds" / "examples" / "all" / "roberta-twitter" / "run1.jsonl",
                      [{"id": ex["id"], "label": label, "probs": probs} for ex, (label, probs) in zip(sentences, out)])
+    _examples_embed_lr(sentences, root)
+
+
+def _examples_embed_lr(sentences: list[dict], root: Path) -> None:
     cache = root / "embeddings" / EMBED_MODEL / "examples.npz"
     cached = {}
     if cache.exists():
@@ -292,10 +301,17 @@ def run_llm(spec: str, eval_ds: str, split: str, n: int | None, run: int = 1, wo
     spent = {"start": llm_spend(root) + embedding_spend(root), "run": 0.0}
     stop = threading.Event()
 
+    quota = []
+
     def job(item):
         if stop.is_set():
             return
-        row = {"id": item["id"], **classify(item["text"], model_spec, prompt_id)}
+        try:
+            row = {"id": item["id"], **classify(item["text"], model_spec, prompt_id)}
+        except QuotaExhausted as e:
+            quota.append(str(e))
+            stop.set()
+            return
         with lock:
             with path.open("a", encoding="utf-8") as f:
                 f.write(json.dumps(row, ensure_ascii=False) + "\n")
@@ -305,6 +321,8 @@ def run_llm(spec: str, eval_ds: str, split: str, n: int | None, run: int = 1, wo
 
     with ThreadPoolExecutor(workers) as pool:
         list(pool.map(job, todo))
+    if quota:
+        raise QuotaExhausted(f"stopped, the API account has no credits left: {quota[0]}")
     if stop.is_set():
         raise BudgetExceeded(f"stopped: total spend ${spent['start'] + spent['run']:.3f} passed the ${budget_usd} cap")
     rows = read_preds(path)

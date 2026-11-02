@@ -206,3 +206,29 @@ def test_error_tags():
     assert "technical" not in tags_for("Kill the process and restart the server.", "negative")
     assert "politeness" in tags_for("Thanks for the patch!", "positive")
     assert "politeness" in tags_for("Could you please add a test?", "neutral")
+
+
+def test_transient_api_errors_are_rerun(monkeypatch, tmp_path):
+    path = bench.pred_path("so", "dev", "llm:openai:gpt-6-luna/zs-basic", root=tmp_path)
+    path.parent.mkdir(parents=True)
+    items = data.load_sample("so", "dev", 3, PROCESSED)
+    path.write_text(
+        json.dumps({"id": items[0]["id"], "label": "neutral", "ok": True, "cost_usd": 0.001}) + "\n"
+        + json.dumps({"id": items[1]["id"], "label": None, "ok": False,
+                      "error": "API error after 4 retries: RateLimitError", "cost_usd": None}) + "\n")
+    assert list(bench.read_preds(path)) == [items[0]["id"]]
+    calls = []
+    monkeypatch.setattr(bench, "classify", lambda text, m, p: calls.append(text) or {"label": "neutral", "ok": True})
+    monkeypatch.chdir(ROOT)
+    assert bench.run_llm("llm:openai:gpt-6-luna/zs-basic", "so", "dev", 3, root=tmp_path)["new"] == 2
+
+
+def test_quota_exhaustion_stops_the_run(monkeypatch, tmp_path):
+    def broke(text, m, p):
+        raise bench.QuotaExhausted("no credits")
+
+    monkeypatch.setattr(bench, "classify", broke)
+    monkeypatch.chdir(ROOT)
+    with pytest.raises(bench.QuotaExhausted):
+        bench.run_llm("llm:openai:gpt-6-luna/zs-basic", "so", "dev", 5, root=tmp_path)
+    assert bench.read_preds(bench.pred_path("so", "dev", "llm:openai:gpt-6-luna/zs-basic", root=tmp_path)) == {}

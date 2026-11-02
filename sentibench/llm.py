@@ -35,6 +35,11 @@ class LLMError(RuntimeError):
     pass
 
 
+class QuotaExhausted(RuntimeError):
+    """The API account has no credits left. Not a model failure: the run stops and the
+    item stays unclassified, so a later run picks it up."""
+
+
 def load_dotenv(path: Path) -> None:
     """Read KEY=VALUE lines into the environment without overriding variables already set."""
     if not path.is_file():
@@ -59,8 +64,13 @@ def _retrying(call):
     for attempt in range(RETRIES + 1):
         try:
             return call()
-        except (openai.RateLimitError, openai.APIConnectionError, openai.APITimeoutError,
-                openai.InternalServerError) as e:
+        except openai.RateLimitError as e:
+            if getattr(e, "code", None) == "insufficient_quota" or "credits" in str(e.message).lower():
+                raise QuotaExhausted(str(e.message)[:200]) from e
+            if attempt == RETRIES:
+                raise LLMError(f"API error after {RETRIES} retries: {type(e).__name__}") from e
+            time.sleep(2 ** attempt * 2)
+        except (openai.APIConnectionError, openai.APITimeoutError, openai.InternalServerError) as e:
             if attempt == RETRIES:
                 raise LLMError(f"API error after {RETRIES} retries: {type(e).__name__}") from e
             time.sleep(2 ** attempt * 2)
