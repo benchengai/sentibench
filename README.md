@@ -201,8 +201,11 @@ More in [docs/benchmark.md](docs/benchmark.md#limitations).
 
 The EMTk files are pinned to commit `2592acc` and all five files are
 checked against MD5 sums (`sentibench/data.py`). Raw files are not committed;
-the cleaned splits in `data/processed/` are, with the attribution above. The
-web demo shows dataset texts with @handles and e-mail addresses masked.
+the cleaned splits in `data/processed/` are, with the attribution above and
+the source licences in [data/processed/LICENSES.md](data/processed/LICENSES.md).
+The code is MIT-licensed ([LICENSE](LICENSE)); the datasets keep their own
+licences. The web demo shows dataset texts with @handles and e-mail addresses
+masked.
 
 Models: VADER lexicon (vaderSentiment 3.3.2, MIT);
 [`cardiffnlp/twitter-roberta-base-sentiment-latest`](https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest)
