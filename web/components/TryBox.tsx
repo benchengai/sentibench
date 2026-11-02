@@ -118,19 +118,21 @@ export function TryBox({ examples, note, names, tuned, classifiers }: Props) {
               <table className="data">
                 <tbody>
                   <tr><td>RoBERTa-Twitter (general domain)</td><td><strong>{example.roberta ?? "–"}</strong></td></tr>
-                  <tr><td>Embeddings + LR trained on {names[domain]}</td><td><strong>{example.embed_lr[domain] ?? "–"}</strong></td></tr>
+                  <tr><td>Embeddings + LR trained on {names[domain]}</td><td><strong>{example.embed_lr[domain] ?? "not run"}</strong></td></tr>
                   {llms.map((c) => {
                     const label = example.llm[c.key]?.[domain];
                     return (
                       <tr key={c.key}>
                         <td>{c.name}{c.kind === "few-shot" ? `, examples from ${names[domain]}` : ""}</td>
-                        <td><strong>{label === undefined ? "–" : label ?? "failed"}</strong></td>
+                        <td><strong>{label === undefined ? "not run" : label ?? "failed"}</strong></td>
                       </tr>
                     );
                   })}
                 </tbody>
               </table>
-              <p className="note" style={{ marginTop: 8 }}>{note}</p>
+              <p className="note" style={{ marginTop: 8 }}>
+                {note} &quot;Not run&quot;: the shared API account ran out of credits before these calls were made.
+              </p>
             </>
           ) : (
             <p className="note">

@@ -95,6 +95,8 @@ export default function Home() {
           <h2>Run-to-run variance</h2>
           <p className="note">
             Three runs of each LLM on the first {r.variance_n} items per dataset of the sample, same prompt, default sampling.
+            {r.variance.length < r.classifiers.filter((c) => c.family === "LLM").length &&
+              " Only the runs that completed are shown; the API models' repeated runs were cut short when the credits ran out."}
           </p>
           <div className="scroll-x">
             <table className="data">
