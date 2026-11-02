@@ -80,7 +80,7 @@ def cmd_llm(args) -> None:
                 for run in range(args.first_run, args.first_run + args.runs):
                     try:
                         r = bench.run_llm(spec, ds, args.split, args.n, run, args.workers, args.budget)
-                    except bench.BudgetExceeded as e:
+                    except (bench.BudgetExceeded, bench.QuotaExhausted) as e:
                         sys.exit(str(e))
                     print(f"{spec} {ds}/{args.split} run {run}: {r['items']} items ({r['new']} new), "
                           f"{r['failed']} failed, ${r['cost_usd']:.4f}", flush=True)
@@ -93,16 +93,25 @@ def cmd_examples(args) -> None:
 
     _env()
     sentences = json.loads(EXAMPLES.read_text(encoding="utf-8"))["sentences"]
-    bench.run_examples_baselines(sentences, roberta=not args.skip_roberta)
-    print("wrote RoBERTa and embeddings + LR outputs for the examples")
+    try:
+        bench.run_examples_baselines(sentences, roberta=not args.skip_roberta)
+        print("wrote RoBERTa and embeddings + LR outputs for the examples")
+    except bench.QuotaExhausted as e:
+        print(f"skipped embeddings + LR for the examples: {e}")
     _, selected = select_prompts()
+    no_credits = False
     for row in classifier_rows(selected):
-        if row["family"] != "LLM":
+        if row["family"] != "LLM" or (no_credits and not row["model"].startswith("ollama:")):
             continue
         sources = DATASETS if row["kind"] == "few-shot" else DATASETS[:1]
         for ds in sources:
             key = ds if row["kind"] == "few-shot" else "zs"
-            print(f"wrote {bench.run_examples(sentences, row['spec'](ds), key)}")
+            try:
+                print(f"wrote {bench.run_examples(sentences, row['spec'](ds), key)}")
+            except bench.QuotaExhausted as e:
+                print(f"skipped {row['name']}: {e}")
+                no_credits = True
+                break
 
 
 def cmd_spend(args) -> None:
